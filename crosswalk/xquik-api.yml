@@ -1,0 +1,68 @@
+provider: xquik-api
+apis_io: https://apis.io/providers/xquik-api/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profile
+    properties:
+      id: id
+      bio: description
+      created_at: createdAt
+      name: name
+      location: location
+      updated_at: updatedAt
+      request_id: requestId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/xquik-rest-api-openapi.json#PATCH /api/v1/x/profile
+    - openapi/_original/xquik-rest-api-openapi.yml#PATCH /api/v1/x/profile
+  post:
+    path_segment:
+    - tweets
+    properties:
+      id: id
+      text: text
+      created_at: createdAt
+      platform:
+      - type
+      - source
+      author_id: author
+      status: status
+      media_urls:
+      - media
+      - mediaUrl
+      updated_at: updatedAt
+      comment_count: replyCount
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/xquik-rest-api-openapi.json#DELETE /api/v1/x/tweets/{id}
+    - openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/communities/tweets
+    - openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/communities/{id}/tweets
+    - openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/lists/{id}/tweets
+    - openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/tweets
+  social_comment:
+    path_segment:
+    - replies
+    properties:
+      id: id
+      author_id: author
+      created_at: createdAt
+      text: text
+      platform:
+      - type
+      - source
+      like_count: likeCount
+      media: media
+      reply_count: replyCount
+      article: article
+      card: card
+      community_note: communityNote
+      conversation_id: conversationId
+      entities: entities
+      in_reply_to_user_id: inReplyToUserId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/tweets/{id}/replies
+    - openapi/_original/xquik-rest-api-openapi.yml#GET /api/v1/x/tweets/{id}/replies

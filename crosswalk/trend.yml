@@ -1,0 +1,18 @@
+provider: trend
+apis_io: https://apis.io/providers/trend/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profile
+    properties:
+      username: username
+      bio: about
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/trend-api-openapi.yml#GET /auth/brand/profile
+    - openapi/_original/trend-api-openapi.yml#GET /auth/profile
+    - openapi/_original/trend-api-openapi.yml#GET /creator/profile
+    - openapi/_original/trend-api-openapi.yml#PATCH /creator/profile/{creatorId}
+    - openapi/_original/trend-openapi-original.json#GET /auth/brand/profile

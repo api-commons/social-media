@@ -1,0 +1,40 @@
+provider: reefapi
+apis_io: https://apis.io/providers/reefapi/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profile
+    properties:
+      username: username
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /amazon/v1/seller/profile
+    - openapi/_original/reefapi-openapi.json#POST /bluesky/v1/profile
+    - openapi/_original/reefapi-openapi.json#POST /finance/v1/v1/stock/profile
+    - openapi/_original/reefapi-openapi.json#POST /instagram/v1/profile
+    - openapi/_original/reefapi-openapi.json#POST /pinterest/v1/profile
+  post:
+    path_segment:
+    - posts
+    - post
+    - tweet
+    properties:
+      id: post_id
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /instagram/v1/posts
+    - openapi/_original/reefapi-openapi.json#POST /producthunt/v1/post
+    - openapi/_original/reefapi-openapi.json#POST /producthunt/v1/posts
+    - openapi/_original/reefapi-openapi.json#POST /stackoverflow/v1/post
+    - openapi/_original/reefapi-openapi.json#POST /stackoverflow/v1/posts
+  social_comment:
+    path_segment:
+    - comments
+    properties:
+      id: id
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /stackoverflow/v1/comments
+    - openapi/_original/reefapi-openapi.json#POST /youtube/v1/comments

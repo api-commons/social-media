@@ -1,0 +1,16 @@
+provider: linkedin
+apis_io: https://apis.io/providers/linkedin/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/linkedin-marketing-content.yml#DELETE /posts/{encoded ugcPostUrn|shareUrn}
+    - openapi/_original/linkedin-marketing-content.yml#GET /posts
+    - openapi/_original/linkedin-marketing-content.yml#GET /posts/{encoded ugcPostUrn|shareUrn}
+    - openapi/_original/linkedin-marketing-content.yml#GET /rest/posts
+    - openapi/_original/linkedin-marketing-content.yml#GET /rest/posts/{postId}

@@ -1,0 +1,31 @@
+provider: postiz
+apis_io: https://apis.io/providers/postiz/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    - post
+    properties:
+      id:
+      - id
+      - postId
+      text: content
+      platform: type
+      status: state
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/postiz-openapi.yml#DELETE /posts/{id}
+    - openapi/_original/postiz-openapi.yml#GET /analytics/post/{postId}
+    - openapi/_original/postiz-openapi.yml#GET /posts
+    - openapi/_original/postiz-openapi.yml#POST /posts
+    - openapi/_original/postiz-platform-swagger-openapi.json#DELETE /posts/{group}
+  social_comment:
+    path_segment:
+    - comments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/postiz-platform-swagger-openapi.json#GET /public/posts/{id}/comments
+    - openapi/_original/postiz-platform-swagger-openapi.json#POST /posts/{id}/comments

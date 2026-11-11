@@ -1,0 +1,32 @@
+provider: creatoriq
+apis_io: https://apis.io/providers/creatoriq/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    - statuses
+    properties:
+      id: id
+      text: caption
+      created_at: published_at
+      platform:
+      - platform
+      - type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/creatoriq-brand-safety-openapi-original.yaml#GET /brand-safety/v1/posts
+    - openapi/_original/creatoriq-brand-safety-openapi-original.yaml#GET /brand-safety/v1/posts/{post_id}
+    - openapi/_original/creatoriq-brand-safety-openapi.yml#GET /brand-safety/v1/posts
+    - openapi/_original/creatoriq-brand-safety-openapi.yml#GET /brand-safety/v1/posts/{post_id}
+    - openapi/_original/creatoriq-publishers-openapi-original.yaml#GET /crm/v1/api/statuses
+  social_comment:
+    path_segment:
+    - comments
+    properties:
+      comment: Comment
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/creatoriq-onesheets-openapi-original.yaml#POST /crm/v1/api/onesheet/{oneSheetId}/publisher/{publisherId}/comments
+    - openapi/_original/creatoriq-onesheets-openapi.yml#POST /crm/v1/api/onesheet/{oneSheetId}/publisher/{publisherId}/comments

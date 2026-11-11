@@ -1,0 +1,20 @@
+provider: pixelfed
+apis_io: https://apis.io/providers/pixelfed/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - statuses
+    properties:
+      id: id
+      text: content
+      created_at: created_at
+      status: status
+      scheduled_at: scheduled_at
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /v1/statuses/{id}
+    - openapi/_original/openapi.yml#GET /v1/accounts/{id}/statuses
+    - openapi/_original/openapi.yml#GET /v1/statuses/{id}
+    - openapi/_original/openapi.yml#POST /v1/statuses

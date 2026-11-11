@@ -1,0 +1,20 @@
+provider: facebook-pages
+apis_io: https://apis.io/providers/facebook-pages/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/facebook-pages-openapi.yml#GET /{page-id}/posts
+  social_comment:
+    path_segment:
+    - comments
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/facebook-pages-openapi.yml#GET /{object-id}/comments
+    - openapi/_original/facebook-pages-openapi.yml#POST /{object-id}/comments

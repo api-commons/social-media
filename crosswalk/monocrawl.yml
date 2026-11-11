@@ -1,0 +1,95 @@
+provider: monocrawl
+apis_io: https://apis.io/providers/monocrawl/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profile
+    - creators
+    properties:
+      id: id
+      username: handle
+      bio:
+      - bio
+      - about
+      - description
+      avatar_url:
+      - avatar_url
+      - avatar
+      created_at: created_at
+      name:
+      - name
+      - display_name
+      platform:
+      - platform
+      - type
+      location: location
+      request_id: request_id
+      verified: verified
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/monocrawl-openapi.json#GET /v1/bluesky/profile
+    - openapi/_original/monocrawl-openapi.json#GET /v1/facebook/profile
+    - openapi/_original/monocrawl-openapi.json#GET /v1/github/profile
+    - openapi/_original/monocrawl-openapi.json#GET /v1/hackernews/profile
+    - openapi/_original/monocrawl-openapi.json#GET /v1/instagram/profile
+  post:
+    path_segment:
+    - post
+    - posts
+    - tweet
+    - tweets
+    properties:
+      id: id
+      text:
+      - text
+      - caption
+      created_at:
+      - created_at
+      - published_at
+      platform:
+      - platform
+      - channel
+      author_id: author
+      media_urls: images
+      name:
+      - name
+      - title
+      - display_name
+      comment_count:
+      - replies
+      - comments_count
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/monocrawl-openapi.json#GET /v1/bluesky/post
+    - openapi/_original/monocrawl-openapi.json#GET /v1/bluesky/user/posts
+    - openapi/_original/monocrawl-openapi.json#GET /v1/facebook/post
+    - openapi/_original/monocrawl-openapi.json#GET /v1/facebook/posts
+    - openapi/_original/monocrawl-openapi.json#GET /v1/instagram/post
+  social_comment:
+    path_segment:
+    - comments
+    properties:
+      id: id
+      author_id: author
+      created_at:
+      - created_at
+      - published_at
+      text:
+      - body
+      - text
+      platform: platform
+      depth: depth
+      parent_id: parent_id
+      like_count: likes
+      replies: replies
+      reply_count: reply_count
+      request_id: request_id
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/monocrawl-openapi.json#GET /v1/github/issue/comments
+    - openapi/_original/monocrawl-openapi.json#GET /v1/hackernews/story/comments
+    - openapi/_original/monocrawl-openapi.json#GET /v1/reddit/post/comments
+    - openapi/_original/monocrawl-openapi.json#GET /v1/youtube/video/comments

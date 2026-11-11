@@ -1,0 +1,25 @@
+provider: toksta
+apis_io: https://apis.io/providers/toksta/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - creators
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/toksta-public-api-openapi.json#GET /v1/creators/{id}
+    - openapi/_original/toksta-public-api-openapi.json#POST /v1/creator-lists/{id}/creators
+    - openapi/_original/toksta-public-api-openapi.yml#GET /v1/creators/{id}
+    - openapi/_original/toksta-public-api-openapi.yml#POST /v1/creator-lists/{id}/creators
+  post:
+    path_segment:
+    - posts
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/toksta-public-api-openapi.json#POST /v1/content-match/posts
+    - openapi/_original/toksta-public-api-openapi.json#POST /v1/search-results/posts
+    - openapi/_original/toksta-public-api-openapi.yml#POST /v1/content-match/posts
+    - openapi/_original/toksta-public-api-openapi.yml#POST /v1/search-results/posts

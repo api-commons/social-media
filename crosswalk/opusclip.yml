@@ -1,0 +1,14 @@
+provider: opusclip
+apis_io: https://apis.io/providers/opusclip/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - social-accounts
+    properties:
+      platform: platform
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/opus-openapi-original.json#GET /api/social-accounts
+    - openapi/_original/opusclip-openapi-original.json#GET /api/social-accounts

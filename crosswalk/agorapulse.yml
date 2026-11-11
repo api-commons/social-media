@@ -1,0 +1,13 @@
+provider: agorapulse
+apis_io: https://apis.io/providers/agorapulse/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profiles
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/agorapulse-open-api-openapi.yml#GET /v1.0/core/organizations/{organizationId}/workspaces/{workspaceId}/profiles
+    - openapi/_original/agorapulse-openapi.yml#GET /v1.0/core/organizations/{organizationId}/workspaces/{workspaceId}/profiles

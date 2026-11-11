@@ -1,0 +1,27 @@
+provider: khoros-ai
+apis_io: https://apis.io/providers/khoros-ai/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profiles
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/lithium-export-api-openapi.yml#POST /export/profiles
+    - openapi/_original/lithium-marketing-beta-analytics-api-openapi.json#POST /export/profiles
+    - openapi/_original/lithium-marketing-beta-analytics-api-openapi.json#POST /export/profiles
+    - openapi/_original/spredfast-analytics-api-openapi.json#POST /export/profiles
+    - openapi/_original/spredfast-analytics-api-openapi.yml#POST /export/profiles
+  post:
+    path_segment:
+    - posts
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/lithium-export-api-openapi.yml#POST /export/posts
+    - openapi/_original/lithium-marketing-beta-analytics-api-openapi.json#POST /export/posts
+    - openapi/_original/lithium-marketing-beta-analytics-api-openapi.json#POST /export/posts
+    - openapi/_original/spredfast-analytics-api-openapi.json#POST /export/posts
+    - openapi/_original/spredfast-analytics-api-openapi.yml#POST /export/posts

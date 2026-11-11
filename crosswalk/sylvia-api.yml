@@ -1,0 +1,33 @@
+provider: sylvia-api
+apis_io: https://apis.io/providers/sylvia-api/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties:
+      id: id
+      author_id: author
+      name: title
+      permalink: permalink
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /posts/{id}
+    - openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /subreddits/{name}/posts
+    - openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /users/{username}/posts
+  social_comment:
+    path_segment:
+    - comments
+    properties:
+      id: id
+      author_id: author
+      text: body
+      depth: depth
+      parent_id: parent_id
+      permalink: permalink
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /comments/{id}
+    - openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /live/comments
+    - openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /users/{username}/comments

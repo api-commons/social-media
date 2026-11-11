@@ -1,0 +1,24 @@
+provider: x
+apis_io: https://apis.io/providers/x/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - tweets
+    properties:
+      id: id
+      text: text
+      created_at: created_at
+      platform: source
+      author_id: author_id
+      media_urls:
+      - attachments
+      - media
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/x-api-v2-openapi.json#DELETE /2/tweets/{id}
+    - openapi/_original/x-api-v2-openapi.json#GET /2/lists/{id}/tweets
+    - openapi/_original/x-api-v2-openapi.json#GET /2/spaces/{id}/tweets
+    - openapi/_original/x-api-v2-openapi.json#GET /2/tweets
+    - openapi/_original/x-api-v2-openapi.json#GET /2/tweets/{id}

@@ -1,0 +1,104 @@
+provider: scrapeatlas
+apis_io: https://apis.io/providers/scrapeatlas/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profile
+    - profiles
+    properties:
+      id: id
+      username:
+      - handle
+      - username
+      bio:
+      - description
+      - bio
+      - about
+      avatar_url:
+      - avatar
+      - avatar_url
+      - image
+      - profileImageURL
+      created_at:
+      - creationDate
+      - created
+      - created_at
+      name:
+      - displayName
+      - full_name
+      - name
+      - display_name
+      location: location
+      request_id: requestId
+      verified:
+      - is_verified
+      - verified
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/bluesky/profile
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/cosmos/profile
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/couchsurfing/profile
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/dribbble/profile
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/facebook/profile
+  post:
+    path_segment:
+    - posts
+    - post
+    - tweet
+    - tweets
+    properties:
+      id:
+      - id
+      - post_id
+      text:
+      - caption
+      - text
+      - content
+      created_at:
+      - created_at
+      - created
+      - published_at
+      platform: channel
+      author_id:
+      - owner
+      - author
+      status: status
+      media_urls:
+      - media
+      - images
+      name:
+      - title
+      - name
+      comment_count:
+      - replies
+      - comment_count
+      - comments
+      - commentCount
+      permalink: permalink
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/bluesky/post
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/bluesky/user/posts
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/cosmos/cluster/posts
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/cosmos/post
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/cosmos/user/posts
+  social_comment:
+    path_segment:
+    - comments
+    - replies
+    properties:
+      id:
+      - id
+      - postId
+      platform: type
+      replies: replies
+      request_id: requestId
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/facebook/post/comment/replies
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/facebook/post/comments
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/hackernews/story/comments
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/instagram/post/comments
+    - openapi/_original/scrapeatlas-openapi.json#GET /v1/kalshi/comments

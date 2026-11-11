@@ -1,0 +1,1395 @@
+[
+ {
+  "slug": "adsmom-inc",
+  "specs": [
+   "openapi/_original/adsmom-inc-openapi.json"
+  ]
+ },
+ {
+  "slug": "agorapulse",
+  "specs": [
+   "openapi/_original/agorapulse-open-api-openapi.yml",
+   "openapi/_original/agorapulse-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ahrefs",
+  "specs": [
+   "openapi/_original/ahrefs-batch-analysis-openapi.json",
+   "openapi/_original/ahrefs-brand-radar-openapi.json",
+   "openapi/_original/ahrefs-gsc-openapi.json",
+   "openapi/_original/ahrefs-keywords-explorer-openapi.json",
+   "openapi/_original/ahrefs-management-openapi.json",
+   "openapi/_original/ahrefs-openapi-original.json",
+   "openapi/_original/ahrefs-public-openapi.json",
+   "openapi/_original/ahrefs-rank-tracker-openapi.json",
+   "openapi/_original/ahrefs-serp-overview-openapi.json",
+   "openapi/_original/ahrefs-site-audit-openapi.json",
+   "openapi/_original/ahrefs-site-explorer-openapi.json",
+   "openapi/_original/ahrefs-social-media-openapi.json",
+   "openapi/_original/ahrefs-spec-index.json",
+   "openapi/_original/ahrefs-subscription-info-openapi.json",
+   "openapi/_original/ahrefs-web-analytics-openapi.json"
+  ]
+ },
+ {
+  "slug": "anyapi",
+  "specs": [
+   "openapi/_original/anyapi-gateway-openapi.json",
+   "openapi/_original/anyapi-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "at-protocol",
+  "specs": [
+   "openapi/_original/at-protocol-openapi.yml"
+  ]
+ },
+ {
+  "slug": "audiomack",
+  "specs": [
+   "openapi/_original/audiomack-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "beehiiv",
+  "specs": [
+   "openapi/_original/beehiiv-oauth2-api-openapi.yml",
+   "openapi/_original/beehiiv-oauth2-openapi.json",
+   "openapi/_original/beehiiv-openapi.yml",
+   "openapi/_original/beehiiv-webhook-events-openapi.yml",
+   "openapi/_original/beehiiv-webhooks-openapi.json"
+  ]
+ },
+ {
+  "slug": "blotato",
+  "specs": [
+   "openapi/_original/blotato-openapi.yml"
+  ]
+ },
+ {
+  "slug": "brandwatch",
+  "specs": [
+   "openapi/_original/brandwatch-consumer-research-authentication-openapi.json",
+   "openapi/_original/brandwatch-consumer-research-authentication-openapi.yml",
+   "openapi/_original/brandwatch-consumer-research-openapi.json",
+   "openapi/_original/brandwatch-consumer-research-openapi.yml"
+  ]
+ },
+ {
+  "slug": "buymeacoffee",
+  "specs": [
+   "openapi/_original/buymeacoffee-openapi.json"
+  ]
+ },
+ {
+  "slug": "convertkit",
+  "specs": [
+   "openapi/_original/kit-account-api-openapi.yml",
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "creatoriq",
+  "specs": [
+   "openapi/_original/creatoriq-BrandSafety-brandsafety-openapi-original.yaml",
+   "openapi/_original/creatoriq-brand-safety-draft-openapi.yml",
+   "openapi/_original/creatoriq-brand-safety-openapi-original.yaml",
+   "openapi/_original/creatoriq-brand-safety-openapi.yml",
+   "openapi/_original/creatoriq-campaigns-openapi-original.yaml",
+   "openapi/_original/creatoriq-campaigns-openapi.yml",
+   "openapi/_original/creatoriq-conversion-metrics-openapi-original.yaml",
+   "openapi/_original/creatoriq-conversion-metrics-openapi.yml",
+   "openapi/_original/creatoriq-ecommerce-openapi-original.yaml",
+   "openapi/_original/creatoriq-ecommerce-openapi.yml",
+   "openapi/_original/creatoriq-link-tracking-openapi-original.yaml",
+   "openapi/_original/creatoriq-link-tracking-openapi.yml",
+   "openapi/_original/creatoriq-lists-openapi-original.yaml",
+   "openapi/_original/creatoriq-lists-openapi.yml",
+   "openapi/_original/creatoriq-notes-openapi-original.yaml",
+   "openapi/_original/creatoriq-notes-openapi.yml",
+   "openapi/_original/creatoriq-onesheets-openapi-original.yaml",
+   "openapi/_original/creatoriq-onesheets-openapi.yml",
+   "openapi/_original/creatoriq-payments-openapi-original.yaml",
+   "openapi/_original/creatoriq-payments-openapi.yml",
+   "openapi/_original/creatoriq-publishers-openapi-original.yaml",
+   "openapi/_original/creatoriq-publishers-openapi.yml",
+   "openapi/_original/creatoriq-reports-openapi-original.yaml",
+   "openapi/_original/creatoriq-reports-openapi.yml",
+   "openapi/_original/creatoriq-socials-openapi-original.yaml",
+   "openapi/_original/creatoriq-socials-openapi.yml",
+   "openapi/_original/creatoriq-users-openapi-original.yaml",
+   "openapi/_original/creatoriq-v1-divisions-openapi-original.yaml",
+   "openapi/_original/creatoriq-v1-divisions-openapi.yml",
+   "openapi/_original/creatoriq-v2-campaigns-openapi-original.yaml",
+   "openapi/_original/creatoriq-v2-campaigns-openapi.yml",
+   "openapi/_original/creatoriq-v2-publishers-openapi-original.yaml",
+   "openapi/_original/creatoriq-v2-publishers-openapi.yml",
+   "openapi/_original/creatoriq-webhooks-openapi-original.yaml",
+   "openapi/_original/creatoriq-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dataforseo",
+  "specs": [
+   "openapi/_original/dataforseo-ai-optimization-openapi.yml",
+   "openapi/_original/dataforseo-app-data-openapi.yml",
+   "openapi/_original/dataforseo-appendix-openapi.yml",
+   "openapi/_original/dataforseo-backlinks-openapi.yml",
+   "openapi/_original/dataforseo-business-data-openapi.yml",
+   "openapi/_original/dataforseo-content-analysis-openapi.yml",
+   "openapi/_original/dataforseo-domain-analytics-openapi.yml",
+   "openapi/_original/dataforseo-keywords-data-openapi.yml",
+   "openapi/_original/dataforseo-labs-openapi.yml",
+   "openapi/_original/dataforseo-merchant-openapi.yml",
+   "openapi/_original/dataforseo-on-page-openapi.yml",
+   "openapi/_original/dataforseo-serp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dev-to",
+  "specs": [
+   "openapi/_original/dev-to-forem-api-openapi.yml",
+   "openapi/_original/dev-to-forem-api-v1-openapi.json",
+   "openapi/_original/devto-agent-sessions-api-openapi.yml",
+   "openapi/_original/devto-articles-api-openapi.yml",
+   "openapi/_original/devto-billboards-api-openapi.yml",
+   "openapi/_original/devto-comments-api-openapi.yml",
+   "openapi/_original/devto-followed-tags-api-openapi.yml",
+   "openapi/_original/devto-followers-api-openapi.yml",
+   "openapi/_original/devto-organizations-api-openapi.yml",
+   "openapi/_original/devto-pages-api-openapi.yml",
+   "openapi/_original/devto-podcast-episodes-api-openapi.yml",
+   "openapi/_original/devto-profile-images-api-openapi.yml",
+   "openapi/_original/devto-reactions-api-openapi.yml",
+   "openapi/_original/devto-reading-list-api-openapi.yml",
+   "openapi/_original/devto-segments-api-openapi.yml",
+   "openapi/_original/devto-surveys-api-openapi.yml",
+   "openapi/_original/devto-tags-api-openapi.yml",
+   "openapi/_original/devto-trends-api-openapi.yml",
+   "openapi/_original/devto-users-api-openapi.yml",
+   "openapi/_original/devto-videos-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "devto",
+  "specs": [
+   "openapi/_original/openapi.json",
+   "openapi/_original/openapi.yaml"
+  ]
+ },
+ {
+  "slug": "diaspora",
+  "specs": [
+   "openapi/_original/diaspora-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "discord",
+  "specs": [
+   "openapi/_original/discord-openapi.json"
+  ]
+ },
+ {
+  "slug": "disqus",
+  "specs": [
+   "openapi/_original/disqus-openapi.yml"
+  ]
+ },
+ {
+  "slug": "facebook-business-manager",
+  "specs": [
+   "openapi/_original/facebook-marketing-openapi.yml",
+   "openapi/_original/facebook-pages-openapi.yml"
+  ]
+ },
+ {
+  "slug": "facebook-pages",
+  "specs": [
+   "openapi/_original/facebook-pages-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fama",
+  "specs": [
+   "openapi/_original/fama-external-interface-openapi.yml",
+   "openapi/_original/fama-external-interface-readme-slices.json",
+   "openapi/_original/fama-public-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "famous",
+  "specs": [
+   "openapi/_original/famous-spring-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "farcaster",
+  "specs": [
+   "openapi/_original/farcaster-openapi.yml"
+  ]
+ },
+ {
+  "slug": "firstpromoter",
+  "specs": [
+   "openapi/_original/firstpromoter-v2-advanced-payout-methods-openapi.yml",
+   "openapi/_original/firstpromoter-v2-advanced-payout-methods.json",
+   "openapi/_original/firstpromoter-v2-advanced-products-openapi.yml",
+   "openapi/_original/firstpromoter-v2-advanced-products.json",
+   "openapi/_original/firstpromoter-v2-affiliate-assets-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-assets.json",
+   "openapi/_original/firstpromoter-v2-affiliate-campaigns-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-campaigns.json",
+   "openapi/_original/firstpromoter-v2-affiliate-commissions-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-commissions.json",
+   "openapi/_original/firstpromoter-v2-affiliate-contract-documents-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-contract-documents.json",
+   "openapi/_original/firstpromoter-v2-affiliate-email-settings-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-email-settings.json",
+   "openapi/_original/firstpromoter-v2-affiliate-payout-methods-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-payout-methods.json",
+   "openapi/_original/firstpromoter-v2-affiliate-payouts-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-payouts.json",
+   "openapi/_original/firstpromoter-v2-affiliate-promo-codes-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-promo-codes.json",
+   "openapi/_original/firstpromoter-v2-affiliate-promoter-campaigns-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-promoter-campaigns.json",
+   "openapi/_original/firstpromoter-v2-affiliate-promoters-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-promoters.json",
+   "openapi/_original/firstpromoter-v2-affiliate-referral-links-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-referral-links.json",
+   "openapi/_original/firstpromoter-v2-affiliate-referrals-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-referrals.json",
+   "openapi/_original/firstpromoter-v2-affiliate-reports-openapi.yml",
+   "openapi/_original/firstpromoter-v2-affiliate-reports.json",
+   "openapi/_original/firstpromoter-v2-asset-categories-openapi.yml",
+   "openapi/_original/firstpromoter-v2-asset-categories.json",
+   "openapi/_original/firstpromoter-v2-assets-openapi.yml",
+   "openapi/_original/firstpromoter-v2-assets.json",
+   "openapi/_original/firstpromoter-v2-batches-openapi.yml",
+   "openapi/_original/firstpromoter-v2-batches.json",
+   "openapi/_original/firstpromoter-v2-campaigns-openapi.yml",
+   "openapi/_original/firstpromoter-v2-campaigns.json",
+   "openapi/_original/firstpromoter-v2-commissions-openapi.yml",
+   "openapi/_original/firstpromoter-v2-commissions.json",
+   "openapi/_original/firstpromoter-v2-contract-documents-openapi.yml",
+   "openapi/_original/firstpromoter-v2-contract-documents.json",
+   "openapi/_original/firstpromoter-v2-contracts-openapi.yml",
+   "openapi/_original/firstpromoter-v2-contracts.json",
+   "openapi/_original/firstpromoter-v2-custom-referral-statuses-openapi.yml",
+   "openapi/_original/firstpromoter-v2-custom-referral-statuses.json",
+   "openapi/_original/firstpromoter-v2-dashboard-openapi.yml",
+   "openapi/_original/firstpromoter-v2-dashboard.json",
+   "openapi/_original/firstpromoter-v2-emails-openapi.yml",
+   "openapi/_original/firstpromoter-v2-emails.json",
+   "openapi/_original/firstpromoter-v2-invoices-openapi.yml",
+   "openapi/_original/firstpromoter-v2-invoices.json",
+   "openapi/_original/firstpromoter-v2-payent-batches-openapi.yml",
+   "openapi/_original/firstpromoter-v2-payent-batches.json",
+   "openapi/_original/firstpromoter-v2-payouts-openapi.yml",
+   "openapi/_original/firstpromoter-v2-payouts.json",
+   "openapi/_original/firstpromoter-v2-promocodes-openapi.yml",
+   "openapi/_original/firstpromoter-v2-promocodes.json",
+   "openapi/_original/firstpromoter-v2-promoter-campaigns-openapi.yml",
+   "openapi/_original/firstpromoter-v2-promoter-campaigns.json",
+   "openapi/_original/firstpromoter-v2-promoters-openapi.yml",
+   "openapi/_original/firstpromoter-v2-promoters.json",
+   "openapi/_original/firstpromoter-v2-referral-custom-status-openapi.yml",
+   "openapi/_original/firstpromoter-v2-referral-custom-status.json",
+   "openapi/_original/firstpromoter-v2-referrals-openapi.yml",
+   "openapi/_original/firstpromoter-v2-referrals.json",
+   "openapi/_original/firstpromoter-v2-reports-openapi.yml",
+   "openapi/_original/firstpromoter-v2-reports.json",
+   "openapi/_original/firstpromoter-v2-rewards-openapi.yml",
+   "openapi/_original/firstpromoter-v2-rewards.json",
+   "openapi/_original/firstpromoter-v2-tracking-openapi.yml",
+   "openapi/_original/firstpromoter-v2-tracking.json",
+   "openapi/_original/firstpromoter-v2-webhooks-openapi.yml",
+   "openapi/_original/firstpromoter-v2-webhooks.json"
+  ]
+ },
+ {
+  "slug": "flickr",
+  "specs": [
+   "openapi/_original/index.yaml",
+   "openapi/_original/schema.json"
+  ]
+ },
+ {
+  "slug": "fourthwall",
+  "specs": [
+   "openapi/_original/fourthwall-openapi.yml"
+  ]
+ },
+ {
+  "slug": "giphy",
+  "specs": [
+   "openapi/_original/giphy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gravatar",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "highrise",
+  "specs": [
+   "openapi/_original/highrise-openapi.json"
+  ]
+ },
+ {
+  "slug": "honesthook",
+  "specs": [
+   "openapi/_original/honesthook-openapi.json"
+  ]
+ },
+ {
+  "slug": "hootsuite",
+  "specs": [
+   "openapi/_original/hootsuite-amplify-api-swagger.json",
+   "openapi/_original/hootsuite-analytics-api-openapi.yaml",
+   "openapi/_original/hootsuite-inbox-api-openapi.yaml",
+   "openapi/_original/hootsuite-rest-api-swagger.yaml"
+  ]
+ },
+ {
+  "slug": "imgur",
+  "specs": [
+   "openapi/_original/imgur-openapi.yml"
+  ]
+ },
+ {
+  "slug": "impact",
+  "specs": [
+   "openapi/_original/impact-agency-advertisers-v3-openapi.yml",
+   "openapi/_original/impact-agency-advertisers-v3.yaml",
+   "openapi/_original/impact-agency-companyinformation-v3-openapi.yml",
+   "openapi/_original/impact-agency-companyinformation-v3.yaml",
+   "openapi/_original/impact-agency-compliance-v3-openapi.yml",
+   "openapi/_original/impact-agency-compliance-v3.yaml",
+   "openapi/_original/impact-agency-jobs-v3-openapi.yml",
+   "openapi/_original/impact-agency-jobs-v3.yaml",
+   "openapi/_original/impact-agency-reports-v3-openapi.yml",
+   "openapi/_original/impact-agency-reports-v3.yaml",
+   "openapi/_original/impact-brand-account-v14-openapi.yml",
+   "openapi/_original/impact-brand-account-v14.yaml",
+   "openapi/_original/impact-brand-actioninquiries-v14-openapi.yml",
+   "openapi/_original/impact-brand-actioninquiries-v14.yaml",
+   "openapi/_original/impact-brand-actions-v14-openapi.yml",
+   "openapi/_original/impact-brand-actions-v14.yaml",
+   "openapi/_original/impact-brand-ads-v14-openapi.yml",
+   "openapi/_original/impact-brand-ads-v14.yaml",
+   "openapi/_original/impact-brand-advocate-account-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-account-v13.yaml",
+   "openapi/_original/impact-brand-advocate-export-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-export-v13.yaml",
+   "openapi/_original/impact-brand-advocate-referral-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-referral-v13.yaml",
+   "openapi/_original/impact-brand-advocate-referralcode-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-referralcode-v13.yaml",
+   "openapi/_original/impact-brand-advocate-reward-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-reward-v13.yaml",
+   "openapi/_original/impact-brand-advocate-rewardbalance-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-rewardbalance-v13.yaml",
+   "openapi/_original/impact-brand-advocate-sharelinks-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-sharelinks-v13.yaml",
+   "openapi/_original/impact-brand-advocate-user-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-user-v13.yaml",
+   "openapi/_original/impact-brand-advocate-webhook-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-webhook-v13.yaml",
+   "openapi/_original/impact-brand-calldata-v14-openapi.yml",
+   "openapi/_original/impact-brand-calldata-v14.yaml",
+   "openapi/_original/impact-brand-catalogs-v14-openapi.yml",
+   "openapi/_original/impact-brand-catalogs-v14.yaml",
+   "openapi/_original/impact-brand-clicks-v14-openapi.yml",
+   "openapi/_original/impact-brand-clicks-v14.yaml",
+   "openapi/_original/impact-brand-contacts-v14-openapi.yml",
+   "openapi/_original/impact-brand-contacts-v14.yaml",
+   "openapi/_original/impact-brand-contracts-v14-openapi.yml",
+   "openapi/_original/impact-brand-contracts-v14.yaml",
+   "openapi/_original/impact-brand-conversions-v14-openapi.yml",
+   "openapi/_original/impact-brand-conversions-v14.yaml",
+   "openapi/_original/impact-brand-deals-v14-openapi.yml",
+   "openapi/_original/impact-brand-deals-v14.yaml",
+   "openapi/_original/impact-brand-deferreddeeplink-v14-openapi.yml",
+   "openapi/_original/impact-brand-deferreddeeplink-v14.yaml",
+   "openapi/_original/impact-brand-exceptionlists-v14-openapi.yml",
+   "openapi/_original/impact-brand-exceptionlists-v14.yaml",
+   "openapi/_original/impact-brand-invoices-v14-openapi.yml",
+   "openapi/_original/impact-brand-invoices-v14.yaml",
+   "openapi/_original/impact-brand-jobs-v14-openapi.yml",
+   "openapi/_original/impact-brand-jobs-v14.yaml",
+   "openapi/_original/impact-brand-notes-v14-openapi.yml",
+   "openapi/_original/impact-brand-notes-v14.yaml",
+   "openapi/_original/impact-brand-pageload-v14-openapi.yml",
+   "openapi/_original/impact-brand-pageload-v14.yaml",
+   "openapi/_original/impact-brand-partnergroups-v14-openapi.yml",
+   "openapi/_original/impact-brand-partnergroups-v14.yaml",
+   "openapi/_original/impact-brand-partners-v14-openapi.yml",
+   "openapi/_original/impact-brand-partners-v14.yaml",
+   "openapi/_original/impact-brand-phonenumbers-v14-openapi.yml",
+   "openapi/_original/impact-brand-phonenumbers-v14.yaml",
+   "openapi/_original/impact-brand-programs-v14-openapi.yml",
+   "openapi/_original/impact-brand-programs-v14.yaml",
+   "openapi/_original/impact-brand-promocodeexceptionlists-v14-openapi.yml",
+   "openapi/_original/impact-brand-promocodeexceptionlists-v14.yaml",
+   "openapi/_original/impact-brand-promocodes-v14-openapi.yml",
+   "openapi/_original/impact-brand-promocodes-v14.yaml",
+   "openapi/_original/impact-brand-reports-v14-openapi.yml",
+   "openapi/_original/impact-brand-reports-v14.yaml",
+   "openapi/_original/impact-brand-routingrules-v14-openapi.yml",
+   "openapi/_original/impact-brand-routingrules-v14.yaml",
+   "openapi/_original/impact-brand-submissions-v14-openapi.yml",
+   "openapi/_original/impact-brand-submissions-v14.yaml",
+   "openapi/_original/impact-brand-tasks-v14-openapi.yml",
+   "openapi/_original/impact-brand-tasks-v14.yaml",
+   "openapi/_original/impact-brand-trackinglinks-v14-openapi.yml",
+   "openapi/_original/impact-brand-trackinglinks-v14.yaml",
+   "openapi/_original/impact-brand-trackingvaluerequests-v14-openapi.yml",
+   "openapi/_original/impact-brand-trackingvaluerequests-v14.yaml",
+   "openapi/_original/impact-partner-account-v16-openapi.yml",
+   "openapi/_original/impact-partner-account-v16.yaml",
+   "openapi/_original/impact-partner-actioninquiries-v16-openapi.yml",
+   "openapi/_original/impact-partner-actioninquiries-v16.yaml",
+   "openapi/_original/impact-partner-actions-v16-openapi.yml",
+   "openapi/_original/impact-partner-actions-v16.yaml",
+   "openapi/_original/impact-partner-ads-v16-openapi.yml",
+   "openapi/_original/impact-partner-ads-v16.yaml",
+   "openapi/_original/impact-partner-campaigns-v16-openapi.yml",
+   "openapi/_original/impact-partner-campaigns-v16.yaml",
+   "openapi/_original/impact-partner-catalogs-v16-openapi.yml",
+   "openapi/_original/impact-partner-catalogs-v16.yaml",
+   "openapi/_original/impact-partner-clicks-v16-openapi.yml",
+   "openapi/_original/impact-partner-clicks-v16.yaml",
+   "openapi/_original/impact-partner-contracts-v16-openapi.yml",
+   "openapi/_original/impact-partner-contracts-v16.yaml",
+   "openapi/_original/impact-partner-conversions-v16-openapi.yml",
+   "openapi/_original/impact-partner-conversions-v16.yaml",
+   "openapi/_original/impact-partner-deals-v16-openapi.yml",
+   "openapi/_original/impact-partner-deals-v16.yaml",
+   "openapi/_original/impact-partner-eventnotifications-v16-openapi.yml",
+   "openapi/_original/impact-partner-eventnotifications-v16.yaml",
+   "openapi/_original/impact-partner-exceptionlists-v16-openapi.yml",
+   "openapi/_original/impact-partner-exceptionlists-v16.yaml",
+   "openapi/_original/impact-partner-identityverification-v16-openapi.yml",
+   "openapi/_original/impact-partner-identityverification-v16.yaml",
+   "openapi/_original/impact-partner-invoices-v16-openapi.yml",
+   "openapi/_original/impact-partner-invoices-v16.yaml",
+   "openapi/_original/impact-partner-jobs-v16-openapi.yml",
+   "openapi/_original/impact-partner-jobs-v16.yaml",
+   "openapi/_original/impact-partner-mediaproperties-v16-openapi.yml",
+   "openapi/_original/impact-partner-mediaproperties-v16.yaml",
+   "openapi/_original/impact-partner-promo-codes-v16-openapi.yml",
+   "openapi/_original/impact-partner-promo-codes-v16.yaml",
+   "openapi/_original/impact-partner-promocodeexceptionlists-v16-openapi.yml",
+   "openapi/_original/impact-partner-promocodeexceptionlists-v16.yaml",
+   "openapi/_original/impact-partner-promotions-v16-openapi.yml",
+   "openapi/_original/impact-partner-promotions-v16.yaml",
+   "openapi/_original/impact-partner-reports-v16-openapi.yml",
+   "openapi/_original/impact-partner-reports-v16.yaml",
+   "openapi/_original/impact-partner-stores-v16-openapi.yml",
+   "openapi/_original/impact-partner-stores-v16.yaml",
+   "openapi/_original/impact-partner-tasks-v16-openapi.yml",
+   "openapi/_original/impact-partner-tasks-v16.yaml",
+   "openapi/_original/impact-partner-taxdocument-v16-openapi.yml",
+   "openapi/_original/impact-partner-taxdocument-v16.yaml",
+   "openapi/_original/impact-partner-trackinglinks-v16-openapi.yml",
+   "openapi/_original/impact-partner-trackinglinks-v16.yaml",
+   "openapi/_original/impact-partner-users-v16-openapi.yml",
+   "openapi/_original/impact-partner-users-v16.yaml",
+   "openapi/_original/impact-partner-withdrawalsettings-v16-openapi.yml",
+   "openapi/_original/impact-partner-withdrawalsettings-v16.yaml"
+  ]
+ },
+ {
+  "slug": "impact-radius",
+  "specs": [
+   "openapi/_original/impact-radius-agency-advertisers-v3.yaml",
+   "openapi/_original/impact-radius-agency-advertisers-v3.yml",
+   "openapi/_original/impact-radius-agency-companyinformation-v3.yaml",
+   "openapi/_original/impact-radius-agency-companyinformation-v3.yml",
+   "openapi/_original/impact-radius-agency-compliance-v3.yaml",
+   "openapi/_original/impact-radius-agency-compliance-v3.yml",
+   "openapi/_original/impact-radius-agency-jobs-v3.yaml",
+   "openapi/_original/impact-radius-agency-jobs-v3.yml",
+   "openapi/_original/impact-radius-agency-reports-v3.yaml",
+   "openapi/_original/impact-radius-agency-reports-v3.yml",
+   "openapi/_original/impact-radius-brand-account-v14.yaml",
+   "openapi/_original/impact-radius-brand-account-v14.yml",
+   "openapi/_original/impact-radius-brand-actioninquiries-v14.yaml",
+   "openapi/_original/impact-radius-brand-actioninquiries-v14.yml",
+   "openapi/_original/impact-radius-brand-actions-v14.yaml",
+   "openapi/_original/impact-radius-brand-actions-v14.yml",
+   "openapi/_original/impact-radius-brand-ads-v14.yaml",
+   "openapi/_original/impact-radius-brand-ads-v14.yml",
+   "openapi/_original/impact-radius-brand-advocate-account-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-account-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-export-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-export-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-referral-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-referral-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-referralcode-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-referralcode-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-reward-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-reward-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-rewardbalance-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-rewardbalance-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-sharelinks-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-sharelinks-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-user-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-user-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-webhook-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-webhook-v13.yml",
+   "openapi/_original/impact-radius-brand-calldata-v14.yaml",
+   "openapi/_original/impact-radius-brand-calldata-v14.yml",
+   "openapi/_original/impact-radius-brand-catalogs-v14.yaml",
+   "openapi/_original/impact-radius-brand-catalogs-v14.yml",
+   "openapi/_original/impact-radius-brand-clicks-v14.yaml",
+   "openapi/_original/impact-radius-brand-clicks-v14.yml",
+   "openapi/_original/impact-radius-brand-contacts-v14.yaml",
+   "openapi/_original/impact-radius-brand-contacts-v14.yml",
+   "openapi/_original/impact-radius-brand-contracts-v14.yaml",
+   "openapi/_original/impact-radius-brand-contracts-v14.yml",
+   "openapi/_original/impact-radius-brand-conversions-v14.yaml",
+   "openapi/_original/impact-radius-brand-conversions-v14.yml",
+   "openapi/_original/impact-radius-brand-deals-v14.yaml",
+   "openapi/_original/impact-radius-brand-deals-v14.yml",
+   "openapi/_original/impact-radius-brand-deferreddeeplink-v14.yaml",
+   "openapi/_original/impact-radius-brand-deferreddeeplink-v14.yml",
+   "openapi/_original/impact-radius-brand-exceptionlists-v14.yaml",
+   "openapi/_original/impact-radius-brand-exceptionlists-v14.yml",
+   "openapi/_original/impact-radius-brand-invoices-v14.yaml",
+   "openapi/_original/impact-radius-brand-invoices-v14.yml",
+   "openapi/_original/impact-radius-brand-jobs-v14.yaml",
+   "openapi/_original/impact-radius-brand-jobs-v14.yml",
+   "openapi/_original/impact-radius-brand-notes-v14.yaml",
+   "openapi/_original/impact-radius-brand-notes-v14.yml",
+   "openapi/_original/impact-radius-brand-pageload-v14.yaml",
+   "openapi/_original/impact-radius-brand-pageload-v14.yml",
+   "openapi/_original/impact-radius-brand-partnergroups-v14.yaml",
+   "openapi/_original/impact-radius-brand-partnergroups-v14.yml",
+   "openapi/_original/impact-radius-brand-partners-v14.yaml",
+   "openapi/_original/impact-radius-brand-partners-v14.yml",
+   "openapi/_original/impact-radius-brand-phonenumbers-v14.yaml",
+   "openapi/_original/impact-radius-brand-phonenumbers-v14.yml",
+   "openapi/_original/impact-radius-brand-programs-v14.yaml",
+   "openapi/_original/impact-radius-brand-programs-v14.yml",
+   "openapi/_original/impact-radius-brand-promocodeexceptionlists-v14.yaml",
+   "openapi/_original/impact-radius-brand-promocodeexceptionlists-v14.yml",
+   "openapi/_original/impact-radius-brand-promocodes-v14.yaml",
+   "openapi/_original/impact-radius-brand-promocodes-v14.yml",
+   "openapi/_original/impact-radius-brand-reports-v14.yaml",
+   "openapi/_original/impact-radius-brand-reports-v14.yml",
+   "openapi/_original/impact-radius-brand-routingrules-v14.yaml",
+   "openapi/_original/impact-radius-brand-routingrules-v14.yml",
+   "openapi/_original/impact-radius-brand-submissions-v14.yaml",
+   "openapi/_original/impact-radius-brand-submissions-v14.yml",
+   "openapi/_original/impact-radius-brand-tasks-v14.yaml",
+   "openapi/_original/impact-radius-brand-tasks-v14.yml",
+   "openapi/_original/impact-radius-brand-trackinglinks-v14.yaml",
+   "openapi/_original/impact-radius-brand-trackinglinks-v14.yml",
+   "openapi/_original/impact-radius-brand-trackingvaluerequests-v14.yaml",
+   "openapi/_original/impact-radius-brand-trackingvaluerequests-v14.yml",
+   "openapi/_original/impact-radius-partner-account-v15.yaml",
+   "openapi/_original/impact-radius-partner-account-v15.yml",
+   "openapi/_original/impact-radius-partner-actioninquiries-v15.yaml",
+   "openapi/_original/impact-radius-partner-actioninquiries-v15.yml",
+   "openapi/_original/impact-radius-partner-actions-v15.yaml",
+   "openapi/_original/impact-radius-partner-actions-v15.yml",
+   "openapi/_original/impact-radius-partner-ads-v15.yaml",
+   "openapi/_original/impact-radius-partner-ads-v15.yml",
+   "openapi/_original/impact-radius-partner-campaigns-v15.yaml",
+   "openapi/_original/impact-radius-partner-campaigns-v15.yml",
+   "openapi/_original/impact-radius-partner-catalogs-v15.yaml",
+   "openapi/_original/impact-radius-partner-catalogs-v15.yml",
+   "openapi/_original/impact-radius-partner-clicks-v15.yaml",
+   "openapi/_original/impact-radius-partner-clicks-v15.yml",
+   "openapi/_original/impact-radius-partner-contracts-v15.yaml",
+   "openapi/_original/impact-radius-partner-contracts-v15.yml",
+   "openapi/_original/impact-radius-partner-deals-v15.yaml",
+   "openapi/_original/impact-radius-partner-deals-v15.yml",
+   "openapi/_original/impact-radius-partner-eventnotifications-v15.yaml",
+   "openapi/_original/impact-radius-partner-eventnotifications-v15.yml",
+   "openapi/_original/impact-radius-partner-exceptionlists-v15.yaml",
+   "openapi/_original/impact-radius-partner-exceptionlists-v15.yml",
+   "openapi/_original/impact-radius-partner-identityverification-v15.yaml",
+   "openapi/_original/impact-radius-partner-identityverification-v15.yml",
+   "openapi/_original/impact-radius-partner-invoices-v15.yaml",
+   "openapi/_original/impact-radius-partner-invoices-v15.yml",
+   "openapi/_original/impact-radius-partner-jobs-v15.yaml",
+   "openapi/_original/impact-radius-partner-jobs-v15.yml",
+   "openapi/_original/impact-radius-partner-mediaproperties-v15.yaml",
+   "openapi/_original/impact-radius-partner-mediaproperties-v15.yml",
+   "openapi/_original/impact-radius-partner-promo-codes-v15.yaml",
+   "openapi/_original/impact-radius-partner-promo-codes-v15.yml",
+   "openapi/_original/impact-radius-partner-promocodeexceptionlists-v15.yaml",
+   "openapi/_original/impact-radius-partner-promocodeexceptionlists-v15.yml",
+   "openapi/_original/impact-radius-partner-promotions-v15.yaml",
+   "openapi/_original/impact-radius-partner-promotions-v15.yml",
+   "openapi/_original/impact-radius-partner-reports-v15.yaml",
+   "openapi/_original/impact-radius-partner-reports-v15.yml",
+   "openapi/_original/impact-radius-partner-stores-v15.yaml",
+   "openapi/_original/impact-radius-partner-stores-v15.yml",
+   "openapi/_original/impact-radius-partner-taxdocument-v15.yaml",
+   "openapi/_original/impact-radius-partner-taxdocument-v15.yml",
+   "openapi/_original/impact-radius-partner-trackinglinks-v15.yaml",
+   "openapi/_original/impact-radius-partner-trackinglinks-v15.yml",
+   "openapi/_original/impact-radius-partner-users-v15.yaml",
+   "openapi/_original/impact-radius-partner-users-v15.yml",
+   "openapi/_original/impact-radius-partner-withdrawalsettings-v15.yaml",
+   "openapi/_original/impact-radius-partner-withdrawalsettings-v15.yml"
+  ]
+ },
+ {
+  "slug": "insightera",
+  "specs": [
+   "openapi/_original/insightera-nlp-platform-openapi.json",
+   "openapi/_original/insightera-nlp-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "instagram",
+  "specs": [
+   "openapi/_original/instagram-graph-api.yaml"
+  ]
+ },
+ {
+  "slug": "kajabi",
+  "specs": [
+   "openapi/_original/kajabi-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "khoros-ai",
+  "specs": [
+   "openapi/_original/lithium-accountset-api-openapi.yml",
+   "openapi/_original/lithium-active-api-openapi.yml",
+   "openapi/_original/lithium-admin-api-openapi.yml",
+   "openapi/_original/lithium-asset-api-openapi.yml",
+   "openapi/_original/lithium-assets-api-openapi.yml",
+   "openapi/_original/lithium-author-api-v2-api-openapi.yml",
+   "openapi/_original/lithium-authors-api-openapi.yml",
+   "openapi/_original/lithium-broadcast-api-openapi.yml",
+   "openapi/_original/lithium-business-hours-api-openapi.yml",
+   "openapi/_original/lithium-bysourcedocumentid-api-openapi.yml",
+   "openapi/_original/lithium-care-agent-states-api-v2-openapi.json",
+   "openapi/_original/lithium-care-analytics-reports-openapi.json",
+   "openapi/_original/lithium-care-api-specifications-openapi.json",
+   "openapi/_original/lithium-care-authentication-api-v2-openapi.json",
+   "openapi/_original/lithium-care-author-api-v2-openapi.json",
+   "openapi/_original/lithium-care-bot-api-v2-openapi.json",
+   "openapi/_original/lithium-care-bot-api-v3-openapi.json",
+   "openapi/_original/lithium-care-conversation-api-v2-openapi.json",
+   "openapi/_original/lithium-care-conversation-tag-rules-v2-openapi.json",
+   "openapi/_original/lithium-care-gdpr-api-v2-openapi.json",
+   "openapi/_original/lithium-care-listening-api-v2-openapi.json",
+   "openapi/_original/lithium-care-secure-forms-api-v2-openapi.json",
+   "openapi/_original/lithium-care-smart-views-api-v2-openapi.json",
+   "openapi/_original/lithium-care-supervisor-reports-api-openapi.json",
+   "openapi/_original/lithium-care-tag-api-v2-openapi.json",
+   "openapi/_original/lithium-care-users-api-v2-openapi.json",
+   "openapi/_original/lithium-care-work-queue-api-v1-openapi.json",
+   "openapi/_original/lithium-care-work-queue-api-v2-openapi.json",
+   "openapi/_original/lithium-case-api-openapi.yml",
+   "openapi/_original/lithium-changed-api-openapi.yml",
+   "openapi/_original/lithium-compare-json-streams-api-openapi.yml",
+   "openapi/_original/lithium-compare-json-streams-content-sort-api-openapi.yml",
+   "openapi/_original/lithium-compare-json-streams-content-target-api-openapi.yml",
+   "openapi/_original/lithium-compare-json-streams-content-target-number-precision-api-openapi.yml",
+   "openapi/_original/lithium-config-api-openapi.yml",
+   "openapi/_original/lithium-control-api-openapi.yml",
+   "openapi/_original/lithium-conversation-api-v2-api-openapi.yml",
+   "openapi/_original/lithium-conversations-api-openapi.yml",
+   "openapi/_original/lithium-csv-api-openapi.yml",
+   "openapi/_original/lithium-csv-long-api-openapi.yml",
+   "openapi/_original/lithium-currenttar-api-openapi.yml",
+   "openapi/_original/lithium-customer-api-openapi.yml",
+   "openapi/_original/lithium-customer-copy-api-openapi.yml",
+   "openapi/_original/lithium-customers-api-openapi.yml",
+   "openapi/_original/lithium-data-api-openapi.yml",
+   "openapi/_original/lithium-default-api-openapi.yml",
+   "openapi/_original/lithium-discussion-api-openapi.yml",
+   "openapi/_original/lithium-displayids-api-openapi.yml",
+   "openapi/_original/lithium-email-api-openapi.yml",
+   "openapi/_original/lithium-entities-json-entity-ids-api-openapi.yml",
+   "openapi/_original/lithium-export-api-openapi.yml",
+   "openapi/_original/lithium-flow-flow-rest-api-openapi.json",
+   "openapi/_original/lithium-flow-rest-api-api-openapi.yml",
+   "openapi/_original/lithium-folder-api-openapi.yml",
+   "openapi/_original/lithium-form-api-openapi.yml",
+   "openapi/_original/lithium-getforms-api-openapi.yml",
+   "openapi/_original/lithium-handover-api-openapi.yml",
+   "openapi/_original/lithium-health-api-openapi.yml",
+   "openapi/_original/lithium-initiatives-api-openapi.yml",
+   "openapi/_original/lithium-khorosapi-api-openapi.yml",
+   "openapi/_original/lithium-labels-api-openapi.yml",
+   "openapi/_original/lithium-list-api-openapi.yml",
+   "openapi/_original/lithium-marketing-api-specifications-openapi.json",
+   "openapi/_original/lithium-marketing-beta-analytics-api-openapi.json",
+   "openapi/_original/lithium-marketing-conversations-api-v1-openapi.json",
+   "openapi/_original/lithium-marketing-conversations-openapi.json",
+   "openapi/_original/lithium-marketing-crm-openapi.json",
+   "openapi/_original/lithium-marketing-introspection-api-openapi.json",
+   "openapi/_original/lithium-marketing-labelsets-api-openapi.json",
+   "openapi/_original/lithium-marketing-notification-service-openapi.json",
+   "openapi/_original/lithium-marketing-stream-api-openapi.json",
+   "openapi/_original/lithium-me-api-openapi.yml",
+   "openapi/_original/lithium-messages-api-openapi.yml",
+   "openapi/_original/lithium-meta-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-activity-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-all-topics-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-disregard-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-finish-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-networks-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-num-contributors-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-num-days-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-num-hashtags-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-num-hours-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-num-minutes-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-num-trends-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-percent-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-precision-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-sort-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-top-count-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-top-periods-api-openapi.yml",
+   "openapi/_original/lithium-meta-json-top-periods-relative-api-openapi.yml",
+   "openapi/_original/lithium-multichannelmessages-api-openapi.yml",
+   "openapi/_original/lithium-networks-api-openapi.yml",
+   "openapi/_original/lithium-note-api-openapi.yml",
+   "openapi/_original/lithium-pause-api-openapi.yml",
+   "openapi/_original/lithium-permissions-api-openapi.yml",
+   "openapi/_original/lithium-plans-api-openapi.yml",
+   "openapi/_original/lithium-priority-api-openapi.yml",
+   "openapi/_original/lithium-projects-api-openapi.yml",
+   "openapi/_original/lithium-registrations-api-openapi.yml",
+   "openapi/_original/lithium-report-api-openapi.yml",
+   "openapi/_original/lithium-reports-api-openapi.yml",
+   "openapi/_original/lithium-request-api-openapi.yml",
+   "openapi/_original/lithium-requests-api-openapi.yml",
+   "openapi/_original/lithium-resolve-api-openapi.yml",
+   "openapi/_original/lithium-respond-api-openapi.yml",
+   "openapi/_original/lithium-ssoid-api-openapi.yml",
+   "openapi/_original/lithium-stream-api-api-openapi.yml",
+   "openapi/_original/lithium-streams-api-openapi.yml",
+   "openapi/_original/lithium-subscription-api-openapi.yml",
+   "openapi/_original/lithium-surveys-api-openapi.yml",
+   "openapi/_original/lithium-tag-api-openapi.yml",
+   "openapi/_original/lithium-teams-api-openapi.yml",
+   "openapi/_original/lithium-threads-api-openapi.yml",
+   "openapi/_original/lithium-tokens-api-openapi.yml",
+   "openapi/_original/lithium-trigger-api-openapi.yml",
+   "openapi/_original/lithium-users-api-openapi.yml",
+   "openapi/_original/lithium-uuid-api-openapi.yml",
+   "openapi/_original/lithium-work-queue-api-openapi.yml",
+   "openapi/_original/lithium-work-queues-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kit",
+  "specs": [
+   "openapi/_original/kit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "konbiniapi",
+  "specs": [
+   "openapi/_original/konbiniapi-openapi.json",
+   "openapi/_original/konbiniapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "later",
+  "specs": [
+   "openapi/_original/later-influence-api-openapi-original.json",
+   "openapi/_original/later-influence-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "learnworlds",
+  "specs": [
+   "openapi/_original/learnworlds-openapi.yml"
+  ]
+ },
+ {
+  "slug": "linkedin",
+  "specs": [
+   "openapi/_original/linkedin-compliance-events.yml",
+   "openapi/_original/linkedin-learning-activity-reports.yml",
+   "openapi/_original/linkedin-marketing-audience-insights.yml",
+   "openapi/_original/linkedin-marketing-audience.yml",
+   "openapi/_original/linkedin-marketing-campaigns.yml",
+   "openapi/_original/linkedin-marketing-community.yml",
+   "openapi/_original/linkedin-marketing-content.yml",
+   "openapi/_original/linkedin-marketing-conversions.yml",
+   "openapi/_original/linkedin-marketing-leads.yml",
+   "openapi/_original/linkedin-marketing-media-planning.yml",
+   "openapi/_original/linkedin-marketing-reporting-roi.yml",
+   "openapi/_original/linkedin-regulations-data-portability.yml",
+   "openapi/_original/linkedin-regulatory-ads-transparency.yml",
+   "openapi/_original/linkedin-sales-navigator.yml",
+   "openapi/_original/linkedin-talent-job-posting.yml",
+   "openapi/_original/linkedin-talent-learning-parent-application.yml",
+   "openapi/_original/linkedin-talent-recruiter-system-connect.yml"
+  ]
+ },
+ {
+  "slug": "lithium",
+  "specs": [
+   "openapi/_original/lithium-care-agent-states-api-v2-openapi.json",
+   "openapi/_original/lithium-care-analytics-reports-openapi.json",
+   "openapi/_original/lithium-care-api-specifications-openapi.json",
+   "openapi/_original/lithium-care-authentication-api-v2-openapi.json",
+   "openapi/_original/lithium-care-author-api-v2-openapi.json",
+   "openapi/_original/lithium-care-bot-api-v2-openapi.json",
+   "openapi/_original/lithium-care-bot-api-v3-openapi.json",
+   "openapi/_original/lithium-care-conversation-api-v2-openapi.json",
+   "openapi/_original/lithium-care-conversation-tag-rules-v2-openapi.json",
+   "openapi/_original/lithium-care-gdpr-api-v2-openapi.json",
+   "openapi/_original/lithium-care-listening-api-v2-openapi.json",
+   "openapi/_original/lithium-care-secure-forms-api-v2-openapi.json",
+   "openapi/_original/lithium-care-smart-views-api-v2-openapi.json",
+   "openapi/_original/lithium-care-supervisor-reports-api-openapi.json",
+   "openapi/_original/lithium-care-tag-api-v2-openapi.json",
+   "openapi/_original/lithium-care-users-api-v2-openapi.json",
+   "openapi/_original/lithium-care-work-queue-api-v1-openapi.json",
+   "openapi/_original/lithium-care-work-queue-api-v2-openapi.json",
+   "openapi/_original/lithium-flow-flow-rest-api-openapi.json",
+   "openapi/_original/lithium-marketing-api-specifications-openapi.json",
+   "openapi/_original/lithium-marketing-beta-analytics-api-openapi.json",
+   "openapi/_original/lithium-marketing-conversations-api-v1-openapi.json",
+   "openapi/_original/lithium-marketing-conversations-openapi.json",
+   "openapi/_original/lithium-marketing-crm-openapi.json",
+   "openapi/_original/lithium-marketing-introspection-api-openapi.json",
+   "openapi/_original/lithium-marketing-labelsets-api-openapi.json",
+   "openapi/_original/lithium-marketing-notification-service-openapi.json",
+   "openapi/_original/lithium-marketing-stream-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "loudcrowd",
+  "specs": [
+   "openapi/_original/loudcrowd-creator-storefronts-openapi-original.json",
+   "openapi/_original/loudcrowd-creator-storefronts-openapi.yml",
+   "openapi/_original/loudcrowd-openapi-original.json",
+   "openapi/_original/loudcrowd-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lucidya-ltd",
+  "specs": [
+   "openapi/_original/lucidya-ltd-ai-api-openapi.yml",
+   "openapi/_original/lucidya-ltd-ai-api.json",
+   "openapi/_original/lucidya-ltd-cdp-api-openapi.yml",
+   "openapi/_original/lucidya-ltd-cdp-api.yml",
+   "openapi/_original/lucidya-ltd-omnichannel-api-openapi.yml",
+   "openapi/_original/lucidya-ltd-omnichannel-api.yaml",
+   "openapi/_original/lucidya-ltd-omniserve-analytics-api-openapi.yml",
+   "openapi/_original/lucidya-ltd-omniserve-api.yml",
+   "openapi/_original/lucidya-ltd-social-listening-api-openapi.yml",
+   "openapi/_original/lucidya-ltd-social-listening-api.yaml"
+  ]
+ },
+ {
+  "slug": "mastodon-instances",
+  "specs": [
+   "openapi/_original/mastodon-instances-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mavrck",
+  "specs": [
+   "openapi/_original/mavrck-openapi.json",
+   "openapi/_original/mavrck-reporting-api.json",
+   "openapi/_original/mavrck-workflow-stage-change-event-webhook-openapi.json"
+  ]
+ },
+ {
+  "slug": "medium",
+  "specs": [
+   "openapi/_original/medium-oauth2-openapi.yml",
+   "openapi/_original/medium-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "meltwater",
+  "specs": [
+   "openapi/_original/meltwater-api-openapi.yaml",
+   "openapi/_original/meltwater-api-v4-openapi.yaml",
+   "openapi/_original/meltwater-api-v4-openapi.yml"
+  ]
+ },
+ {
+  "slug": "metricool",
+  "specs": [
+   "openapi/_original/metricool-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "mighty-networks",
+  "specs": [
+   "openapi/_original/mighty-networks-admin-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "monocrawl",
+  "specs": [
+   "openapi/_original/monocrawl-openapi.json"
+  ]
+ },
+ {
+  "slug": "nakama",
+  "specs": [
+   "openapi/_original/nakama-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nextdoor",
+  "specs": [
+   "openapi/_original/nextdoor-openapi.yml"
+  ]
+ },
+ {
+  "slug": "neynar",
+  "specs": [
+   "openapi/_original/neynar-farcaster-api.yaml",
+   "openapi/_original/neynar-hub-api.yaml"
+  ]
+ },
+ {
+  "slug": "openhandle",
+  "specs": [
+   "openapi/_original/openhandle-openapi.json",
+   "openapi/_original/openhandle-openapi.yml"
+  ]
+ },
+ {
+  "slug": "opus",
+  "specs": [
+   "openapi/_original/opus-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "opusclip",
+  "specs": [
+   "openapi/_original/opusclip-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "paragraph",
+  "specs": [
+   "openapi/_original/paragraph-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "patreon",
+  "specs": [
+   "openapi/_original/patreon-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pinterest",
+  "specs": [
+   "openapi/_original/pinterest-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "pixelfed",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "planable",
+  "specs": [
+   "openapi/_original/planable-openapi.json"
+  ]
+ },
+ {
+  "slug": "pomo",
+  "specs": [
+   "openapi/_original/pomo-openapi.json",
+   "openapi/_original/pomo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "posteahora",
+  "specs": [
+   "openapi/_original/posteahora-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "postiz",
+  "specs": [
+   "openapi/_original/postiz-openapi.yml",
+   "openapi/_original/postiz-platform-swagger-openapi.json",
+   "openapi/_original/postiz-public-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "postonce",
+  "specs": [
+   "openapi/_original/postonce-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "publer",
+  "specs": [
+   "openapi/_original/publer-openapi.yml"
+  ]
+ },
+ {
+  "slug": "publora",
+  "specs": [
+   "openapi/_original/publora-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "reddit",
+  "specs": [
+   "openapi/_original/reddit-data-api-openapi.yml",
+   "openapi/_original/reddit-embeds-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reefapi",
+  "specs": [
+   "openapi/_original/reefapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "refersion",
+  "specs": [
+   "openapi/_original/refersion-rest-api-openapi.yml",
+   "openapi/_original/refersion-rest-api-readme-harvest.json"
+  ]
+ },
+ {
+  "slug": "reputation",
+  "specs": [
+   "openapi/_original/reputation-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "respondology",
+  "specs": [
+   "openapi/_original/respondology-api-openapi.json",
+   "openapi/_original/respondology-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "scrapeatlas",
+  "specs": [
+   "openapi/_original/scrapeatlas-openapi.json"
+  ]
+ },
+ {
+  "slug": "snap",
+  "specs": [
+   "openapi/_original/snap-conversions-api-openapi-original.yml",
+   "openapi/_original/snap-conversions-api-openapi.yml",
+   "openapi/_original/snap-conversions-api-v3-openapi-original.yml",
+   "openapi/_original/snap-conversions-api-v3-openapi.yml"
+  ]
+ },
+ {
+  "slug": "snapchat",
+  "specs": [
+   "openapi/_original/snapchat-conversions-api-openapi.yml",
+   "openapi/_original/snapchat-login-kit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "social-fetch",
+  "specs": [
+   "openapi/_original/social-fetch-openapi.json"
+  ]
+ },
+ {
+  "slug": "socialapis",
+  "specs": [
+   "openapi/_original/socialapis-openapi.json"
+  ]
+ },
+ {
+  "slug": "sociallisteningapi",
+  "specs": [
+   "openapi/_original/sociallisteningapi-openapi.json",
+   "openapi/_original/sociallisteningapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sorsa",
+  "specs": [
+   "openapi/_original/sorsa-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spredfast",
+  "specs": [
+   "openapi/_original/spredfast-analytics-api-openapi.json",
+   "openapi/_original/spredfast-analytics-api-openapi.yml",
+   "openapi/_original/spredfast-conversations-api-openapi.json",
+   "openapi/_original/spredfast-conversations-api-v1-openapi.json",
+   "openapi/_original/spredfast-conversations-api-v1-openapi.yml",
+   "openapi/_original/spredfast-crm-api-openapi.json",
+   "openapi/_original/spredfast-crm-api-openapi.yml",
+   "openapi/_original/spredfast-custom-crm-callback-api-openapi.json",
+   "openapi/_original/spredfast-custom-crm-callback-api-openapi.yml",
+   "openapi/_original/spredfast-experiences-stream-api-openapi.json",
+   "openapi/_original/spredfast-experiences-stream-api-openapi.yml",
+   "openapi/_original/spredfast-introspection-api-openapi.json",
+   "openapi/_original/spredfast-introspection-api-openapi.yml",
+   "openapi/_original/spredfast-labelsets-api-openapi.json",
+   "openapi/_original/spredfast-labelsets-api-openapi.yml",
+   "openapi/_original/spredfast-notification-api-openapi.json",
+   "openapi/_original/spredfast-notification-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sssnack-com",
+  "specs": [
+   "openapi/_original/sssnack-com-openapi.json"
+  ]
+ },
+ {
+  "slug": "stocktwits",
+  "specs": [
+   "openapi/_original/stocktwits-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "streamelements",
+  "specs": [
+   "openapi/_original/streamelements-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "sylvia-api",
+  "specs": [
+   "openapi/_original/sylvia-api-openapi-2026-08-04.json",
+   "openapi/_original/sylvia-api-openapi-2026-08-18.json",
+   "openapi/_original/sylvia-api-openapi-2026-08-20.json"
+  ]
+ },
+ {
+  "slug": "syncly",
+  "specs": [
+   "openapi/_original/syncly-social-mcp-openapi.json"
+  ]
+ },
+ {
+  "slug": "synup",
+  "specs": [
+   "openapi/_original/synup-api-openapi.yml",
+   "openapi/_original/synup-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "talkwalker",
+  "specs": [
+   "openapi/_original/talkwalker-documents-openapi.yml",
+   "openapi/_original/talkwalker-histogram-openapi.yml",
+   "openapi/_original/talkwalker-image-openapi.yml",
+   "openapi/_original/talkwalker-openapi.yaml",
+   "openapi/_original/talkwalker-resources-openapi.yml",
+   "openapi/_original/talkwalker-search-openapi.yml",
+   "openapi/_original/talkwalker-status-openapi.yml",
+   "openapi/_original/talkwalker-streaming-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tapfiliate",
+  "specs": [
+   "openapi/_original/tapfiliate-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "teachable",
+  "specs": [
+   "openapi/_original/teachable-admin-openapi.yml",
+   "openapi/_original/teachable-oauth-openapi.yml"
+  ]
+ },
+ {
+  "slug": "telegram",
+  "specs": [
+   "openapi/_original/telegram-bot-openapi.yml"
+  ]
+ },
+ {
+  "slug": "threads-api",
+  "specs": [
+   "openapi/_original/threads-api-openapi.yml",
+   "openapi/_original/threads-api.yml"
+  ]
+ },
+ {
+  "slug": "thrivecart",
+  "specs": [
+   "openapi/_original/thrivecart-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tiktok",
+  "specs": [
+   "openapi/_original/tiktok-business-openapi.yml",
+   "openapi/_original/tiktok-data-portability-openapi.yml",
+   "openapi/_original/tiktok-shop-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tiktok-ads",
+  "specs": [
+   "openapi/_original/tiktok-ads-marketing-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tiktok-for-developers",
+  "specs": [
+   "openapi/_original/tiktok-content-posting-openapi.yml",
+   "openapi/_original/tiktok-display-openapi.yml",
+   "openapi/_original/tiktok-login-kit-openapi.yml",
+   "openapi/_original/tiktok-research-openapi.yml"
+  ]
+ },
+ {
+  "slug": "toksta",
+  "specs": [
+   "openapi/_original/toksta-public-api-openapi.json",
+   "openapi/_original/toksta-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trakt",
+  "specs": [
+   "openapi/_original/trakt-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trend",
+  "specs": [
+   "openapi/_original/trend-api-openapi.yml",
+   "openapi/_original/trend-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "twitter",
+  "specs": [
+   "openapi/_original/x-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "twitter-x",
+  "specs": [
+   "openapi/_original/twitter-x-x-api-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "unified",
+  "specs": [
+   "openapi/_original/unified-mcp-service-openapi.json"
+  ]
+ },
+ {
+  "slug": "upload-post",
+  "specs": [
+   "openapi/_original/upload-post-openapi.yml"
+  ]
+ },
+ {
+  "slug": "usecommune",
+  "specs": [
+   "openapi/_original/usecommune-openapi.json",
+   "openapi/_original/usecommune-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vaynermedia",
+  "specs": [
+   "openapi/_original/vaynermedia-wordpress-content-openapi.json"
+  ]
+ },
+ {
+  "slug": "vbout",
+  "specs": [
+   "openapi/_original/vbout-openapi-original.json",
+   "openapi/_original/vbout-plugin-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "versusgame",
+  "specs": [
+   "openapi/_original/versusgame-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "viewsmeet-com",
+  "specs": [
+   "openapi/_original/viewsmeet-com-openapi.json",
+   "openapi/_original/viewsmeet-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wechat",
+  "specs": [
+   "openapi/_original/wechat-openapi.yml"
+  ]
+ },
+ {
+  "slug": "x",
+  "specs": [
+   "openapi/_original/x-api-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "xproapi",
+  "specs": [
+   "openapi/_original/xproapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "xquik-api",
+  "specs": [
+   "openapi/_original/xquik-rest-api-openapi.json",
+   "openapi/_original/xquik-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yawplet",
+  "specs": [
+   "openapi/_original/yawplet-openapi.yml",
+   "openapi/_original/yawplet-openapi_2.yml",
+   "openapi/_original/yawplet-openapi_3.yml"
+  ]
+ },
+ {
+  "slug": "youtube",
+  "specs": [
+   "openapi/_original/youtube-analytics-openapi-original.yml",
+   "openapi/_original/youtube-analytics-openapi.yml",
+   "openapi/_original/youtube-data-api-openapi.yml",
+   "openapi/_original/youtube-data-openapi-original.yml",
+   "openapi/_original/youtube-live-streaming-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zoca",
+  "specs": [
+   "openapi/_original/zoca-platform-openapi.yml",
+   "openapi/_original/zoca-platform-swagger.json",
+   "openapi/_original/zoca-public-openapi.yml",
+   "openapi/_original/zoca-public-swagger.json",
+   "openapi/_original/zoca-tasks-openapi.yml",
+   "openapi/_original/zoca-tasks-swagger.json"
+  ]
+ },
+ {
+  "slug": "zora",
+  "specs": [
+   "openapi/_original/zora-coins-rest-api-openapi.json"
+  ]
+ }
+]

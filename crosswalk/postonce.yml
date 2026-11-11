@@ -1,0 +1,24 @@
+provider: postonce
+apis_io: https://apis.io/providers/postonce/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties:
+      id:
+      - id
+      - external_id
+      text: content
+      created_at: created_at
+      status: status
+      media_urls: media
+      scheduled_at: publish_at
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/postonce-api-openapi.json#DELETE /v1/posts/{id}
+    - openapi/_original/postonce-api-openapi.json#GET /v1/posts
+    - openapi/_original/postonce-api-openapi.json#GET /v1/posts/{id}
+    - openapi/_original/postonce-api-openapi.json#PATCH /v1/posts/{id}
+    - openapi/_original/postonce-api-openapi.json#POST /v1/posts

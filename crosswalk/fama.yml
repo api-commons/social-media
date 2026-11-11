@@ -1,0 +1,21 @@
+provider: fama
+apis_io: https://apis.io/providers/fama/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profiles
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/fama-external-interface-openapi.yml#GET /report/{report_uuid}/profiles
+  post:
+    path_segment:
+    - posts
+    properties:
+      text: text
+      platform: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/fama-external-interface-openapi.yml#GET /report/{report_uuid}/posts

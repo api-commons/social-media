@@ -1,0 +1,13 @@
+provider: patreon
+apis_io: https://apis.io/providers/patreon/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/patreon-openapi.yml#GET /api/oauth2/v2/campaigns/{campaign_id}/posts
+    - openapi/_original/patreon-openapi.yml#GET /api/oauth2/v2/posts/{id}

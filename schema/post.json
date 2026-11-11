@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/social-media/main/schema/post.json",
+  "title": "Post",
+  "description": "The common post in Social Media, distilled from 39 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.744,
+      "x-commons-providers": 29,
+      "x-commons-spellings": [
+        "id",
+        "post_id",
+        "postId",
+        "_id",
+        "externalId",
+        "uuid",
+        "external_id"
+      ]
+    },
+    "text": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.692,
+      "x-commons-providers": 27,
+      "x-commons-spellings": [
+        "text",
+        "content",
+        "caption",
+        "body",
+        "text_content"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.641,
+      "x-commons-providers": 25,
+      "x-commons-spellings": [
+        "created_at",
+        "published_at",
+        "createdAt",
+        "publishedAt",
+        "created",
+        "posted_at",
+        "timestamp",
+        "creationDate"
+      ],
+      "format": "date-time"
+    },
+    "platform": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.513,
+      "x-commons-providers": 20,
+      "x-commons-spellings": [
+        "type",
+        "source",
+        "platform",
+        "channel",
+        "network"
+      ]
+    },
+    "author_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.462,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "author",
+        "author_id",
+        "authorId",
+        "profileId",
+        "account_id",
+        "owner",
+        "userId",
+        "accountId"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.436,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "publishStatus"
+      ]
+    },
+    "media_urls": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.41,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "media",
+        "images",
+        "attachments",
+        "mediaUrls",
+        "mediaUrl",
+        "media_urls",
+        "imageUrls"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.359,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "title",
+        "name",
+        "display_name"
+      ]
+    },
+    "scheduled_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "scheduled_at",
+        "scheduledAt",
+        "scheduledTime",
+        "publish_at"
+      ],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "updatedAt",
+        "updated_at",
+        "lastModified",
+        "updatedDate",
+        "modifiedAt"
+      ],
+      "format": "date-time"
+    },
+    "comment_count": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.205,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "comments",
+        "replies",
+        "commentCount",
+        "replyCount",
+        "commentsCount",
+        "comments_count",
+        "comment_count"
+      ]
+    },
+    "permalink": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.205,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "permalink",
+        "link",
+        "postUrl",
+        "post_url",
+        "permalinkUrl"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "social-media",
+    "concept": "post",
+    "providers": 39,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

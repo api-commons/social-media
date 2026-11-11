@@ -1,0 +1,19 @@
+provider: gravatar
+apis_io: https://apis.io/providers/gravatar/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profile
+    - profiles
+    properties:
+      bio: description
+      avatar_url: avatar_url
+      name: display_name
+      location: location
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openapi.json#GET /me/profile
+    - openapi/_original/openapi.json#GET /profiles/{profileIdentifier}
+    - openapi/_original/openapi.json#PATCH /me/profile

@@ -1,0 +1,51 @@
+aid: common-social-media
+name: Social Media
+type: Common
+description: 'The common Social Media vocabulary, distilled from the harvested OpenAPI of 118 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Social Media
+- Social
+- Social Media Management
+- Social Networking
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/social-media/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-social-media:social-media
+  name: Common Social Media Interface
+  description: The Social Media interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/social-media
+  tags:
+  - Social Media
+  - Social
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/social-media/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/social-media/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/social-media/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: social_account
+    url: https://raw.githubusercontent.com/api-commons/social-media/main/schema/social_account.json
+  - type: JSONSchema
+    name: post
+    url: https://raw.githubusercontent.com/api-commons/social-media/main/schema/post.json
+  - type: JSONSchema
+    name: social_comment
+    url: https://raw.githubusercontent.com/api-commons/social-media/main/schema/social_comment.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/social-media/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

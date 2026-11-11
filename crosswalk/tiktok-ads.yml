@@ -1,0 +1,13 @@
+provider: tiktok-ads
+apis_io: https://apis.io/providers/tiktok-ads/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - post
+    properties:
+      text: text
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/tiktok-ads-marketing-api-openapi.yml#POST /comment/post/

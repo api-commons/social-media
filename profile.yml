@@ -1,0 +1,685 @@
+context: social-media
+name: Social Media
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Social Media
+  - Social
+  - Social Media Management
+  - Social Networking
+  - Creator Economy
+  - Influencer Marketing
+  - Social Listening
+  providers_with_harvested_openapi: 118
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded:
+  post:
+    beehiiv: /publications are newsletters
+    later: /action-groups/statuses are job statuses
+duplicates:
+  khoros-ai:
+  - lithium
+  - spredfast
+  later:
+  - mavrck
+  opusclip:
+  - opus
+  impact:
+  - impact-radius
+shared_specs: {}
+concepts:
+  social_account:
+    segments_seen:
+      profiles: 12
+      profile: 12
+      creators: 5
+      influencers: 2
+      social-accounts: 2
+    providers_exposing: 22
+    providers_with_readable_schema: 21
+    operations:
+    - operation: GET collection
+      providers: 17
+      share: 0.773
+      tier: core
+    - operation: POST collection
+      providers: 9
+      share: 0.409
+      tier: extended
+    - operation: GET item
+      providers: 7
+      share: 0.318
+      tier: extended
+    - operation: UPDATE collection
+      providers: 4
+      share: 0.182
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.091
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 11
+      share: 0.524
+      type: string
+      spellings:
+      - id
+      - profileId
+      - profile_id
+    - name: username
+      tier: extended
+      providers: 10
+      share: 0.476
+      type: string
+      spellings:
+      - username
+      - handle
+      - screenName
+      - userName
+    - name: bio
+      tier: extended
+      providers: 9
+      share: 0.429
+      type: string
+      spellings:
+      - description
+      - bio
+      - about
+    - name: avatar_url
+      tier: extended
+      providers: 8
+      share: 0.381
+      type: string
+      spellings:
+      - avatar
+      - avatar_url
+      - picture
+      - image
+      - profileImageURL
+      - avatarUrl
+    - name: created_at
+      tier: extended
+      providers: 8
+      share: 0.381
+      type: string
+      spellings:
+      - createdAt
+      - created_at
+      - creationDate
+      - created
+    - name: name
+      tier: extended
+      providers: 8
+      share: 0.381
+      type: string
+      spellings:
+      - displayName
+      - name
+      - display_name
+      - label
+      - title
+      - full_name
+    - name: platform
+      tier: extended
+      providers: 7
+      share: 0.333
+      type: string
+      spellings:
+      - platform
+      - provider
+      - type
+      - source
+    - name: location
+      tier: extended
+      providers: 6
+      share: 0.286
+      type: string
+      spellings:
+      - location
+    - name: updated_at
+      tier: extended
+      providers: 6
+      share: 0.286
+      type: string
+      spellings:
+      - updatedAt
+      - lastModified
+      - updated
+    - name: request_id
+      tier: extended
+      providers: 5
+      share: 0.238
+      type: string
+      spellings:
+      - request_id
+      - requestId
+    - name: verified
+      tier: extended
+      providers: 5
+      share: 0.238
+      type: boolean
+      spellings:
+      - verified
+      - isVerified
+      - verification
+      - is_verified
+    long_tail_count: 568
+    long_tail_sample:
+    - email
+    - error
+    - first_name
+    - follower_count
+    - last_name
+    - metrics
+    - category
+    - credits_remaining
+    - credits_used
+    - endpoint
+    - fields
+    - following_count
+    - posts
+    - profile_url
+    - publications
+    - recent_posts
+    - timezone
+    - user_id
+    - action
+    - activity
+    - actors
+    - address
+    - articles
+    - banner
+    - bio_links
+    - business
+    - cached
+    - contact
+    - cost
+    - curated_highlights
+    - education
+    - experience
+    - external_url
+    - facebook
+    - fetched_at
+    - gender
+    - hash
+    - header
+    - instagram
+    - is_live
+  post:
+    segments_seen:
+      posts: 38
+      post: 9
+      tweets: 9
+      statuses: 5
+      publications: 4
+      tweet: 3
+      media: 1
+    providers_exposing: 45
+    providers_with_readable_schema: 39
+    operations:
+    - operation: GET collection
+      providers: 38
+      share: 0.844
+      tier: core
+    - operation: POST collection
+      providers: 30
+      share: 0.667
+      tier: core
+    - operation: GET item
+      providers: 27
+      share: 0.6
+      tier: core
+    - operation: DELETE item
+      providers: 18
+      share: 0.4
+      tier: extended
+    - operation: UPDATE item
+      providers: 9
+      share: 0.2
+      tier: extended
+    - operation: DELETE collection
+      providers: 3
+      share: 0.067
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 3
+      share: 0.067
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.022
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 29
+      share: 0.744
+      type: string
+      spellings:
+      - id
+      - post_id
+      - postId
+      - _id
+      - externalId
+      - uuid
+      - external_id
+    - name: text
+      tier: core
+      providers: 27
+      share: 0.692
+      type: string
+      spellings:
+      - text
+      - content
+      - caption
+      - body
+      - text_content
+    - name: created_at
+      tier: core
+      providers: 25
+      share: 0.641
+      type: string
+      spellings:
+      - created_at
+      - published_at
+      - createdAt
+      - publishedAt
+      - created
+      - posted_at
+      - timestamp
+      - creationDate
+    - name: platform
+      tier: core
+      providers: 20
+      share: 0.513
+      type: string
+      spellings:
+      - type
+      - source
+      - platform
+      - channel
+      - network
+    - name: author_id
+      tier: extended
+      providers: 18
+      share: 0.462
+      type: string
+      spellings:
+      - author
+      - author_id
+      - authorId
+      - profileId
+      - account_id
+      - owner
+      - userId
+      - accountId
+    - name: status
+      tier: extended
+      providers: 17
+      share: 0.436
+      type: string
+      spellings:
+      - status
+      - state
+      - publishStatus
+    - name: media_urls
+      tier: extended
+      providers: 16
+      share: 0.41
+      type: array
+      spellings:
+      - media
+      - images
+      - attachments
+      - mediaUrls
+      - mediaUrl
+      - media_urls
+      - imageUrls
+    - name: name
+      tier: extended
+      providers: 14
+      share: 0.359
+      type: string
+      spellings:
+      - title
+      - name
+      - display_name
+    - name: scheduled_at
+      tier: extended
+      providers: 9
+      share: 0.231
+      type: string
+      spellings:
+      - scheduled_at
+      - scheduledAt
+      - scheduledTime
+      - publish_at
+    - name: updated_at
+      tier: extended
+      providers: 9
+      share: 0.231
+      type: string
+      spellings:
+      - updatedAt
+      - updated_at
+      - lastModified
+      - updatedDate
+      - modifiedAt
+    - name: comment_count
+      tier: extended
+      providers: 8
+      share: 0.205
+      type: integer
+      spellings:
+      - comments
+      - replies
+      - commentCount
+      - replyCount
+      - commentsCount
+      - comments_count
+      - comment_count
+    - name: permalink
+      tier: extended
+      providers: 8
+      share: 0.205
+      type: string
+      spellings:
+      - permalink
+      - link
+      - postUrl
+      - post_url
+      - permalinkUrl
+    long_tail_count: 868
+    long_tail_sample:
+    - conversation_id
+    - description
+    - entities
+    - language
+    - request_id
+    - tags
+    - deleted
+    - display_text_range
+    - in_reply_to_user_id
+    - like_count
+    - location
+    - poll
+    - share_count
+    - username
+    - community_id
+    - image_url
+    - lang
+    - possibly_sensitive
+    - post_type
+    - account
+    - article
+    - author_name
+    - card
+    - date
+    - flair
+    - hashtags
+    - in_reply_to_id
+    - is_edited
+    - metrics
+    - reply
+    - score
+    - slug
+    - subreddit
+    - thumbnail_url
+    - tweet_id
+    - user
+    - views
+    - visibility
+    - audio
+    - campaign_id
+  social_comment:
+    segments_seen:
+      comments: 19
+      replies: 4
+    providers_exposing: 20
+    providers_with_readable_schema: 15
+    operations:
+    - operation: GET collection
+      providers: 16
+      share: 0.8
+      tier: core
+    - operation: POST collection
+      providers: 10
+      share: 0.5
+      tier: core
+    - operation: GET item
+      providers: 6
+      share: 0.3
+      tier: extended
+    - operation: DELETE item
+      providers: 4
+      share: 0.2
+      tier: extended
+    - operation: UPDATE item
+      providers: 2
+      share: 0.1
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 12
+      share: 0.8
+      type: string
+      spellings:
+      - id
+      - postId
+      - post_id
+    - name: author_id
+      tier: core
+      providers: 8
+      share: 0.533
+      type: string
+      spellings:
+      - author
+      - authorId
+      - user
+      - author_id
+    - name: created_at
+      tier: core
+      providers: 8
+      share: 0.533
+      type: string
+      spellings:
+      - createdAt
+      - created_at
+      - createdDate
+      - published_at
+      - posted_at
+      - publishedAt
+      - postedAt
+    - name: text
+      tier: core
+      providers: 8
+      share: 0.533
+      type: string
+      spellings:
+      - text
+      - body
+      - content
+    - name: platform
+      tier: extended
+      providers: 7
+      share: 0.467
+      type: string
+      spellings:
+      - type
+      - platform
+      - source
+    - name: depth
+      tier: extended
+      providers: 5
+      share: 0.333
+      type: integer
+      spellings:
+      - depth
+    - name: parent_id
+      tier: extended
+      providers: 5
+      share: 0.333
+      type: string
+      spellings:
+      - parentId
+      - parent_id
+    - name: like_count
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: integer
+      spellings:
+      - likeCount
+      - likes
+    - name: media
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: array
+      spellings:
+      - media
+    - name: replies
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: array
+      spellings:
+      - replies
+    - name: reply_count
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: integer
+      spellings:
+      - reply_count
+      - replyCount
+    - name: request_id
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: string
+      spellings:
+      - request_id
+      - requestId
+    - name: article
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: object
+      spellings:
+      - article
+    - name: card
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: object
+      spellings:
+      - card
+    - name: comment
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - comment
+      - Comment
+    - name: community_note
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: object
+      spellings:
+      - communityNote
+    - name: conversation_id
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - conversationId
+    - name: entities
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: object
+      spellings:
+      - entities
+    - name: in_reply_to_user_id
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - inReplyToUserId
+    - name: is_pinned
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: boolean
+      spellings:
+      - isPinned
+    - name: permalink
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - permalink
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+    long_tail_count: 236
+    long_tail_sample:
+    - comment_count
+    - community
+    - credits_remaining
+    - credits_used
+    - display_text_range
+    - edit
+    - edited_at
+    - endpoint
+    - fetched_at
+    - is_by_post_author
+    - is_edited
+    - is_quote
+    - is_reply
+    - is_submitter
+    - is_translatable
+    - language
+    - metrics
+    - next_cursor
+    - parent_comment_id
+    - place
+    - possibly_sensitive
+    - post
+    - quoted_tweet
+    - reactions
+    - reply_to
+    - reply_to_id
+    - retweeted_tweet
+    - score
+    - status
+    - text_html
+    - truncated
+    - account_id
+    - accounting
+    - after
+    - age_seconds
+    - ai
+    - ai_disclosure
+    - ancestors
+    - ap_id
+    - attachment

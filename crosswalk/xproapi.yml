@@ -1,0 +1,12 @@
+provider: xproapi
+apis_io: https://apis.io/providers/xproapi/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - tweets
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/xproapi-openapi.json#GET /twitter/tweets

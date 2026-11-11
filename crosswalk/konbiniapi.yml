@@ -1,0 +1,40 @@
+provider: konbiniapi
+apis_io: https://apis.io/providers/konbiniapi/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties:
+      id: id
+      text: content
+      platform: type
+      name: name
+      comment_count:
+      - commentCount
+      - replyCount
+      - replies
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/konbiniapi-openapi.json#GET /v1/instagram/posts/{postId}
+    - openapi/_original/konbiniapi-openapi.json#GET /v1/instagram/users/{username}/posts
+    - openapi/_original/konbiniapi-openapi.json#GET /v1/linkedin/companies/{company}/posts
+    - openapi/_original/konbiniapi-openapi.json#GET /v1/linkedin/posts/{postId}
+    - openapi/_original/konbiniapi-openapi.json#GET /v1/linkedin/users/{username}/posts
+  social_comment:
+    path_segment:
+    - comments
+    properties:
+      id: id
+      text: content
+      platform: type
+      like_count: likeCount
+      is_pinned: isPinned
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/konbiniapi-openapi.json#GET /v1/instagram/posts/{postId}/comments
+    - openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/posts/{postId}/comments
+    - openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/posts/{postId}/comments/{commentId}
+    - openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/subreddits/{subreddit}/comments
+    - openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/users/{username}/comments

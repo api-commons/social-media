@@ -1,0 +1,21 @@
+provider: yawplet
+apis_io: https://apis.io/providers/yawplet/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties:
+      id: id
+      text: text
+      created_at: published_at
+      author_id: author
+      status: status
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/yawplet-openapi.yml#DELETE /v1/posts/{id}
+    - openapi/_original/yawplet-openapi.yml#GET /v1/posts
+    - openapi/_original/yawplet-openapi.yml#GET /v1/posts/{id}
+    - openapi/_original/yawplet-openapi.yml#POST /v1/posts
+    - openapi/_original/yawplet-openapi_2.yml#DELETE /v1/posts/{id}

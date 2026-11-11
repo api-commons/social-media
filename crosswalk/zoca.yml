@@ -1,0 +1,18 @@
+provider: zoca
+apis_io: https://apis.io/providers/zoca/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - post
+    - posts
+    - statuses
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/zoca-platform-openapi.yml#DELETE /gbp-location/posts
+    - openapi/_original/zoca-platform-openapi.yml#GET /gbp-location/posts
+    - openapi/_original/zoca-platform-openapi.yml#GET /social-media/posts
+    - openapi/_original/zoca-platform-openapi.yml#PATCH /content-queue/{entityId}/items/{itemId}/post
+    - openapi/_original/zoca-platform-openapi.yml#PATCH /gbp-location/posts

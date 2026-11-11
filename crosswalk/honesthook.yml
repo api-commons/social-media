@@ -1,0 +1,40 @@
+provider: honesthook
+apis_io: https://apis.io/providers/honesthook/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profile
+    properties:
+      platform: platform
+      request_id: request_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/bluesky/profile
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/github/profile
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/hackernews/profile
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/instagram/profile
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/linktree/profile
+  post:
+    path_segment:
+    - posts
+    - post
+    properties:
+      platform: platform
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/bluesky/post
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/bluesky/posts
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/instagram/location/posts
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/instagram/post
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/mastodon/posts
+  social_comment:
+    path_segment:
+    - comments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/github/issue/comments
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/hackernews/story/comments
+    - openapi/_original/honesthook-openapi.json#GET /api/v1/youtube/video/comments

@@ -1,0 +1,90 @@
+provider: openhandle
+apis_io: https://apis.io/providers/openhandle/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profiles
+    properties:
+      id: id
+      username: handle
+      bio: bio
+      avatar_url: avatar
+      created_at: createdAt
+      name: displayName
+      platform:
+      - platform
+      - source
+      location: location
+      verified:
+      - isVerified
+      - verification
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openhandle-openapi.json#GET /v1/instagram/profiles/{identifier}
+    - openapi/_original/openhandle-openapi.json#GET /v1/instagram/search/profiles
+    - openapi/_original/openhandle-openapi.json#GET /v1/reddit/profiles/{identifier}
+    - openapi/_original/openhandle-openapi.json#GET /v1/reddit/search/profiles
+    - openapi/_original/openhandle-openapi.json#GET /v1/tiktok/profiles/{identifier}
+  post:
+    path_segment:
+    - posts
+    properties:
+      id: id
+      text:
+      - caption
+      - text
+      created_at: createdAt
+      platform:
+      - platform
+      - source
+      - type
+      author_id:
+      - author
+      - authorId
+      status: status
+      media_urls: media
+      name: title
+      comment_count: comments
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openhandle-openapi.json#GET /v1/instagram/hashtags/{identifier}/posts
+    - openapi/_original/openhandle-openapi.json#GET /v1/instagram/locations/{identifier}/posts
+    - openapi/_original/openhandle-openapi.json#GET /v1/instagram/posts/{identifier}
+    - openapi/_original/openhandle-openapi.json#GET /v1/instagram/profiles/{identifier}/posts
+    - openapi/_original/openhandle-openapi.json#GET /v1/reddit/domains/{identifier}/posts
+  social_comment:
+    path_segment:
+    - comments
+    properties:
+      id:
+      - id
+      - postId
+      author_id:
+      - author
+      - authorId
+      created_at: createdAt
+      text: text
+      platform:
+      - platform
+      - source
+      - type
+      depth: depth
+      parent_id: parentId
+      media: media
+      replies: replies
+      article: article
+      card: card
+      community_note: communityNote
+      conversation_id: conversationId
+      entities: entities
+      in_reply_to_user_id: inReplyToUserId
+      is_pinned: isPinned
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openhandle-openapi.json#GET /v1/instagram/posts/{identifier}/comments
+    - openapi/_original/openhandle-openapi.json#GET /v1/reddit/posts/{identifier}/comments
+    - openapi/_original/openhandle-openapi.json#GET /v1/reddit/profiles/{identifier}/comments
+    - openapi/_original/openhandle-openapi.json#GET /v1/tiktok/posts/{identifier}/comments
+    - openapi/_original/openhandle-openapi.json#GET /v1/twitter/posts/{identifier}/comments

@@ -1,0 +1,43 @@
+provider: sociallisteningapi
+apis_io: https://apis.io/providers/sociallisteningapi/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profile
+    properties:
+      username: username
+      platform: platform
+      request_id: request_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/instagram/profile
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/linkedin/profile
+    - openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/instagram/profile
+    - openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/linkedin/profile
+    - openapi/_original/sociallisteningapi-openapi.yml#GET /api/v1/instagram/profile
+  post:
+    path_segment:
+    - posts
+    properties:
+      platform: platform
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/linkedin/profile/posts
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/linkedin/user/posts
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/x/user/posts
+    - openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/linkedin/profile/posts
+    - openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/linkedin/user/posts
+  social_comment:
+    path_segment:
+    - comments
+    properties:
+      platform: platform
+      request_id: request_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/reddit/post/comments
+    - openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/reddit/post/comments
+    - openapi/_original/sociallisteningapi-openapi.yml#GET /api/v1/reddit/post/comments
+    - openapi/_original/sociallisteningapi-openapi.yml#POST /api/v1/reddit/post/comments

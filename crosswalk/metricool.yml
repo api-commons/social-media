@@ -1,0 +1,78 @@
+provider: metricool
+apis_io: https://apis.io/providers/metricool/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profiles
+    - profile
+    - influencers
+    properties:
+      id: id
+      username: screenName
+      bio: description
+      avatar_url: picture
+      name:
+      - label
+      - title
+      - displayName
+      platform: provider
+      updated_at: updated
+      verified: verified
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/metricool-api-openapi.json#GET /admin/blog/profiles
+    - openapi/_original/metricool-api-openapi.json#GET /admin/profile
+    - openapi/_original/metricool-api-openapi.json#GET /admin/profiles
+    - openapi/_original/metricool-api-openapi.json#GET /stats/influencers/{provider}
+    - openapi/_original/metricool-api-openapi.json#GET /v2/integrations/canva/me/profile
+  post:
+    path_segment:
+    - posts
+    - tweets
+    - statuses
+    - publications
+    properties:
+      id:
+      - id
+      - postId
+      - uuid
+      text:
+      - text
+      - content
+      created_at:
+      - createdAt
+      - timestamp
+      - created
+      - publishedAt
+      - creationDate
+      platform:
+      - source
+      - type
+      - network
+      author_id: userId
+      status:
+      - state
+      - status
+      media_urls:
+      - mediaUrls
+      - media
+      - mediaUrl
+      name: title
+      updated_at:
+      - updatedAt
+      - updatedDate
+      comment_count:
+      - commentsCount
+      - comments
+      permalink:
+      - postUrl
+      - link
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/metricool-api-openapi.json#DELETE /v2/scheduler/library/posts/{id}
+    - openapi/_original/metricool-api-openapi.json#DELETE /v2/scheduler/posts/{id}
+    - openapi/_original/metricool-api-openapi.json#GET /explore/posts/{blogId}
+    - openapi/_original/metricool-api-openapi.json#GET /hashtags/consolidated/tweets
+    - openapi/_original/metricool-api-openapi.json#GET /hashtags/feed/tweets

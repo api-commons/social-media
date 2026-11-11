@@ -1,0 +1,26 @@
+provider: diaspora
+apis_io: https://apis.io/providers/diaspora/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties:
+      text: body
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/diaspora-api-openapi.yml#DELETE /posts/{post_guid}
+    - openapi/_original/diaspora-api-openapi.yml#GET /posts/{post_guid}
+    - openapi/_original/diaspora-api-openapi.yml#GET /search/posts
+    - openapi/_original/diaspora-api-openapi.yml#GET /users/{person_guid}/posts
+    - openapi/_original/diaspora-api-openapi.yml#POST /posts
+  social_comment:
+    path_segment:
+    - comments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/diaspora-api-openapi.yml#DELETE /posts/{post_guid}/comments/{comment_guid}
+    - openapi/_original/diaspora-api-openapi.yml#GET /posts/{post_guid}/comments
+    - openapi/_original/diaspora-api-openapi.yml#POST /posts/{post_guid}/comments

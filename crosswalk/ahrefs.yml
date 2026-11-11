@@ -1,0 +1,23 @@
+provider: ahrefs
+apis_io: https://apis.io/providers/ahrefs/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - post
+    - posts
+    properties:
+      id: post_id
+      text: text_content
+      created_at: created_at
+      author_id: author_id
+      scheduled_at: scheduled_at
+      permalink: permalink
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/ahrefs-openapi-original.json#DELETE /social-media/post
+    - openapi/_original/ahrefs-openapi-original.json#GET /social-media/posts
+    - openapi/_original/ahrefs-openapi-original.json#PATCH /social-media/post
+    - openapi/_original/ahrefs-openapi-original.json#POST /social-media/post
+    - openapi/_original/ahrefs-social-media-openapi.json#DELETE /post

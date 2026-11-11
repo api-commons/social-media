@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/social-media/main/schema/social_comment.json",
+  "title": "Social Comment",
+  "description": "The common social_comment in Social Media, distilled from 15 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.8,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "id",
+        "postId",
+        "post_id"
+      ]
+    },
+    "author_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.533,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "author",
+        "authorId",
+        "user",
+        "author_id"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.533,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "createdAt",
+        "created_at",
+        "createdDate",
+        "published_at",
+        "posted_at",
+        "publishedAt",
+        "postedAt"
+      ],
+      "format": "date-time"
+    },
+    "text": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.533,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "text",
+        "body",
+        "content"
+      ]
+    },
+    "platform": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.467,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "type",
+        "platform",
+        "source"
+      ]
+    },
+    "depth": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "depth"
+      ]
+    },
+    "parent_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "parentId",
+        "parent_id"
+      ]
+    },
+    "like_count": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "likeCount",
+        "likes"
+      ]
+    },
+    "media": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "media"
+      ]
+    },
+    "replies": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "replies"
+      ]
+    },
+    "reply_count": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "reply_count",
+        "replyCount"
+      ]
+    },
+    "request_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "request_id",
+        "requestId"
+      ]
+    },
+    "article": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "article"
+      ]
+    },
+    "card": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "card"
+      ]
+    },
+    "comment": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "comment",
+        "Comment"
+      ]
+    },
+    "community_note": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "communityNote"
+      ]
+    },
+    "conversation_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "conversationId"
+      ]
+    },
+    "entities": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "entities"
+      ]
+    },
+    "in_reply_to_user_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "inReplyToUserId"
+      ]
+    },
+    "is_pinned": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "isPinned"
+      ]
+    },
+    "permalink": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "permalink"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "social-media",
+    "concept": "social_comment",
+    "providers": 15,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

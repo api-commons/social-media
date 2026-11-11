@@ -1,0 +1,33 @@
+provider: pomo
+apis_io: https://apis.io/providers/pomo/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  social_account:
+    path_segment:
+    - profile
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pomo-openapi.json#GET /api/influencer-discovery/instagram/users/profile
+    - openapi/_original/pomo-openapi.json#POST /api/first-party-data/profile
+    - openapi/_original/pomo-openapi.yml#GET /api/influencer-discovery/instagram/users/profile
+    - openapi/_original/pomo-openapi.yml#POST /api/first-party-data/profile
+  post:
+    path_segment:
+    - posts
+    properties:
+      id:
+      - id
+      - post_id
+      created_at: posted_at
+      platform: platform
+      status: status
+      permalink: post_url
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/pomo-openapi.json#GET /api/campaigns/social-post/{campaign_id}/{idea_number}/posts
+    - openapi/_original/pomo-openapi.json#GET /api/external-platform/instagram/posts
+    - openapi/_original/pomo-openapi.json#GET /api/influencer-discovery/tiktok/users/posts
+    - openapi/_original/pomo-openapi.yml#GET /api/campaigns/social-post/{campaign_id}/{idea_number}/posts
+    - openapi/_original/pomo-openapi.yml#GET /api/external-platform/instagram/posts

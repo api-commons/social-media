@@ -1,0 +1,15 @@
+provider: blotato
+apis_io: https://apis.io/providers/blotato/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties:
+      status: status
+      scheduled_at: scheduledTime
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/blotato-openapi.yml#GET /posts/{postSubmissionId}
+    - openapi/_original/blotato-openapi.yml#POST /posts

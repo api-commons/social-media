@@ -1,0 +1,302 @@
+context: social-media
+generated: '2026-11-10'
+adopters:
+- provider: agorapulse
+  apis_io: https://apis.io/providers/agorapulse/
+  crosswalk: crosswalk/agorapulse.yml
+  concepts:
+  - social_account
+- provider: ahrefs
+  apis_io: https://apis.io/providers/ahrefs/
+  crosswalk: crosswalk/ahrefs.yml
+  concepts:
+  - post
+- provider: blotato
+  apis_io: https://apis.io/providers/blotato/
+  crosswalk: crosswalk/blotato.yml
+  concepts:
+  - post
+- provider: convertkit
+  apis_io: https://apis.io/providers/convertkit/
+  crosswalk: crosswalk/convertkit.yml
+  concepts:
+  - post
+- provider: creatoriq
+  apis_io: https://apis.io/providers/creatoriq/
+  crosswalk: crosswalk/creatoriq.yml
+  concepts:
+  - post
+  - social_comment
+- provider: diaspora
+  apis_io: https://apis.io/providers/diaspora/
+  crosswalk: crosswalk/diaspora.yml
+  concepts:
+  - post
+  - social_comment
+- provider: facebook-pages
+  apis_io: https://apis.io/providers/facebook-pages/
+  crosswalk: crosswalk/facebook-pages.yml
+  concepts:
+  - post
+  - social_comment
+- provider: fama
+  apis_io: https://apis.io/providers/fama/
+  crosswalk: crosswalk/fama.yml
+  concepts:
+  - post
+  - social_account
+- provider: gravatar
+  apis_io: https://apis.io/providers/gravatar/
+  crosswalk: crosswalk/gravatar.yml
+  concepts:
+  - social_account
+- provider: highrise
+  apis_io: https://apis.io/providers/highrise/
+  crosswalk: crosswalk/highrise.yml
+  concepts:
+  - post
+- provider: honesthook
+  apis_io: https://apis.io/providers/honesthook/
+  crosswalk: crosswalk/honesthook.yml
+  concepts:
+  - post
+  - social_account
+  - social_comment
+- provider: hootsuite
+  apis_io: https://apis.io/providers/hootsuite/
+  crosswalk: crosswalk/hootsuite.yml
+  concepts:
+  - post
+  - social_account
+  - social_comment
+- provider: khoros-ai
+  apis_io: https://apis.io/providers/khoros-ai/
+  crosswalk: crosswalk/khoros-ai.yml
+  concepts:
+  - post
+  - social_account
+- provider: konbiniapi
+  apis_io: https://apis.io/providers/konbiniapi/
+  crosswalk: crosswalk/konbiniapi.yml
+  concepts:
+  - post
+  - social_comment
+- provider: later
+  apis_io: https://apis.io/providers/later/
+  crosswalk: crosswalk/later.yml
+  concepts:
+  - social_account
+- provider: linkedin
+  apis_io: https://apis.io/providers/linkedin/
+  crosswalk: crosswalk/linkedin.yml
+  concepts:
+  - post
+- provider: lucidya-ltd
+  apis_io: https://apis.io/providers/lucidya-ltd/
+  crosswalk: crosswalk/lucidya-ltd.yml
+  concepts:
+  - social_account
+- provider: medium
+  apis_io: https://apis.io/providers/medium/
+  crosswalk: crosswalk/medium.yml
+  concepts:
+  - post
+- provider: metricool
+  apis_io: https://apis.io/providers/metricool/
+  crosswalk: crosswalk/metricool.yml
+  concepts:
+  - post
+  - social_account
+- provider: mighty-networks
+  apis_io: https://apis.io/providers/mighty-networks/
+  crosswalk: crosswalk/mighty-networks.yml
+  concepts:
+  - post
+  - social_comment
+- provider: monocrawl
+  apis_io: https://apis.io/providers/monocrawl/
+  crosswalk: crosswalk/monocrawl.yml
+  concepts:
+  - post
+  - social_account
+  - social_comment
+- provider: openhandle
+  apis_io: https://apis.io/providers/openhandle/
+  crosswalk: crosswalk/openhandle.yml
+  concepts:
+  - post
+  - social_account
+  - social_comment
+- provider: opusclip
+  apis_io: https://apis.io/providers/opusclip/
+  crosswalk: crosswalk/opusclip.yml
+  concepts:
+  - social_account
+- provider: paragraph
+  apis_io: https://apis.io/providers/paragraph/
+  crosswalk: crosswalk/paragraph.yml
+  concepts:
+  - post
+- provider: patreon
+  apis_io: https://apis.io/providers/patreon/
+  crosswalk: crosswalk/patreon.yml
+  concepts:
+  - post
+- provider: pixelfed
+  apis_io: https://apis.io/providers/pixelfed/
+  crosswalk: crosswalk/pixelfed.yml
+  concepts:
+  - post
+- provider: planable
+  apis_io: https://apis.io/providers/planable/
+  crosswalk: crosswalk/planable.yml
+  concepts:
+  - post
+  - social_comment
+- provider: pomo
+  apis_io: https://apis.io/providers/pomo/
+  crosswalk: crosswalk/pomo.yml
+  concepts:
+  - post
+  - social_account
+- provider: posteahora
+  apis_io: https://apis.io/providers/posteahora/
+  crosswalk: crosswalk/posteahora.yml
+  concepts:
+  - post
+- provider: postiz
+  apis_io: https://apis.io/providers/postiz/
+  crosswalk: crosswalk/postiz.yml
+  concepts:
+  - post
+  - social_comment
+- provider: postonce
+  apis_io: https://apis.io/providers/postonce/
+  crosswalk: crosswalk/postonce.yml
+  concepts:
+  - post
+- provider: publer
+  apis_io: https://apis.io/providers/publer/
+  crosswalk: crosswalk/publer.yml
+  concepts:
+  - post
+- provider: reefapi
+  apis_io: https://apis.io/providers/reefapi/
+  crosswalk: crosswalk/reefapi.yml
+  concepts:
+  - post
+  - social_account
+  - social_comment
+- provider: respondology
+  apis_io: https://apis.io/providers/respondology/
+  crosswalk: crosswalk/respondology.yml
+  concepts:
+  - post
+  - social_comment
+- provider: scrapeatlas
+  apis_io: https://apis.io/providers/scrapeatlas/
+  crosswalk: crosswalk/scrapeatlas.yml
+  concepts:
+  - post
+  - social_account
+  - social_comment
+- provider: social-fetch
+  apis_io: https://apis.io/providers/social-fetch/
+  crosswalk: crosswalk/social-fetch.yml
+  concepts:
+  - post
+  - social_account
+  - social_comment
+- provider: socialapis
+  apis_io: https://apis.io/providers/socialapis/
+  crosswalk: crosswalk/socialapis.yml
+  concepts:
+  - post
+  - social_comment
+- provider: sociallisteningapi
+  apis_io: https://apis.io/providers/sociallisteningapi/
+  crosswalk: crosswalk/sociallisteningapi.yml
+  concepts:
+  - post
+  - social_account
+  - social_comment
+- provider: sylvia-api
+  apis_io: https://apis.io/providers/sylvia-api/
+  crosswalk: crosswalk/sylvia-api.yml
+  concepts:
+  - post
+  - social_comment
+- provider: synup
+  apis_io: https://apis.io/providers/synup/
+  crosswalk: crosswalk/synup.yml
+  concepts:
+  - post
+- provider: tiktok-ads
+  apis_io: https://apis.io/providers/tiktok-ads/
+  crosswalk: crosswalk/tiktok-ads.yml
+  concepts:
+  - post
+- provider: toksta
+  apis_io: https://apis.io/providers/toksta/
+  crosswalk: crosswalk/toksta.yml
+  concepts:
+  - post
+  - social_account
+- provider: trend
+  apis_io: https://apis.io/providers/trend/
+  crosswalk: crosswalk/trend.yml
+  concepts:
+  - social_account
+- provider: twitter
+  apis_io: https://apis.io/providers/twitter/
+  crosswalk: crosswalk/twitter.yml
+  concepts:
+  - post
+- provider: twitter-x
+  apis_io: https://apis.io/providers/twitter-x/
+  crosswalk: crosswalk/twitter-x.yml
+  concepts:
+  - post
+- provider: vaynermedia
+  apis_io: https://apis.io/providers/vaynermedia/
+  crosswalk: crosswalk/vaynermedia.yml
+  concepts:
+  - post
+  - social_comment
+- provider: versusgame
+  apis_io: https://apis.io/providers/versusgame/
+  crosswalk: crosswalk/versusgame.yml
+  concepts:
+  - social_account
+- provider: x
+  apis_io: https://apis.io/providers/x/
+  crosswalk: crosswalk/x.yml
+  concepts:
+  - post
+- provider: xproapi
+  apis_io: https://apis.io/providers/xproapi/
+  crosswalk: crosswalk/xproapi.yml
+  concepts:
+  - post
+- provider: xquik-api
+  apis_io: https://apis.io/providers/xquik-api/
+  crosswalk: crosswalk/xquik-api.yml
+  concepts:
+  - post
+  - social_account
+  - social_comment
+- provider: yawplet
+  apis_io: https://apis.io/providers/yawplet/
+  crosswalk: crosswalk/yawplet.yml
+  concepts:
+  - post
+- provider: zoca
+  apis_io: https://apis.io/providers/zoca/
+  crosswalk: crosswalk/zoca.yml
+  concepts:
+  - post
+- provider: zora
+  apis_io: https://apis.io/providers/zora/
+  crosswalk: crosswalk/zora.yml
+  concepts:
+  - social_account

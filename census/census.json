@@ -1,0 +1,7665 @@
+{
+ "cohort_size": 118,
+ "unreadable": [],
+ "concepts": {
+  "social_account": {
+   "agorapulse": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "profileUid": "string",
+     "profileName": "string",
+     "profileType": "string",
+     "socialNetworkId": "string",
+     "workspaceId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/agorapulse-open-api-openapi.yml#GET /v1.0/core/organizations/{organizationId}/workspaces/{workspaceId}/profiles",
+     "openapi/_original/agorapulse-openapi.yml#GET /v1.0/core/organizations/{organizationId}/workspaces/{workspaceId}/profiles"
+    ]
+   },
+   "fama": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/fama-external-interface-openapi.yml#GET /report/{report_uuid}/profiles"
+    ]
+   },
+   "gravatar": {
+    "segments": [
+     "profile",
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH collection"
+    ],
+    "properties": {
+     "user_id": "integer",
+     "user_login": "string",
+     "hash": "string",
+     "display_name": "string",
+     "profile_url": "string",
+     "avatar_url": "string",
+     "avatar_alt_text": "string",
+     "location": "string",
+     "description": "string",
+     "job_title": "string",
+     "company": "string",
+     "verified_accounts": "array",
+     "pronunciation": "string",
+     "pronouns": "string",
+     "timezone": "string",
+     "languages": "array",
+     "first_name": "string",
+     "last_name": "string",
+     "is_organization": "boolean",
+     "header_image": "string",
+     "hide_default_header_image": "boolean",
+     "background_color": "string",
+     "links": "array",
+     "interests": "array",
+     "payments": "object",
+     "contact_info": "object",
+     "gallery": "array",
+     "number_verified_accounts": "integer",
+     "last_profile_edit": [
+      "string",
+      "null"
+     ],
+     "registration_date": [
+      "string",
+      "null"
+     ],
+     "section_visibility": "object",
+     "cell_phone": "string",
+     "contact_email": "string",
+     "hidden_contact_info": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/openapi.json#GET /me/profile",
+     "openapi/_original/openapi.json#GET /profiles/{profileIdentifier}",
+     "openapi/_original/openapi.json#PATCH /me/profile"
+    ]
+   },
+   "honesthook": {
+    "segments": [
+     "profile"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "platform": "string",
+     "endpoint": "string",
+     "data": [
+      "object",
+      "null"
+     ],
+     "error": [
+      "object",
+      "null"
+     ],
+     "credits_used": "integer",
+     "credits_remaining": [
+      "integer",
+      "null"
+     ],
+     "credits_purchased_remaining": [
+      "integer",
+      "null"
+     ],
+     "free_credits_remaining": [
+      "integer",
+      "null"
+     ],
+     "free_credits_total": [
+      "integer",
+      "null"
+     ],
+     "free_credits_reset_at": "string",
+     "cached": "boolean",
+     "request_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/bluesky/profile",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/github/profile",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/hackernews/profile",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/instagram/profile",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/linktree/profile",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/mastodon/profile",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/medium/profile",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/pinterest/profile",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/soundcloud/profile",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/threads/profile",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/tiktok/profile"
+    ]
+   },
+   "hootsuite": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "profileId": "string",
+     "externalProfileId": "string",
+     "date": "string",
+     "metrics": "object",
+     "lastModified": "object",
+     "reportingPeriod": "object"
+    },
+    "evidence": [
+     "openapi/_original/hootsuite-analytics-api-openapi.yaml#POST /v1/analytics/profiles"
+    ]
+   },
+   "khoros-ai": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "export_id": "string",
+     "start": "string",
+     "stop": "string",
+     "fields": "array",
+     "timezone": "string"
+    },
+    "evidence": [
+     "openapi/_original/lithium-export-api-openapi.yml#POST /export/profiles",
+     "openapi/_original/lithium-marketing-beta-analytics-api-openapi.json#POST /export/profiles"
+    ]
+   },
+   "later": {
+    "segments": [
+     "influencers",
+     "social-accounts",
+     "creators",
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "globalUserId": "integer",
+     "profilePic": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "email": "string",
+     "facebookProfiles": "array",
+     "instagramAccounts": "array",
+     "pinterestAccounts": "array",
+     "twitterAccounts": "array",
+     "globalUserIds": "array",
+     "campaignId": "number",
+     "campaignName": "string",
+     "campaignStatus": "string",
+     "budget": "number",
+     "budgetReferenceId": "string",
+     "budgetReferenceIdType": "object",
+     "influencerName": "string",
+     "rewardWinType": "string",
+     "rewardWinCashPaymentAppProvider": "object",
+     "fulfillmentStatus": "object",
+     "cost": "number",
+     "listMemberId": "number",
+     "actionGroupId": "number",
+     "mavelyProfileId": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/later-influence-api-openapi-original.json#GET /influencers",
+     "openapi/_original/later-influence-api-openapi-original.json#GET /v1/budgets/influencers",
+     "openapi/_original/later-influence-api-openapi-original.json#GET /v1/social-accounts",
+     "openapi/_original/later-influence-api-openapi-original.json#POST /v1/brand-suitability/batches/{batchId}/creators",
+     "openapi/_original/later-influence-api-openapi-original.json#POST /v1/list-members/mavely/profiles",
+     "openapi/_original/later-influence-api-openapi.json#GET /influencers",
+     "openapi/_original/later-influence-api-openapi.json#GET /v1/budgets/influencers",
+     "openapi/_original/later-influence-api-openapi.json#GET /v1/social-accounts",
+     "openapi/_original/later-influence-api-openapi.json#POST /v1/brand-suitability/batches/{batchId}/creators",
+     "openapi/_original/later-influence-api-openapi.json#POST /v1/list-members/mavely/profiles"
+    ]
+   },
+   "lithium": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "export_id": "string",
+     "start": "string",
+     "stop": "string",
+     "fields": "array",
+     "timezone": "string"
+    },
+    "evidence": [
+     "openapi/_original/lithium-marketing-beta-analytics-api-openapi.json#POST /export/profiles"
+    ]
+   },
+   "lucidya-ltd": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "message": "string",
+     "profile_id": "integer",
+     "email": "string",
+     "phone_number": "string",
+     "twitter": "string",
+     "facebook": "string",
+     "instagram": "string",
+     "intercom": "string",
+     "gmail": "string",
+     "whatsapp": "string",
+     "tiktok": "string",
+     "field_value": "string",
+     "field_name": "string",
+     "action": "string",
+     "id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/lucidya-ltd-cdp-api-openapi.yml#GET /profiles",
+     "openapi/_original/lucidya-ltd-cdp-api-openapi.yml#GET /profiles/{id}",
+     "openapi/_original/lucidya-ltd-cdp-api-openapi.yml#POST /profiles",
+     "openapi/_original/lucidya-ltd-cdp-api-openapi.yml#PUT /profiles",
+     "openapi/_original/lucidya-ltd-cdp-api.yml#GET /profiles",
+     "openapi/_original/lucidya-ltd-cdp-api.yml#GET /profiles/{id}",
+     "openapi/_original/lucidya-ltd-cdp-api.yml#POST /profiles",
+     "openapi/_original/lucidya-ltd-cdp-api.yml#PUT /profiles"
+    ]
+   },
+   "mavrck": {
+    "segments": [
+     "influencers",
+     "social-accounts",
+     "creators",
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "globalUserId": "integer",
+     "profilePic": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "email": "string",
+     "facebookProfiles": "array",
+     "instagramAccounts": "array",
+     "pinterestAccounts": "array",
+     "twitterAccounts": "array",
+     "globalUserIds": "array",
+     "campaignId": "number",
+     "campaignName": "string",
+     "campaignStatus": "string",
+     "budget": "number",
+     "budgetReferenceId": "string",
+     "budgetReferenceIdType": "object",
+     "influencerName": "string",
+     "rewardWinType": "string",
+     "rewardWinCashPaymentAppProvider": "object",
+     "fulfillmentStatus": "object",
+     "cost": "number",
+     "listMemberId": "number",
+     "actionGroupId": "number",
+     "mavelyProfileId": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/mavrck-openapi.json#GET /influencers",
+     "openapi/_original/mavrck-openapi.json#GET /v1/budgets/influencers",
+     "openapi/_original/mavrck-openapi.json#GET /v1/social-accounts",
+     "openapi/_original/mavrck-openapi.json#POST /v1/brand-suitability/batches/{batchId}/creators",
+     "openapi/_original/mavrck-openapi.json#POST /v1/list-members/mavely/profiles"
+    ]
+   },
+   "metricool": {
+    "segments": [
+     "profiles",
+     "profile",
+     "influencers"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "userId": "integer",
+     "ownerUserId": "integer",
+     "label": "string",
+     "url": "string",
+     "title": "string",
+     "description": "string",
+     "picture": "string",
+     "twitter": "string",
+     "facebook": "string",
+     "facebookPageId": "string",
+     "facebookGroup": "string",
+     "facebookGroupId": "string",
+     "instagram": "string",
+     "fbBusinessId": "string",
+     "googlePlus": "string",
+     "linkedinCompany": "string",
+     "facebookAds": "string",
+     "adwords": "string",
+     "gmb": "string",
+     "youtube": "string",
+     "twitch": "string",
+     "tiktokads": "string",
+     "pinterest": "string",
+     "tiktok": "string",
+     "threads": "string",
+     "bluesky": "string",
+     "feedRss": "string",
+     "tiktokAccountType": "string",
+     "instagramConnectionType": "string",
+     "instagramFollowsUnfollowsAvailable": "boolean",
+     "twitterPicture": "string",
+     "twitterSubscriptionType": "string",
+     "facebookPicture": "string",
+     "facebookGroupPicture": "string",
+     "instagramPicture": "string",
+     "linkedInPicture": "string",
+     "facebookAdsPicture": "string",
+     "facebookAdsName": "string",
+     "pinterestPicture": "string",
+     "pinterestBusiness": "boolean",
+     "tiktokPicture": "string",
+     "tiktokBusinessTokenExpiration": "string",
+     "threadsPicture": "string",
+     "threadsAccountName": "string",
+     "blueskyPicture": "string",
+     "blueskyHandle": "string",
+     "fbUserId": "string",
+     "inUserId": "string",
+     "adwordsUserId": "string",
+     "adwordsAccountName": "string",
+     "gmbUserId": "string",
+     "gmbAccountName": "string",
+     "gmbAddress": "string",
+     "gmbUrl": "string",
+     "tiktokadsUserId": "string",
+     "linkedInCompanyPicture": "string",
+     "linkedInCompanyName": "string",
+     "linkedInTokenExpiration": "string",
+     "linkedInUserProfileURL": "string",
+     "youtubeChannelName": "string",
+     "youtubeChannelPicture": "string",
+     "twitchName": "string",
+     "twitchPicture": "string",
+     "twitchChannelId": "string",
+     "tiktokadsDisplayName": "string",
+     "tiktokadsPicture": "string",
+     "tiktokUserProfileUrl": "string",
+     "isShared": "boolean",
+     "ownerUsername": "string",
+     "whiteLabelLink": "string",
+     "analyticModeWhitelabelLink": "string",
+     "whiteLabelAlias": "string",
+     "hash": "string",
+     "version": "integer",
+     "frontendVersion": "string",
+     "role": "string",
+     "deleteDate": "string",
+     "deleted": "boolean",
+     "joinDate": "string",
+     "firstConnectionDate": "string",
+     "lastResolvedInboxMessageTimestamp": "integer",
+     "lastReadInboxMessageTimestamp": "integer",
+     "timezone": "string",
+     "availableConnectors": "array",
+     "brandRole": "object",
+     "isWhiteLabel": "boolean",
+     "isWhiteLabelOnlyRead": "boolean",
+     "engagementRatio": "integer",
+     "hasXOAuth2Token": "boolean",
+     "isDemo": "boolean",
+     "allWhiteLabelLinks": "object",
+     "provider": "string",
+     "providerId": "string",
+     "screenName": "string",
+     "displayName": "string",
+     "cost": "number",
+     "favorite": "boolean",
+     "costPer1kFollowers": "number",
+     "costPerInteraction": "number",
+     "updated": "string",
+     "verified": "boolean",
+     "followers": "number",
+     "following": "number",
+     "posts": "integer",
+     "reels": "integer",
+     "likes": "number",
+     "favorites": "number",
+     "comments": "number",
+     "reactions": "number",
+     "shares": "number",
+     "engagement": "number",
+     "retweets": "number",
+     "views": "number",
+     "dislikes": "number",
+     "totalViews": "number",
+     "clips": "integer",
+     "quotes": "number",
+     "profile": "object"
+    },
+    "evidence": [
+     "openapi/_original/metricool-api-openapi.json#GET /admin/blog/profiles",
+     "openapi/_original/metricool-api-openapi.json#GET /admin/profile",
+     "openapi/_original/metricool-api-openapi.json#GET /admin/profiles",
+     "openapi/_original/metricool-api-openapi.json#GET /stats/influencers/{provider}",
+     "openapi/_original/metricool-api-openapi.json#GET /v2/integrations/canva/me/profile"
+    ]
+   },
+   "monocrawl": {
+    "segments": [
+     "profile",
+     "creators"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "_completeness": "object",
+     "success": null,
+     "platform": "string",
+     "endpoint": "string",
+     "data": null,
+     "credits_used": "integer",
+     "credits_remaining": "integer",
+     "request_id": "string",
+     "cached": "boolean",
+     "stale": "boolean",
+     "age_seconds": "integer",
+     "fetched_at": "string",
+     "synthetic": "boolean",
+     "degraded": "boolean",
+     "id": [
+      "string",
+      "null"
+     ],
+     "handle": [
+      "string",
+      "null"
+     ],
+     "name": [
+      "string",
+      "null"
+     ],
+     "url": [
+      "string",
+      "null"
+     ],
+     "bio": [
+      "string",
+      "null"
+     ],
+     "bio_link": [
+      "string",
+      "null"
+     ],
+     "avatar_url": [
+      "string",
+      "null"
+     ],
+     "followers": [
+      "number",
+      "null"
+     ],
+     "following": [
+      "number",
+      "null"
+     ],
+     "verified": [
+      "boolean",
+      "null"
+     ],
+     "avatar": [
+      "string",
+      "null"
+     ],
+     "posts_count": [
+      "number",
+      "null"
+     ],
+     "created_at": [
+      "string",
+      "null"
+     ],
+     "_warnings": "array",
+     "likes_count": [
+      "number",
+      "null"
+     ],
+     "talking_about": [
+      "number",
+      "null"
+     ],
+     "category": [
+      "string",
+      "null"
+     ],
+     "cover_url": [
+      "string",
+      "null"
+     ],
+     "public_repos": [
+      "number",
+      "null"
+     ],
+     "type": [
+      "string",
+      "null"
+     ],
+     "about": [
+      "string",
+      "null"
+     ],
+     "karma": [
+      "number",
+      "null"
+     ],
+     "sources": [
+      "array",
+      "null"
+     ],
+     "submitted_count": [
+      "number",
+      "null"
+     ],
+     "business": [
+      "boolean",
+      "null"
+     ],
+     "private": [
+      "boolean",
+      "null"
+     ],
+     "last_post_at": [
+      "string",
+      "null"
+     ],
+     "last_post_scope": [
+      "string",
+      "null"
+     ],
+     "likes": [
+      "number",
+      "null"
+     ],
+     "posts": [
+      "number",
+      "null"
+     ],
+     "articles": [
+      "array",
+      "null"
+     ],
+     "background_image": [
+      "string",
+      "null"
+     ],
+     "certifications": [
+      "array",
+      "null"
+     ],
+     "education": [
+      "array",
+      "null"
+     ],
+     "experience": [
+      "array",
+      "null"
+     ],
+     "first_name": [
+      "string",
+      "null"
+     ],
+     "headline": [
+      "string",
+      "null"
+     ],
+     "id_kind": [
+      "string",
+      "null"
+     ],
+     "languages": [
+      "array",
+      "null"
+     ],
+     "last_name": [
+      "string",
+      "null"
+     ],
+     "location": [
+      "string",
+      "null"
+     ],
+     "member_urn": [
+      "string",
+      "null"
+     ],
+     "position_info": [
+      "object",
+      "null"
+     ],
+     "projects": [
+      "array",
+      "null"
+     ],
+     "publications": [
+      "array",
+      "null"
+     ],
+     "recent_posts": [
+      "array",
+      "null"
+     ],
+     "recommendations": [
+      "array",
+      "null"
+     ],
+     "skills": [
+      "array",
+      "null"
+     ],
+     "top_position": [
+      "object",
+      "null"
+     ],
+     "anonymous": [
+      "boolean",
+      "null"
+     ],
+     "answer_views": [
+      "number",
+      "null"
+     ],
+     "content_views": [
+      "number",
+      "null"
+     ],
+     "counts_note": [
+      "string",
+      "null"
+     ],
+     "credential": [
+      "string",
+      "null"
+     ],
+     "deceased": [
+      "boolean",
+      "null"
+     ],
+     "notable": [
+      "boolean",
+      "null"
+     ],
+     "published_url": [
+      "string",
+      "null"
+     ],
+     "spaces_contributing": [
+      "number",
+      "null"
+     ],
+     "top_writer_years": [
+      "array",
+      "null"
+     ],
+     "description": [
+      "string",
+      "null"
+     ],
+     "has_story": [
+      "boolean",
+      "null"
+     ],
+     "highlight_count": [
+      "number",
+      "null"
+     ],
+     "spotlight_count": [
+      "number",
+      "null"
+     ],
+     "subscribers": [
+      "number",
+      "null"
+     ],
+     "video_count": [
+      "number",
+      "null"
+     ],
+     "commerce_user": [
+      "boolean",
+      "null"
+     ],
+     "seller": [
+      "boolean",
+      "null"
+     ],
+     "region": [
+      "string",
+      "null"
+     ],
+     "business_category": [
+      "string",
+      "null"
+     ],
+     "display_name": [
+      "string",
+      "null"
+     ],
+     "banner_image": [
+      "string",
+      "null"
+     ],
+     "is_live": [
+      "boolean",
+      "null"
+     ],
+     "is_partner": [
+      "boolean",
+      "null"
+     ],
+     "profile_image": [
+      "string",
+      "null"
+     ],
+     "tweets_count": [
+      "number",
+      "null"
+     ],
+     "verified_blue": [
+      "boolean",
+      "null"
+     ],
+     "banner_url": [
+      "string",
+      "null"
+     ],
+     "view_count": [
+      "number",
+      "null"
+     ],
+     "joined_text": [
+      "string",
+      "null"
+     ],
+     "family_safe": [
+      "boolean",
+      "null"
+     ],
+     "country": [
+      "string",
+      "null"
+     ],
+     "links": [
+      "array",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/monocrawl-openapi.json#GET /v1/bluesky/profile",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/facebook/profile",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/github/profile",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/hackernews/profile",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/instagram/profile",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/kwai/profile",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/linkedin/profile",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/quora/profile",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/search/creators",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/snapchat/profile",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/threads/profile",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/tiktok/profile"
+    ]
+   },
+   "openhandle": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "capturedAt": "string",
+     "data": null,
+     "meta": "object",
+     "platform": "string",
+     "resource": "string",
+     "source": "string",
+     "accountBadges": [
+      "array",
+      "null"
+     ],
+     "accountType": null,
+     "avatar": null,
+     "bio": [
+      "string",
+      "null"
+     ],
+     "bioEntities": [
+      "array",
+      "null"
+     ],
+     "bioLinks": [
+      "array",
+      "null"
+     ],
+     "broadcastChannels": "object",
+     "category": [
+      "string",
+      "null"
+     ],
+     "categoryId": [
+      "string",
+      "null"
+     ],
+     "contact": "object",
+     "content": "object",
+     "contentSettings": "object",
+     "displayName": [
+      "string",
+      "null"
+     ],
+     "displaySettings": "object",
+     "externalUrl": [
+      "string",
+      "null"
+     ],
+     "fanClub": "object",
+     "fbid": [
+      "string",
+      "null"
+     ],
+     "fundraisers": "object",
+     "handle": "string",
+     "hasDigitalAvatar": [
+      "boolean",
+      "null"
+     ],
+     "id": "string",
+     "isAccountTransparencyVisible": [
+      "boolean",
+      "null"
+     ],
+     "isBusiness": [
+      "boolean",
+      "null"
+     ],
+     "isFacebookOnboardedCharity": [
+      "boolean",
+      "null"
+     ],
+     "isMemorialized": [
+      "boolean",
+      "null"
+     ],
+     "isNew": [
+      "boolean",
+      "null"
+     ],
+     "isOpenToCollaboration": [
+      "boolean",
+      "null"
+     ],
+     "isPotentialBusiness": [
+      "boolean",
+      "null"
+     ],
+     "isPrivate": [
+      "boolean",
+      "null"
+     ],
+     "isUnpublished": [
+      "boolean",
+      "null"
+     ],
+     "isVerified": [
+      "boolean",
+      "null"
+     ],
+     "lastStoryAt": [
+      "string",
+      "null"
+     ],
+     "location": "object",
+     "mediaPreviews": [
+      "array",
+      "null"
+     ],
+     "messagingFbid": [
+      "string",
+      "null"
+     ],
+     "metrics": "object",
+     "pronouns": [
+      "array",
+      "null"
+     ],
+     "socialContext": [
+      "string",
+      "null"
+     ],
+     "suggestion": null,
+     "threads": "object",
+     "upcomingEvents": [
+      "array",
+      "null"
+     ],
+     "url": "string",
+     "acceptsFollowers": [
+      "boolean",
+      "null"
+     ],
+     "banner": null,
+     "createdAt": [
+      "string",
+      "null"
+     ],
+     "displayHandle": [
+      "string",
+      "null"
+     ],
+     "isEmployee": [
+      "boolean",
+      "null"
+     ],
+     "isModerator": [
+      "boolean",
+      "null"
+     ],
+     "isPremium": [
+      "boolean",
+      "null"
+     ],
+     "isSensitive": [
+      "boolean",
+      "null"
+     ],
+     "profileCommunity": null,
+     "snoovatar": null,
+     "verification": "object",
+     "visibility": "object",
+     "commerce": "object",
+     "isAdVirtual": [
+      "boolean",
+      "null"
+     ],
+     "isCanceled": [
+      "boolean",
+      "null"
+     ],
+     "isDisciplineMember": [
+      "boolean",
+      "null"
+     ],
+     "isEffectArtist": [
+      "boolean",
+      "null"
+     ],
+     "isStar": [
+      "boolean",
+      "null"
+     ],
+     "language": [
+      "string",
+      "null"
+     ],
+     "music": "object",
+     "predictions": "object",
+     "privacy": "object",
+     "regionCode": [
+      "string",
+      "null"
+     ],
+     "searchContext": "object",
+     "secUid": [
+      "string",
+      "null"
+     ],
+     "socialLinks": [
+      "array",
+      "null"
+     ],
+     "stories": "object",
+     "storyStatus": [
+      "integer",
+      "null"
+     ],
+     "entities": "object",
+     "hasCustomTimelines": [
+      "boolean",
+      "null"
+     ],
+     "isLifelineInstitution": [
+      "boolean",
+      "null"
+     ],
+     "isSuspended": [
+      "boolean",
+      "null"
+     ],
+     "labels": [
+      "array",
+      "null"
+     ],
+     "pinnedPostIds": [
+      "array",
+      "null"
+     ],
+     "professional": null,
+     "subscriptions": "object",
+     "withheld": "object"
+    },
+    "evidence": [
+     "openapi/_original/openhandle-openapi.json#GET /v1/instagram/profiles/{identifier}",
+     "openapi/_original/openhandle-openapi.json#GET /v1/instagram/search/profiles",
+     "openapi/_original/openhandle-openapi.json#GET /v1/reddit/profiles/{identifier}",
+     "openapi/_original/openhandle-openapi.json#GET /v1/reddit/search/profiles",
+     "openapi/_original/openhandle-openapi.json#GET /v1/tiktok/profiles/{identifier}",
+     "openapi/_original/openhandle-openapi.json#GET /v1/tiktok/search/profiles",
+     "openapi/_original/openhandle-openapi.json#GET /v1/twitter/profiles/{identifier}",
+     "openapi/_original/openhandle-openapi.yml#GET /v1/instagram/profiles/{identifier}",
+     "openapi/_original/openhandle-openapi.yml#GET /v1/instagram/search/profiles",
+     "openapi/_original/openhandle-openapi.yml#GET /v1/reddit/profiles/{identifier}",
+     "openapi/_original/openhandle-openapi.yml#GET /v1/reddit/search/profiles",
+     "openapi/_original/openhandle-openapi.yml#GET /v1/tiktok/profiles/{identifier}"
+    ]
+   },
+   "opus": {
+    "segments": [
+     "social-accounts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "postAccountId": "string",
+     "subAccountId": "string",
+     "platform": "string",
+     "extUserId": "string",
+     "extUserName": "string",
+     "extUserPictureLink": "string",
+     "extUserProfileLink": "string"
+    },
+    "evidence": [
+     "openapi/_original/opus-openapi-original.json#GET /api/social-accounts"
+    ]
+   },
+   "opusclip": {
+    "segments": [
+     "social-accounts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "postAccountId": "string",
+     "subAccountId": "string",
+     "platform": "string",
+     "extUserId": "string",
+     "extUserName": "string",
+     "extUserPictureLink": "string",
+     "extUserProfileLink": "string"
+    },
+    "evidence": [
+     "openapi/_original/opusclip-openapi-original.json#GET /api/social-accounts"
+    ]
+   },
+   "pomo": {
+    "segments": [
+     "profile"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/pomo-openapi.json#GET /api/influencer-discovery/instagram/users/profile",
+     "openapi/_original/pomo-openapi.json#POST /api/first-party-data/profile",
+     "openapi/_original/pomo-openapi.yml#GET /api/influencer-discovery/instagram/users/profile",
+     "openapi/_original/pomo-openapi.yml#POST /api/first-party-data/profile"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "profile"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "seller_id": "string",
+     "marketplace": "string",
+     "actor": "string",
+     "actors": "string",
+     "symbol": "string",
+     "username": "string",
+     "consumer_id": "string",
+     "page": "string",
+     "cursor": "string",
+     "locale": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /amazon/v1/seller/profile",
+     "openapi/_original/reefapi-openapi.json#POST /bluesky/v1/profile",
+     "openapi/_original/reefapi-openapi.json#POST /finance/v1/v1/stock/profile",
+     "openapi/_original/reefapi-openapi.json#POST /instagram/v1/profile",
+     "openapi/_original/reefapi-openapi.json#POST /pinterest/v1/profile",
+     "openapi/_original/reefapi-openapi.json#POST /snapchat/v1/profile",
+     "openapi/_original/reefapi-openapi.json#POST /threads/v1/profile",
+     "openapi/_original/reefapi-openapi.json#POST /trustpilot/v1/reviewer/profile",
+     "openapi/_original/reefapi-openapi.json#POST /twitter/v1/profile"
+    ]
+   },
+   "scrapeatlas": {
+    "segments": [
+     "profile",
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "did": "string",
+     "handle": "string",
+     "displayName": "string",
+     "description": "string",
+     "avatar": "string",
+     "banner": "string",
+     "followersCount": "integer",
+     "followsCount": "integer",
+     "postsCount": "integer",
+     "labels": "array",
+     "requestId": "string",
+     "accounting": "object",
+     "success": "boolean",
+     "status": "string",
+     "sourceUrl": "string",
+     "fetchedAt": "string",
+     "coverage": "object",
+     "results": "array",
+     "actors": "array",
+     "id": "integer",
+     "username": "string",
+     "full_name": [
+      "string",
+      "null"
+     ],
+     "url": "string",
+     "bio": [
+      "string",
+      "null"
+     ],
+     "avatar_url": [
+      "string",
+      "null"
+     ],
+     "website_url": [
+      "string",
+      "null"
+     ],
+     "is_premium": [
+      "boolean",
+      "null"
+     ],
+     "is_verified": [
+      "boolean",
+      "null"
+     ],
+     "follower_count": [
+      "integer",
+      "null"
+     ],
+     "following_count": [
+      "integer",
+      "null"
+     ],
+     "public_post_count": [
+      "integer",
+      "null"
+     ],
+     "instagram_url": [
+      "string",
+      "null"
+     ],
+     "twitter_url": [
+      "string",
+      "null"
+     ],
+     "tiktok_url": [
+      "string",
+      "null"
+     ],
+     "profile": "object",
+     "answers": "array",
+     "adLibrary": null,
+     "creationDate": [
+      "string",
+      "null"
+     ],
+     "name": "string",
+     "gender": [
+      "string",
+      "null"
+     ],
+     "coverPhoto": null,
+     "isBusinessPageActive": [
+      "boolean",
+      "null"
+     ],
+     "profilePhoto": null,
+     "profilePicLarge": [
+      "string",
+      "null"
+     ],
+     "profilePicMedium": [
+      "string",
+      "null"
+     ],
+     "profilePicSmall": [
+      "string",
+      "null"
+     ],
+     "pageIntro": [
+      "string",
+      "null"
+     ],
+     "category": [
+      "string",
+      "null"
+     ],
+     "address": [
+      "string",
+      "null"
+     ],
+     "email": [
+      "string",
+      "null"
+     ],
+     "links": "array",
+     "phone": [
+      "string",
+      "null"
+     ],
+     "website": [
+      "string",
+      "null"
+     ],
+     "services": [
+      "string",
+      "null"
+     ],
+     "priceRange": [
+      "string",
+      "null"
+     ],
+     "rating": [
+      "string",
+      "null"
+     ],
+     "ratingCount": [
+      "number",
+      "null"
+     ],
+     "likeCount": [
+      "number",
+      "null"
+     ],
+     "talkingAboutCount": [
+      "number",
+      "null"
+     ],
+     "followerCount": [
+      "number",
+      "null"
+     ],
+     "businessHours": null,
+     "data": "object",
+     "hydration": "object",
+     "created": "integer",
+     "karma": "integer",
+     "about": "string",
+     "submittedCount": "integer",
+     "social_profile": "object",
+     "inner_circle": "object",
+     "metrics": "object",
+     "image": [
+      "string",
+      "null"
+     ],
+     "location": [
+      "string",
+      "null"
+     ],
+     "followers": [
+      "number",
+      "null"
+     ],
+     "connections": "string",
+     "recentPosts": "array",
+     "experience": "array",
+     "articles": "array",
+     "activity": "array",
+     "education": "array",
+     "publications": "array",
+     "projects": "array",
+     "recommendations": "array",
+     "similarProfiles": "array",
+     "acct": "string",
+     "display_name": "string",
+     "locked": "boolean",
+     "bot": "boolean",
+     "created_at": "string",
+     "note": "string",
+     "header": "string",
+     "followers_count": [
+      "integer",
+      "null"
+     ],
+     "statuses_count": [
+      "integer",
+      "null"
+     ],
+     "fields": "array",
+     "server": "string",
+     "wallet": "string",
+     "stats": null,
+     "value": [
+      "number",
+      "null"
+     ],
+     "rank": null,
+     "query": "string",
+     "time": "string",
+     "items": "array",
+     "icon_img": [
+      "string",
+      "null"
+     ],
+     "snoovatar_img": [
+      "string",
+      "null"
+     ],
+     "created_utc": [
+      "number",
+      "null"
+     ],
+     "created_at_iso": [
+      "string",
+      "null"
+     ],
+     "link_karma": [
+      "number",
+      "null"
+     ],
+     "comment_karma": [
+      "number",
+      "null"
+     ],
+     "total_karma": [
+      "number",
+      "null"
+     ],
+     "is_gold": [
+      "boolean",
+      "null"
+     ],
+     "is_mod": [
+      "boolean",
+      "null"
+     ],
+     "has_verified_email": [
+      "boolean",
+      "null"
+     ],
+     "over_18": [
+      "boolean",
+      "null"
+     ],
+     "userProfile": "object",
+     "story": null,
+     "storyMetadata": null,
+     "curatedHighlights": "array",
+     "spotlightHighlights": "array",
+     "spotlightStoryMetadata": "array",
+     "lenses": "array",
+     "lensCursor": [
+      "string",
+      "null"
+     ],
+     "curatedHighlightsCursor": [
+      "string",
+      "null"
+     ],
+     "spotlightHighlightsCursor": [
+      "string",
+      "null"
+     ],
+     "spotlights": "array",
+     "relatedAccounts": "array",
+     "pk": "string",
+     "user": "object",
+     "statsV2": "object",
+     "itemList": "array",
+     "verified": "boolean",
+     "isLive": "boolean",
+     "currentViewersCount": [
+      "integer",
+      "null"
+     ],
+     "stream": "object",
+     "profileImageURL": [
+      "string",
+      "null"
+     ],
+     "bannerImageURL": [
+      "string",
+      "null"
+     ],
+     "isPartner": "boolean",
+     "allVideos": "array",
+     "recentBroadcasts": "array",
+     "featuredClips": "array",
+     "similarStreamers": "array",
+     "__typename": "string",
+     "rest_id": "string",
+     "core": "object",
+     "legacy": "object",
+     "domain": "string"
+    },
+    "evidence": [
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/bluesky/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/cosmos/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/couchsurfing/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/dribbble/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/facebook/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/hackernews/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/instagram/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/kalshi/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/kwai/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/linkedin/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/mastodon/profile",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/medium/profile"
+    ]
+   },
+   "social-fetch": {
+    "segments": [
+     "profiles",
+     "profile",
+     "creators"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "lookupStatus": "string",
+     "symbol": "string",
+     "sources": "object",
+     "assetProfile": "object",
+     "summaryProfile": "object",
+     "profile": "object",
+     "id": "integer",
+     "name": "string",
+     "handle": "string",
+     "slug": "string",
+     "bio": "string",
+     "photoUrl": "string",
+     "createdAt": "string",
+     "isDisabled": "boolean",
+     "followerCount": "integer",
+     "subscriberCount": "integer",
+     "subscriberCountLabel": "string",
+     "roughFreeSubscribers": "string",
+     "roughFreeSubscribersInt": "integer",
+     "roughSubscribers": "string",
+     "roughSubscribersInt": "integer",
+     "badges": "object",
+     "bestsellerTier": "integer",
+     "leaderboard": "object",
+     "links": "array",
+     "publicationUrl": "string",
+     "hasNotes": "boolean",
+     "hasGuestPost": "boolean",
+     "hasLikes": "boolean",
+     "hasPosts": "boolean",
+     "recommendationCount": "integer",
+     "primaryPublication": "object",
+     "publications": "array",
+     "subscriptions": "array",
+     "subscriptionCount": "integer",
+     "subscriptionsTruncated": "boolean",
+     "reason": "string",
+     "socials": "array",
+     "paymentMethods": "array",
+     "language": "string",
+     "currency": "string",
+     "termsText": "string",
+     "storeId": "integer",
+     "storeName": "string",
+     "sections": "array",
+     "products": "array",
+     "profileUrl": "string",
+     "productPageCount": "integer",
+     "linksTotal": "integer",
+     "linksTruncated": "boolean",
+     "embeds": "array",
+     "lastModified": "string",
+     "changeFrequency": "string",
+     "priority": "number",
+     "sourceFamily": "string",
+     "page": "object",
+     "reportedTotal": "number",
+     "url": "string",
+     "error": "object",
+     "creditsCharged": "integer",
+     "metrics": "object",
+     "input": "string",
+     "kind": "string",
+     "posts": "integer",
+     "lastPostDate": "string",
+     "host": "string",
+     "username": "string",
+     "actorUri": "string",
+     "displayName": "string",
+     "bioHtml": "string",
+     "avatar": "object",
+     "header": "object",
+     "stats": "object",
+     "isBot": "boolean",
+     "isGroup": "boolean",
+     "isLocked": "boolean",
+     "isLimited": "boolean",
+     "isSuspended": "boolean",
+     "isDiscoverable": "boolean",
+     "isIndexable": "boolean",
+     "noIndex": "boolean",
+     "hidesNetwork": "boolean",
+     "movedTo": "object",
+     "fields": "array",
+     "emojis": "array",
+     "roles": "array",
+     "listedOnSite": "boolean",
+     "contact": "object",
+     "business": "object",
+     "shortcode": "string",
+     "mediaType": "string",
+     "caption": "string",
+     "altText": "string",
+     "owner": "object",
+     "imageUrl": "string",
+     "thumbnailUrl": "string",
+     "videoUrl": "string",
+     "durationSec": "number",
+     "dimensions": "object",
+     "carousel": "array",
+     "audio": "object",
+     "coauthors": "array",
+     "taggedUsers": "array",
+     "location": "object",
+     "isPaidPartnership": "boolean",
+     "sponsors": "array",
+     "commentsDisabled": "boolean",
+     "isPinned": "boolean",
+     "story": "object",
+     "spotlights": "array",
+     "spotlightHighlights": "array",
+     "curatedHighlights": "array",
+     "relatedAccounts": "array",
+     "recentVideos": "array",
+     "similarStreamers": "array",
+     "recentPosts": "array",
+     "relatedProfiles": "array",
+     "platform": "string",
+     "avatarUrl": "string",
+     "verified": "boolean",
+     "privateAccount": "boolean",
+     "platformUserId": "string",
+     "businessAccount": "boolean",
+     "professionalAccount": "boolean",
+     "categoryName": "string",
+     "externalUrl": "string",
+     "bioLinks": "array",
+     "matchedFrom": "string",
+     "compatibility": "object",
+     "activity": "array"
+    },
+    "evidence": [
+     "openapi/_original/social-fetch-openapi.json#GET /v1/behance/profiles/{username}",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/bluesky/profiles/{handle}",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/dev-to/user/profile",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/dribbble/profiles/{handle}",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/facebook/profiles",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/github/profiles/{handle}",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/instagram/profiles/{handle}",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/instagram/search/profiles",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/ko-fi/profiles/{handle}",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/linkedin/profiles",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/linktree/profiles/{handle}",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/lnk-bio/profiles"
+    ]
+   },
+   "sociallisteningapi": {
+    "segments": [
+     "profile"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "platform": "string",
+     "endpoint": "string",
+     "data": "object",
+     "pagination": "object",
+     "raw": null,
+     "request_id": "string",
+     "credits_used": "integer",
+     "credits_remaining": [
+      "integer",
+      "null"
+     ],
+     "username": "string",
+     "profile_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/instagram/profile",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/linkedin/profile",
+     "openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/instagram/profile",
+     "openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/linkedin/profile",
+     "openapi/_original/sociallisteningapi-openapi.yml#GET /api/v1/instagram/profile",
+     "openapi/_original/sociallisteningapi-openapi.yml#GET /api/v1/linkedin/profile",
+     "openapi/_original/sociallisteningapi-openapi.yml#POST /api/v1/instagram/profile",
+     "openapi/_original/sociallisteningapi-openapi.yml#POST /api/v1/linkedin/profile"
+    ]
+   },
+   "spredfast": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "export_id": "string",
+     "start": "string",
+     "stop": "string",
+     "fields": "array",
+     "timezone": "string"
+    },
+    "evidence": [
+     "openapi/_original/spredfast-analytics-api-openapi.json#POST /export/profiles",
+     "openapi/_original/spredfast-analytics-api-openapi.yml#POST /export/profiles"
+    ]
+   },
+   "toksta": {
+    "segments": [
+     "creators"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "data": "object",
+     "meta": "object",
+     "creator_ids": "array",
+     "creator_source": "string"
+    },
+    "evidence": [
+     "openapi/_original/toksta-public-api-openapi.json#GET /v1/creators/{id}",
+     "openapi/_original/toksta-public-api-openapi.json#POST /v1/creator-lists/{id}/creators",
+     "openapi/_original/toksta-public-api-openapi.yml#GET /v1/creators/{id}",
+     "openapi/_original/toksta-public-api-openapi.yml#POST /v1/creator-lists/{id}/creators"
+    ]
+   },
+   "trend": {
+    "segments": [
+     "profile"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH item"
+    ],
+    "properties": {
+     "idToken": "string",
+     "expiresIn": "string",
+     "localId": "string",
+     "brand": "object",
+     "customToken": "string",
+     "email": "string",
+     "refreshToken": "string",
+     "creator": "object",
+     "user": "object",
+     "ageRange": "string",
+     "address": "object",
+     "creatorId": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "profilePicture": "string",
+     "overallRating": "number",
+     "totalReviews": "number",
+     "userId": "string",
+     "socialCategories": "array",
+     "contentCategories": "array",
+     "socials": "object",
+     "portfolio": "array",
+     "jobTypes": "object",
+     "username": "string",
+     "about": "string",
+     "equipment": "array",
+     "environment": "array",
+     "gender": "string",
+     "payPalEmail": "string",
+     "phoneNumber": "string"
+    },
+    "evidence": [
+     "openapi/_original/trend-api-openapi.yml#GET /auth/brand/profile",
+     "openapi/_original/trend-api-openapi.yml#GET /auth/profile",
+     "openapi/_original/trend-api-openapi.yml#GET /creator/profile",
+     "openapi/_original/trend-api-openapi.yml#PATCH /creator/profile/{creatorId}",
+     "openapi/_original/trend-openapi-original.json#GET /auth/brand/profile",
+     "openapi/_original/trend-openapi-original.json#GET /auth/profile",
+     "openapi/_original/trend-openapi-original.json#GET /creator/profile",
+     "openapi/_original/trend-openapi-original.json#PATCH /creator/profile/{creatorId}"
+    ]
+   },
+   "versusgame": {
+    "segments": [
+     "profiles",
+     "creators"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item"
+    ],
+    "properties": {
+     "avatar": "string",
+     "id": "string",
+     "partnerName": "string",
+     "avatarAssetId": "string",
+     "profileColor": "string",
+     "userName": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "username": "string",
+     "roles": "array",
+     "balance": "object"
+    },
+    "evidence": [
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/admin/creators",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/admin/creators/{creatorId}",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/admin/profiles",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/admin/profiles/{id}",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/creators/creators",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/profiles",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/profiles/{id}",
+     "openapi/_original/versusgame-openapi-original.json#PATCH /v1/admin/creators/{creatorId}",
+     "openapi/_original/versusgame-openapi-original.json#PATCH /v1/admin/profiles/{id}",
+     "openapi/_original/versusgame-openapi-original.json#PATCH /v1/creators/creators",
+     "openapi/_original/versusgame-openapi-original.json#PATCH /v1/profiles"
+    ]
+   },
+   "xquik-api": {
+    "segments": [
+     "profile"
+    ],
+    "operations": [
+     "PATCH collection"
+    ],
+    "properties": {
+     "object": "string",
+     "id": "string",
+     "writeActionId": "string",
+     "action": "string",
+     "status": "string",
+     "terminal": "boolean",
+     "retryable": "boolean",
+     "safeToRetry": "boolean",
+     "statusUrl": "string",
+     "pollAfterMs": [
+      "integer",
+      "null"
+     ],
+     "charged": "boolean",
+     "chargedCredits": "string",
+     "billing": "object",
+     "request": "object",
+     "account": [
+      "object",
+      "null"
+     ],
+     "target": [
+      "object",
+      "null"
+     ],
+     "targetId": [
+      "string",
+      "null"
+     ],
+     "result": [
+      "object",
+      "null"
+     ],
+     "nextAction": [
+      "object",
+      "null"
+     ],
+     "requestHash": "string",
+     "requestId": "string",
+     "idempotent": "boolean",
+     "error": "string",
+     "message": "string",
+     "sendDispatched": "boolean",
+     "sendDispatchedAt": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "completedAt": "string",
+     "expiresAt": "string",
+     "confirmedAt": "string",
+     "confirmationCheckedAt": "string",
+     "confirmationAttempts": "integer",
+     "tweetId": "string",
+     "messageId": "string",
+     "mediaId": "string",
+     "mediaUrl": "string",
+     "communityId": "string",
+     "communityName": "string",
+     "resultId": "string",
+     "media": "object",
+     "details": "object",
+     "success": "boolean",
+     "name": "string",
+     "description": "string",
+     "location": "string",
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/xquik-rest-api-openapi.json#PATCH /api/v1/x/profile",
+     "openapi/_original/xquik-rest-api-openapi.yml#PATCH /api/v1/x/profile"
+    ]
+   },
+   "zora": {
+    "segments": [
+     "profile"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "handle": "string",
+     "platformBlocked": "boolean",
+     "avatar": "object",
+     "username": "string",
+     "createdAt": "string",
+     "displayName": "string",
+     "bio": "string",
+     "website": "string",
+     "publicWallet": "object",
+     "socialAccounts": "object",
+     "linkedWallets": "object",
+     "creatorCoin": "object"
+    },
+    "evidence": [
+     "openapi/_original/zora-coins-rest-api-openapi.json#GET /profile"
+    ]
+   }
+  },
+  "post": {
+   "ahrefs": {
+    "segments": [
+     "post",
+     "posts"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "author_id": [
+      "string",
+      "null"
+     ],
+     "author_name": [
+      "string",
+      "null"
+     ],
+     "auto_comment": [
+      "string",
+      "null"
+     ],
+     "channels": "array",
+     "created_at": "string",
+     "external_post_id": [
+      "string",
+      "null"
+     ],
+     "permalink": [
+      "string",
+      "null"
+     ],
+     "post_id": "integer",
+     "status_timestamp": "string",
+     "text_content": "string",
+     "channel_ids": "array",
+     "timing": "string",
+     "scheduled_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/ahrefs-openapi-original.json#DELETE /social-media/post",
+     "openapi/_original/ahrefs-openapi-original.json#GET /social-media/posts",
+     "openapi/_original/ahrefs-openapi-original.json#PATCH /social-media/post",
+     "openapi/_original/ahrefs-openapi-original.json#POST /social-media/post",
+     "openapi/_original/ahrefs-social-media-openapi.json#DELETE /post",
+     "openapi/_original/ahrefs-social-media-openapi.json#GET /posts",
+     "openapi/_original/ahrefs-social-media-openapi.json#PATCH /post",
+     "openapi/_original/ahrefs-social-media-openapi.json#POST /post"
+    ]
+   },
+   "beehiiv": {
+    "segments": [
+     "publications"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "organization_name": "string",
+     "referral_program_enabled": "boolean",
+     "created": "number",
+     "stats": "object"
+    },
+    "evidence": [
+     "openapi/_original/beehiiv-openapi.yml#GET /publications",
+     "openapi/_original/beehiiv-openapi.yml#GET /publications/{publicationId}"
+    ]
+   },
+   "blotato": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "postSubmissionId": "string",
+     "post": "object",
+     "scheduledTime": "string",
+     "useNextFreeSlot": "boolean",
+     "slot": "object",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/blotato-openapi.yml#GET /posts/{postSubmissionId}",
+     "openapi/_original/blotato-openapi.yml#POST /posts"
+    ]
+   },
+   "convertkit": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "publication_id": "integer",
+     "created_at": "string",
+     "title": "string",
+     "slug": "string",
+     "description": null,
+     "meta_description": null,
+     "status": "string",
+     "published_at": "string",
+     "sent_at": "string",
+     "thumbnail_alt": null,
+     "thumbnail_url": null,
+     "is_paid": "boolean",
+     "public_url": "string",
+     "content": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.json#GET /v4/posts",
+     "openapi/_original/openapi.json#GET /v4/posts/{id}"
+    ]
+   },
+   "creatoriq": {
+    "segments": [
+     "posts",
+     "statuses"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "object": null,
+     "id": "string",
+     "creator_id": "string",
+     "social_account_id": "string",
+     "platform": "string",
+     "caption": "string",
+     "ai_summary": "string",
+     "links": "object",
+     "published_at": "string",
+     "issues": "array",
+     "last_issue_detected_at": "string",
+     "highest_severity": "string",
+     "highest_severity_category": "string",
+     "issue_count": "integer",
+     "type": "string",
+     "Statuses": "object"
+    },
+    "evidence": [
+     "openapi/_original/creatoriq-brand-safety-openapi-original.yaml#GET /brand-safety/v1/posts",
+     "openapi/_original/creatoriq-brand-safety-openapi-original.yaml#GET /brand-safety/v1/posts/{post_id}",
+     "openapi/_original/creatoriq-brand-safety-openapi.yml#GET /brand-safety/v1/posts",
+     "openapi/_original/creatoriq-brand-safety-openapi.yml#GET /brand-safety/v1/posts/{post_id}",
+     "openapi/_original/creatoriq-publishers-openapi-original.yaml#GET /crm/v1/api/statuses",
+     "openapi/_original/creatoriq-publishers-openapi.yml#GET /crm/v1/api/statuses"
+    ]
+   },
+   "diaspora": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "aspects": "array",
+     "body": "string",
+     "location": "object",
+     "photos": "array",
+     "poll": "object",
+     "public": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/diaspora-api-openapi.yml#DELETE /posts/{post_guid}",
+     "openapi/_original/diaspora-api-openapi.yml#GET /posts/{post_guid}",
+     "openapi/_original/diaspora-api-openapi.yml#GET /search/posts",
+     "openapi/_original/diaspora-api-openapi.yml#GET /users/{person_guid}/posts",
+     "openapi/_original/diaspora-api-openapi.yml#POST /posts"
+    ]
+   },
+   "facebook-pages": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/facebook-pages-openapi.yml#GET /{page-id}/posts"
+    ]
+   },
+   "fama": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "url": "string",
+     "text": "string",
+     "type": "string",
+     "keywords": "array",
+     "behaviors": "array"
+    },
+    "evidence": [
+     "openapi/_original/fama-external-interface-openapi.yml#GET /report/{report_uuid}/posts"
+    ]
+   },
+   "highrise": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "_id": "string",
+     "type": "string",
+     "author": "object",
+     "carousel_file_keys": "array",
+     "num_comments": "integer",
+     "num_likes": "integer",
+     "body": null,
+     "caption": null,
+     "file_key": null,
+     "bg_color": null,
+     "world_id": null,
+     "created_at": null,
+     "updated_at": null,
+     "post_id": "string",
+     "file_keys": "array",
+     "hide_comments": "boolean",
+     "original_author": null,
+     "num_reposts": "integer",
+     "is_edited": "boolean",
+     "comments": "array"
+    },
+    "evidence": [
+     "openapi/_original/highrise-openapi.json#GET /api/posts",
+     "openapi/_original/highrise-openapi.json#GET /api/worlds/{world_id}/posts",
+     "openapi/_original/highrise-openapi.json#POST /api/posts",
+     "openapi/_original/highrise-openapi.json#POST /api/worlds/{world_id}/posts"
+    ]
+   },
+   "honesthook": {
+    "segments": [
+     "posts",
+     "post"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "platform": "string",
+     "endpoint": "string",
+     "data": [
+      "object",
+      "null"
+     ],
+     "error": [
+      "object",
+      "null"
+     ],
+     "credits_used": "integer",
+     "cached": "boolean",
+     "request_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/bluesky/post",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/bluesky/posts",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/instagram/location/posts",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/instagram/post",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/mastodon/posts",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/threads/posts",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/tiktok/post"
+    ]
+   },
+   "hootsuite": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "createdAt": "string",
+     "lastRefreshed": "string",
+     "profileId": "string",
+     "externalProfileId": "string",
+     "sourceLink": "string",
+     "externalId": "string",
+     "createdMember": "object",
+     "campaign": "object",
+     "detectedViralAt": "string",
+     "isViral": "boolean",
+     "tags": "array",
+     "links": "array",
+     "media": "array",
+     "attachmentTypes": "array",
+     "title": "string",
+     "content": "string",
+     "metrics": "object",
+     "postType": "string",
+     "metadata": "object",
+     "source": "object",
+     "autoTags": "array",
+     "lastModified": "object",
+     "reportingPeriod": "object"
+    },
+    "evidence": [
+     "openapi/_original/hootsuite-analytics-api-openapi.yaml#POST /v1/analytics/posts"
+    ]
+   },
+   "khoros-ai": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "export_id": "string",
+     "accounts": "array",
+     "content_filter": "object",
+     "intiatives": "array",
+     "account_sets": "array",
+     "fields": "array",
+     "start": "string",
+     "stop": "string",
+     "timezone": "string"
+    },
+    "evidence": [
+     "openapi/_original/lithium-export-api-openapi.yml#POST /export/posts",
+     "openapi/_original/lithium-marketing-beta-analytics-api-openapi.json#POST /export/posts"
+    ]
+   },
+   "konbiniapi": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "@context": "array",
+     "type": "string",
+     "partOf": "string",
+     "totalItems": [
+      "integer",
+      "null"
+     ],
+     "cursor": [
+      "string",
+      "null"
+     ],
+     "nextCursor": [
+      "string",
+      "null"
+     ],
+     "next": [
+      "string",
+      "null"
+     ],
+     "itemCount": "integer",
+     "orderedItems": "array",
+     "id": "string",
+     "url": "string",
+     "entityId": "string",
+     "content": "string",
+     "published": "string",
+     "likeCount": "integer",
+     "commentCount": "integer",
+     "attributedTo": null,
+     "location": "object",
+     "tag": "array",
+     "language": "string",
+     "isEdited": "boolean",
+     "isSponsored": "boolean",
+     "viewCount": "integer",
+     "duration": "number",
+     "contentFormat": "string",
+     "attachment": "array",
+     "image": "array",
+     "audio": "object",
+     "name": "string",
+     "items": "array",
+     "replyCount": "integer",
+     "repostCount": "integer",
+     "quoteCount": "integer",
+     "saveCount": "integer",
+     "inReplyTo": "string",
+     "quote": "object",
+     "isLocked": "boolean",
+     "isOriginal": "boolean",
+     "isPinned": "boolean",
+     "isAdult": "boolean",
+     "isSpoiler": "boolean",
+     "isSearchable": "boolean",
+     "voteCount": "integer",
+     "shareCount": "integer",
+     "icon": null,
+     "entityIds": "array",
+     "replies": "array"
+    },
+    "evidence": [
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/instagram/posts/{postId}",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/instagram/users/{username}/posts",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/linkedin/companies/{company}/posts",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/linkedin/posts/{postId}",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/linkedin/users/{username}/posts",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/posts/{postId}",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/search/posts",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/subreddits/{subreddit}/posts",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/users/{username}/posts",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/x/communities/{communityId}/posts",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/x/posts/{postId}",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/x/users/{username}/posts"
+    ]
+   },
+   "later": {
+    "segments": [
+     "statuses"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "actionGroupIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/later-influence-api-openapi-original.json#POST /v1/action-groups/statuses",
+     "openapi/_original/later-influence-api-openapi.json#POST /v1/action-groups/statuses"
+    ]
+   },
+   "linkedin": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/linkedin-marketing-content.yml#DELETE /posts/{encoded ugcPostUrn|shareUrn}",
+     "openapi/_original/linkedin-marketing-content.yml#GET /posts",
+     "openapi/_original/linkedin-marketing-content.yml#GET /posts/{encoded ugcPostUrn|shareUrn}",
+     "openapi/_original/linkedin-marketing-content.yml#GET /rest/posts",
+     "openapi/_original/linkedin-marketing-content.yml#GET /rest/posts/{postId}",
+     "openapi/_original/linkedin-marketing-content.yml#POST /posts"
+    ]
+   },
+   "lithium": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "export_id": "string",
+     "accounts": "array",
+     "content_filter": "object",
+     "intiatives": "array",
+     "account_sets": "array",
+     "fields": "array",
+     "start": "string",
+     "stop": "string",
+     "timezone": "string"
+    },
+    "evidence": [
+     "openapi/_original/lithium-marketing-beta-analytics-api-openapi.json#POST /export/posts"
+    ]
+   },
+   "mavrck": {
+    "segments": [
+     "statuses"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "actionGroupIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/mavrck-openapi.json#POST /v1/action-groups/statuses"
+    ]
+   },
+   "medium": {
+    "segments": [
+     "publications",
+     "posts"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "url": "string",
+     "imageUrl": "string",
+     "title": "string",
+     "authorId": "string",
+     "tags": "array",
+     "canonicalUrl": "string",
+     "publishStatus": "string",
+     "publishedAt": "integer",
+     "license": "string",
+     "licenseUrl": "string",
+     "publicationId": "string",
+     "contentFormat": "string",
+     "content": "string",
+     "notifyFollowers": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/medium-rest-api-openapi.yml#GET /users/{userId}/publications",
+     "openapi/_original/medium-rest-api-openapi.yml#POST /users/{authorId}/posts"
+    ]
+   },
+   "metricool": {
+    "segments": [
+     "posts",
+     "tweets",
+     "statuses",
+     "publications"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "postUrl": "string",
+     "title": "string",
+     "excerpt": "string",
+     "date": "string",
+     "commentsCount": "integer",
+     "picture": "string",
+     "twShares": "integer",
+     "fbShares": "integer",
+     "inShares": "integer",
+     "pinShares": "integer",
+     "totalShares": "integer",
+     "pageViews": "integer",
+     "totalPageViews": "integer",
+     "blogId": "integer",
+     "id": "integer",
+     "idStr": "string",
+     "userId": "integer",
+     "createdAt": "string",
+     "text": "string",
+     "updatedAt": "string",
+     "favoriteCount": "integer",
+     "retweetCount": "integer",
+     "linkClicks": "integer",
+     "promoted": "boolean",
+     "metricsV2": "object",
+     "userName": "string",
+     "screenName": "string",
+     "followers": "integer",
+     "impressions": "integer",
+     "imageUrl": "string",
+     "timestamp": "integer",
+     "source": "string",
+     "interactions": "integer",
+     "engagement": "number",
+     "ownerPicture": "string",
+     "hasVideo": "boolean",
+     "hasPhoto": "boolean",
+     "hasUrls": "boolean",
+     "isRetweet": "boolean",
+     "inReplyToScreenName": "string",
+     "inReplyToStatusIdStr": "string",
+     "inReplyToStatusId": "integer",
+     "user": "object",
+     "retweetedStatus": "object",
+     "entities": "object",
+     "extendedEntities": "object",
+     "coordinates": "object",
+     "extendedTweet": "object",
+     "truncated": "boolean",
+     "created": "string",
+     "retweet": "boolean",
+     "retweets": "integer",
+     "favorites": "integer",
+     "tweetId": "string",
+     "fullText": "string",
+     "hasMedia": "boolean",
+     "hasTags": "boolean",
+     "lang": "string",
+     "key": "object",
+     "value": "string",
+     "listId": "integer",
+     "mediaUrls": "array",
+     "position": "integer",
+     "weight": "integer",
+     "enabled": "boolean",
+     "mediaUpdateDate": "string",
+     "pageId": "string",
+     "postId": "string",
+     "link": "string",
+     "type": "string",
+     "shares": "integer",
+     "comments": "integer",
+     "reactions": "integer",
+     "like": "integer",
+     "love": "integer",
+     "wow": "integer",
+     "haha": "integer",
+     "sorry": "integer",
+     "anger": "integer",
+     "impressionsPaid": "integer",
+     "impressionsOrganic": "integer",
+     "impressionsUnique": "integer",
+     "impressionsUniquePaid": "integer",
+     "impressionsUniqueOrganic": "integer",
+     "clicks": "integer",
+     "videoViews": "integer",
+     "videoViewsPaid": "integer",
+     "videoViewsOrganic": "integer",
+     "videoTimeWatched": "integer",
+     "linkclicks": "integer",
+     "spend": "number",
+     "ownerScreenName": "string",
+     "ownerDisplayName": "string",
+     "internalSearchId": "string",
+     "businessId": "string",
+     "publishedAt": "object",
+     "filter": "string",
+     "url": "string",
+     "content": "string",
+     "likes": "integer",
+     "reach": "integer",
+     "saved": "integer",
+     "follows": "integer",
+     "impressionsTotal": "integer",
+     "views": "integer",
+     "reachPaid": "integer",
+     "videoViewsTotal": "integer",
+     "postClicksPaid": "integer",
+     "postInteractionsPaid": "integer",
+     "hashtags": "array",
+     "companyId": "string",
+     "uniqueImpressions": "integer",
+     "viewers": "integer",
+     "timeWatched": "integer",
+     "timeWatchedForVideoViews": "integer",
+     "description": "string",
+     "comment": "string",
+     "praise": "integer",
+     "entertainment": "integer",
+     "empathy": "integer",
+     "interest": "integer",
+     "appreciation": "integer",
+     "metadata": "object",
+     "page": "object",
+     "data": "boolean",
+     "network": "string",
+     "networkConnection": "string",
+     "publicationDate": "object",
+     "metrics": "object",
+     "videoId": "string",
+     "thumbnailUrl": "string",
+     "publishedDate": "object",
+     "watchMinutes": "number",
+     "averageViewDuration": "number",
+     "dislikes": "number",
+     "estimatedRedPartnerRevenue": "number",
+     "estimatedAdRevenue": "number",
+     "adImpressions": "number",
+     "monetizedPlaybacks": "number",
+     "channelId": "string",
+     "watchUrl": "string",
+     "hasRevenueData": "boolean",
+     "formattedAvgViewDuration": "string",
+     "formattedWatchTime": "string",
+     "blogName": "string",
+     "blogPicture": "string",
+     "deleted": "boolean",
+     "post": "object",
+     "threadId": "string",
+     "contentList": "array",
+     "spentCredits": "number",
+     "userPrompt": "string",
+     "prompt": "string",
+     "tone": "string",
+     "language": "string",
+     "instructions": "string",
+     "userPost": "string",
+     "lastPost": "string",
+     "extraInstructions": "string",
+     "creationDate": "object",
+     "updatedDate": "object",
+     "shortener": "boolean",
+     "draft": "boolean",
+     "commonData": "object",
+     "media": "array",
+     "saveExternalMediaFiles": "boolean",
+     "parentId": "integer",
+     "twitterData": "object",
+     "facebookData": "object",
+     "instagramData": "object",
+     "threadsData": "object",
+     "linkedinData": "object",
+     "pinterestData": "object",
+     "tiktokData": "object",
+     "youtubeData": "object",
+     "gbpData": "object",
+     "blueskyData": "object",
+     "descendants": "array",
+     "notes": "array",
+     "hasNotReadNotes": "boolean",
+     "tags": "string",
+     "performanceDashboardIds": "array",
+     "assignee": "object",
+     "state": "object",
+     "firstCommentText": "string",
+     "providers": "array",
+     "autoPublish": "boolean",
+     "mediaAltText": "array",
+     "location": "object",
+     "videoCoverMilliseconds": "integer",
+     "videoThumbnailUrl": "string",
+     "smartLinkData": "object",
+     "autolistData": "object",
+     "brandName": "string",
+     "targetBrandId": "integer",
+     "gmbData": "object",
+     "uuid": "string",
+     "copiedFrom": "string",
+     "creatorUserMail": "string",
+     "creatorUserId": "integer",
+     "creatorAgencyUserMail": "string",
+     "creatorAgencyId": "integer",
+     "creatorAgencyUserId": "integer",
+     "postApprovalData": "object",
+     "libraryPostId": "integer",
+     "status": "string",
+     "detail": "object",
+     "postUuid": "string",
+     "mediaUrl": "string",
+     "networks": "array",
+     "blogImage": "string",
+     "taskType": "string",
+     "approvalTaskUsers": "array"
+    },
+    "evidence": [
+     "openapi/_original/metricool-api-openapi.json#DELETE /v2/scheduler/library/posts/{id}",
+     "openapi/_original/metricool-api-openapi.json#DELETE /v2/scheduler/posts/{id}",
+     "openapi/_original/metricool-api-openapi.json#GET /explore/posts/{blogId}",
+     "openapi/_original/metricool-api-openapi.json#GET /hashtags/consolidated/tweets",
+     "openapi/_original/metricool-api-openapi.json#GET /hashtags/feed/tweets",
+     "openapi/_original/metricool-api-openapi.json#GET /lists/posts",
+     "openapi/_original/metricool-api-openapi.json#GET /stats/facebook/posts",
+     "openapi/_original/metricool-api-openapi.json#GET /stats/fbgroup/posts",
+     "openapi/_original/metricool-api-openapi.json#GET /stats/instagram/posts",
+     "openapi/_original/metricool-api-openapi.json#GET /stats/linkedin/posts",
+     "openapi/_original/metricool-api-openapi.json#GET /stats/posts",
+     "openapi/_original/metricool-api-openapi.json#GET /stats/rt/twitter/tweets/{type}"
+    ]
+   },
+   "mighty-networks": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "created_at": "string",
+     "updated_at": "string",
+     "creator_id": "integer",
+     "space_id": "integer",
+     "summary": "string",
+     "description": "string",
+     "post_type": "string",
+     "images": "array",
+     "title": "string",
+     "status": "string",
+     "published_at": "string",
+     "last_activity_at": "string",
+     "content_type": "string",
+     "comments_enabled": "boolean",
+     "permalink": "string"
+    },
+    "evidence": [
+     "openapi/_original/mighty-networks-admin-api-openapi.json#DELETE /admin/v1/networks/{network_id}/posts/{id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#GET /admin/v1/networks/{network_id}/posts",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#GET /admin/v1/networks/{network_id}/posts/{id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#PATCH /admin/v1/networks/{network_id}/posts/{id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#POST /admin/v1/networks/{network_id}/posts",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#PUT /admin/v1/networks/{network_id}/posts/{id}/"
+    ]
+   },
+   "monocrawl": {
+    "segments": [
+     "post",
+     "posts",
+     "tweet",
+     "tweets"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "_completeness": "object",
+     "success": null,
+     "platform": "string",
+     "endpoint": "string",
+     "data": null,
+     "credits_used": "integer",
+     "credits_remaining": "integer",
+     "request_id": "string",
+     "cached": "boolean",
+     "stale": "boolean",
+     "age_seconds": "integer",
+     "fetched_at": "string",
+     "synthetic": "boolean",
+     "degraded": "boolean",
+     "id": [
+      "string",
+      "null"
+     ],
+     "rkey": [
+      "string",
+      "null"
+     ],
+     "cid": [
+      "string",
+      "null"
+     ],
+     "url": [
+      "string",
+      "null"
+     ],
+     "text": [
+      "string",
+      "null"
+     ],
+     "created_at": [
+      "string",
+      "null"
+     ],
+     "indexed_at": [
+      "string",
+      "null"
+     ],
+     "author": "object",
+     "likes": [
+      "number",
+      "null"
+     ],
+     "reposts": [
+      "number",
+      "null"
+     ],
+     "replies": [
+      "number",
+      "null"
+     ],
+     "quotes": [
+      "number",
+      "null"
+     ],
+     "is_reply": [
+      "boolean",
+      "null"
+     ],
+     "is_repost": [
+      "boolean",
+      "null"
+     ],
+     "_warnings": "array",
+     "stats": "object",
+     "images": "array",
+     "caption": [
+      "string",
+      "null"
+     ],
+     "coauthors": "array",
+     "audio_cluster_id": [
+      "string",
+      "null"
+     ],
+     "music": [
+      "object",
+      "null"
+     ],
+     "cover_ocr": "object",
+     "handle": [
+      "string",
+      "null"
+     ],
+     "name": [
+      "string",
+      "null"
+     ],
+     "verified": [
+      "boolean",
+      "null"
+     ],
+     "cover_url": [
+      "string",
+      "null"
+     ],
+     "video_url": [
+      "string",
+      "null"
+     ],
+     "title": [
+      "string",
+      "null"
+     ],
+     "subreddit": [
+      "string",
+      "null"
+     ],
+     "score": [
+      "number",
+      "null"
+     ],
+     "comments_count": [
+      "number",
+      "null"
+     ],
+     "upvote_ratio": [
+      "number",
+      "null"
+     ],
+     "selftext": [
+      "string",
+      "null"
+     ],
+     "flair": [
+      "string",
+      "null"
+     ],
+     "author_name": [
+      "string",
+      "null"
+     ],
+     "author_url": [
+      "string",
+      "null"
+     ],
+     "channel": [
+      "string",
+      "null"
+     ],
+     "media_count": [
+      "number",
+      "null"
+     ],
+     "published_at": [
+      "string",
+      "null"
+     ],
+     "reaction_count": [
+      "number",
+      "null"
+     ],
+     "reactions": [
+      "array",
+      "null"
+     ],
+     "views": [
+      "number",
+      "null"
+     ],
+     "replies_preview": [
+      "array",
+      "null"
+     ],
+     "duration_s": [
+      "number",
+      "null"
+     ],
+     "region": [
+      "string",
+      "null"
+     ],
+     "display_name": [
+      "string",
+      "null"
+     ],
+     "followers": [
+      "number",
+      "null"
+     ],
+     "following": [
+      "number",
+      "null"
+     ],
+     "posts": [
+      "number",
+      "null"
+     ],
+     "language": [
+      "string",
+      "null"
+     ],
+     "in_reply_to_id": [
+      "string",
+      "null"
+     ],
+     "conversation_id": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/monocrawl-openapi.json#GET /v1/bluesky/post",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/bluesky/user/posts",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/facebook/post",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/facebook/posts",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/instagram/post",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/instagram/posts",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/kwai/post",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/kwai/posts",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/linkedin/post",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/reddit/post",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/telegram/post",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/threads/post"
+    ]
+   },
+   "openhandle": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "capturedAt": "string",
+     "data": null,
+     "meta": "object",
+     "platform": "string",
+     "resource": "string",
+     "source": "string",
+     "ai": "object",
+     "attribution": "object",
+     "author": null,
+     "caption": null,
+     "carousel": "object",
+     "code": [
+      "string",
+      "null"
+     ],
+     "collaborators": [
+      "array",
+      "null"
+     ],
+     "comments": "object",
+     "createdAt": "string",
+     "crossposting": "object",
+     "fbid": [
+      "string",
+      "null"
+     ],
+     "hasDelayedMetadata": [
+      "boolean",
+      "null"
+     ],
+     "hasTaggedUsers": [
+      "boolean",
+      "null"
+     ],
+     "hasVisualReplies": [
+      "boolean",
+      "null"
+     ],
+     "id": "string",
+     "invitedCollaborators": [
+      "array",
+      "null"
+     ],
+     "isEarlyAccess": [
+      "boolean",
+      "null"
+     ],
+     "isFanClubPromo": [
+      "boolean",
+      "null"
+     ],
+     "isOpenToPublicSubmission": [
+      "boolean",
+      "null"
+     ],
+     "isPaidPartnership": [
+      "boolean",
+      "null"
+     ],
+     "isPublicChatWelcomeVideo": [
+      "boolean",
+      "null"
+     ],
+     "language": [
+      "string",
+      "null"
+     ],
+     "likeAndViewCountsHidden": [
+      "boolean",
+      "null"
+     ],
+     "location": null,
+     "media": "array",
+     "metrics": "object",
+     "notes": [
+      "array",
+      "null"
+     ],
+     "pinning": "object",
+     "productTags": [
+      "array",
+      "null"
+     ],
+     "remix": "object",
+     "reuse": "object",
+     "shareCountHidden": [
+      "boolean",
+      "null"
+     ],
+     "sharingEnabled": [
+      "boolean",
+      "null"
+     ],
+     "taggedUsers": [
+      "array",
+      "null"
+     ],
+     "template": null,
+     "text": [
+      "string",
+      "null"
+     ],
+     "title": [
+      "string",
+      "null"
+     ],
+     "type": [
+      "string",
+      "null"
+     ],
+     "url": "string",
+     "community": null,
+     "distinguishedBy": [
+      "string",
+      "null"
+     ],
+     "domain": [
+      "string",
+      "null"
+     ],
+     "editedAt": [
+      "string",
+      "null"
+     ],
+     "embed": null,
+     "flair": null,
+     "isArchived": [
+      "boolean",
+      "null"
+     ],
+     "isCrosspostable": [
+      "boolean",
+      "null"
+     ],
+     "isEdited": [
+      "boolean",
+      "null"
+     ],
+     "isGallery": [
+      "boolean",
+      "null"
+     ],
+     "isLocked": [
+      "boolean",
+      "null"
+     ],
+     "isMediaOnly": [
+      "boolean",
+      "null"
+     ],
+     "isMeta": [
+      "boolean",
+      "null"
+     ],
+     "isOriginalContent": [
+      "boolean",
+      "null"
+     ],
+     "isPinned": [
+      "boolean",
+      "null"
+     ],
+     "isRedditMediaDomain": [
+      "boolean",
+      "null"
+     ],
+     "isSelf": [
+      "boolean",
+      "null"
+     ],
+     "isSensitive": [
+      "boolean",
+      "null"
+     ],
+     "isSpoiler": [
+      "boolean",
+      "null"
+     ],
+     "isStickied": [
+      "boolean",
+      "null"
+     ],
+     "isVideo": [
+      "boolean",
+      "null"
+     ],
+     "linkUrl": [
+      "string",
+      "null"
+     ],
+     "removedByCategory": [
+      "string",
+      "null"
+     ],
+     "textHtml": [
+      "string",
+      "null"
+     ],
+     "thumbnail": null,
+     "topAwardedType": [
+      "string",
+      "null"
+     ],
+     "visibility": "object",
+     "audio": "object",
+     "authorId": [
+      "string",
+      "null"
+     ],
+     "commerce": "object",
+     "cover": null,
+     "description": [
+      "string",
+      "null"
+     ],
+     "effects": [
+      "array",
+      "null"
+     ],
+     "entities": [
+      "array",
+      "null"
+     ],
+     "hasDanmaku": [
+      "boolean",
+      "null"
+     ],
+     "hasPromotionalMusic": [
+      "boolean",
+      "null"
+     ],
+     "hashtags": "array",
+     "isAd": [
+      "boolean",
+      "null"
+     ],
+     "isMeme": [
+      "boolean",
+      "null"
+     ],
+     "isPaidContent": [
+      "boolean",
+      "null"
+     ],
+     "isVr": [
+      "boolean",
+      "null"
+     ],
+     "locations": [
+      "array",
+      "null"
+     ],
+     "musicContext": "object",
+     "onScreenText": [
+      "array",
+      "null"
+     ],
+     "paidCollectionId": [
+      "string",
+      "null"
+     ],
+     "playlist": null,
+     "region": [
+      "string",
+      "null"
+     ],
+     "searchContext": "object",
+     "status": "object",
+     "stickers": [
+      "array",
+      "null"
+     ],
+     "article": null,
+     "card": null,
+     "communityNote": null,
+     "conversationId": [
+      "string",
+      "null"
+     ],
+     "displayTextRange": null,
+     "edit": null,
+     "hasGrokAnalysisButton": [
+      "boolean",
+      "null"
+     ],
+     "inReplyToHandle": [
+      "string",
+      "null"
+     ],
+     "inReplyToPostId": [
+      "string",
+      "null"
+     ],
+     "inReplyToUserId": [
+      "string",
+      "null"
+     ],
+     "isPromoted": [
+      "boolean",
+      "null"
+     ],
+     "isQuote": [
+      "boolean",
+      "null"
+     ],
+     "isRepost": [
+      "boolean",
+      "null"
+     ],
+     "longText": null,
+     "preview": null,
+     "previousMetrics": null,
+     "promotion": null,
+     "quotedPost": null,
+     "quotedPostId": [
+      "string",
+      "null"
+     ],
+     "repostedPost": null,
+     "restrictions": [
+      "array",
+      "null"
+     ],
+     "timeline": null
+    },
+    "evidence": [
+     "openapi/_original/openhandle-openapi.json#GET /v1/instagram/hashtags/{identifier}/posts",
+     "openapi/_original/openhandle-openapi.json#GET /v1/instagram/locations/{identifier}/posts",
+     "openapi/_original/openhandle-openapi.json#GET /v1/instagram/posts/{identifier}",
+     "openapi/_original/openhandle-openapi.json#GET /v1/instagram/profiles/{identifier}/posts",
+     "openapi/_original/openhandle-openapi.json#GET /v1/reddit/domains/{identifier}/posts",
+     "openapi/_original/openhandle-openapi.json#GET /v1/reddit/posts/{identifier}",
+     "openapi/_original/openhandle-openapi.json#GET /v1/reddit/profiles/{identifier}/posts",
+     "openapi/_original/openhandle-openapi.json#GET /v1/reddit/search/posts",
+     "openapi/_original/openhandle-openapi.json#GET /v1/reddit/subreddits/{identifier}/posts",
+     "openapi/_original/openhandle-openapi.json#GET /v1/reddit/trending/posts",
+     "openapi/_original/openhandle-openapi.json#GET /v1/tiktok/effects/{identifier}/posts",
+     "openapi/_original/openhandle-openapi.json#GET /v1/tiktok/hashtags/{identifier}/posts"
+    ]
+   },
+   "paragraph": {
+    "segments": [
+     "posts",
+     "publications"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "ownerUserId": "string",
+     "slug": "string",
+     "customDomain": "string",
+     "summary": "string",
+     "logoUrl": "string",
+     "postListType": "string",
+     "themeColor": "string",
+     "headerFont": "string",
+     "bodyFont": "string",
+     "showMostPopular": "boolean",
+     "hideStats": "boolean",
+     "featuredPost": "string",
+     "disableComments": null,
+     "disableHighlights": "boolean",
+     "enableTableOfContents": "boolean",
+     "enableSubscribePopup": "boolean",
+     "enableSubscribeScroll": "boolean",
+     "pinnedPostIds": "array",
+     "emailNotifications": "object",
+     "title": "string",
+     "imageUrl": "string",
+     "publishedAt": "string",
+     "updatedAt": "string",
+     "subtitle": "string",
+     "staticHtml": "string",
+     "json": "string",
+     "markdown": "string",
+     "coinId": "string",
+     "categories": "array",
+     "authors": "array",
+     "authorIds": "array",
+     "views": "number",
+     "status": "string",
+     "success": "boolean",
+     "bodyJson": "string",
+     "postPreview": "string",
+     "scheduledAt": [
+      "integer",
+      "null"
+     ],
+     "sendNewsletter": null,
+     "clearImage": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/paragraph-openapi-original.json#DELETE /v1/posts/{postId}",
+     "openapi/_original/paragraph-openapi-original.json#GET /v1/posts",
+     "openapi/_original/paragraph-openapi-original.json#GET /v1/posts/{postId}",
+     "openapi/_original/paragraph-openapi-original.json#GET /v1/publications/{publicationId}",
+     "openapi/_original/paragraph-openapi-original.json#PATCH /v1/publications/{publicationId}",
+     "openapi/_original/paragraph-openapi-original.json#POST /v1/posts",
+     "openapi/_original/paragraph-openapi-original.json#PUT /v1/posts/{postId}"
+    ]
+   },
+   "patreon": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/patreon-openapi.yml#GET /api/oauth2/v2/campaigns/{campaign_id}/posts",
+     "openapi/_original/patreon-openapi.yml#GET /api/oauth2/v2/posts/{id}"
+    ]
+   },
+   "pixelfed": {
+    "segments": [
+     "statuses"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "created_at": "string",
+     "in_reply_to_id": "string",
+     "in_reply_to_account_id": "string",
+     "sensitive": "boolean",
+     "spoiler_text": "string",
+     "visibility": "string",
+     "language": "string",
+     "uri": "string",
+     "url": "string",
+     "replies_count": "integer",
+     "reblogs_count": "integer",
+     "favourites_count": "integer",
+     "content": "string",
+     "reblog": null,
+     "application": "object",
+     "account": "object",
+     "media_attachments": "array",
+     "mentions": "array",
+     "tags": "array",
+     "emojis": "array",
+     "card": "object",
+     "poll": "object",
+     "favourited": "boolean",
+     "reblogged": "boolean",
+     "muted": "boolean",
+     "bookmarked": "boolean",
+     "pinned": "boolean",
+     "status": "string",
+     "media_ids": "array",
+     "scheduled_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#DELETE /v1/statuses/{id}",
+     "openapi/_original/openapi.yml#GET /v1/accounts/{id}/statuses",
+     "openapi/_original/openapi.yml#GET /v1/statuses/{id}",
+     "openapi/_original/openapi.yml#POST /v1/statuses"
+    ]
+   },
+   "planable": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "workspaceId": "string",
+     "pageId": "string",
+     "type": "string",
+     "classification": "string",
+     "plainText": "string",
+     "createdAt": "string",
+     "gridPosition": "number",
+     "campaignId": [
+      "string",
+      "null"
+     ],
+     "media": "array",
+     "scheduledAt": [
+      "string",
+      "null"
+     ],
+     "status": "string",
+     "approved": "boolean",
+     "approvedBy": "array",
+     "approval": "object",
+     "published": "boolean",
+     "scheduledSet": "boolean",
+     "teamOnly": "boolean",
+     "archived": "boolean",
+     "modifiedAt": "string",
+     "mediaType": "string",
+     "videoThumbnailUrl": "string",
+     "labels": "array",
+     "commentsCounter": "number",
+     "notesCounter": "number",
+     "publicShareLink": "string",
+     "publishedPostLink": "string",
+     "groupId": "string",
+     "groupPageIds": "array",
+     "groupSync": "boolean",
+     "pinterest": "object",
+     "pageIds": "array",
+     "text": "string",
+     "publishAtScheduledDate": "boolean",
+     "firstComment": "string",
+     "internalNote": "string",
+     "youtubeTitle": "string",
+     "linkedinPdfTitle": "string",
+     "linkedinVideoTitle": "string",
+     "notify": "boolean",
+     "videoThumbnail": "object"
+    },
+    "evidence": [
+     "openapi/_original/planable-openapi.json#DELETE /posts/{id}",
+     "openapi/_original/planable-openapi.json#GET /posts",
+     "openapi/_original/planable-openapi.json#GET /posts/{id}",
+     "openapi/_original/planable-openapi.json#PATCH /posts/{id}",
+     "openapi/_original/planable-openapi.json#POST /posts"
+    ]
+   },
+   "pomo": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "campaign_id": "string",
+     "idea_number": "integer",
+     "platform": "string",
+     "variation": "integer",
+     "post_id": null,
+     "post_url": null,
+     "posted_at": "string",
+     "status": "string",
+     "post_metadata": null
+    },
+    "evidence": [
+     "openapi/_original/pomo-openapi.json#GET /api/campaigns/social-post/{campaign_id}/{idea_number}/posts",
+     "openapi/_original/pomo-openapi.json#GET /api/external-platform/instagram/posts",
+     "openapi/_original/pomo-openapi.json#GET /api/influencer-discovery/tiktok/users/posts",
+     "openapi/_original/pomo-openapi.yml#GET /api/campaigns/social-post/{campaign_id}/{idea_number}/posts",
+     "openapi/_original/pomo-openapi.yml#GET /api/external-platform/instagram/posts",
+     "openapi/_original/pomo-openapi.yml#GET /api/influencer-discovery/tiktok/users/posts"
+    ]
+   },
+   "posteahora": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "title": [
+      "string",
+      "null"
+     ],
+     "caption": [
+      "string",
+      "null"
+     ],
+     "platforms": "array",
+     "status": "string",
+     "scheduled_at": [
+      "string",
+      "null"
+     ],
+     "published_at": [
+      "string",
+      "null"
+     ],
+     "media_urls": "array",
+     "media_type": [
+      "string",
+      "null"
+     ],
+     "connected_account_id": [
+      "string",
+      "null"
+     ],
+     "platform_results": "array",
+     "created_at": "string",
+     "postIds": "array",
+     "dispatchDeferred": "boolean",
+     "accountMappings": "array",
+     "accountId": "string",
+     "mediaUrls": "array",
+     "mediaType": "string",
+     "postType": "string",
+     "hashtags": "array",
+     "platformCaptions": "object",
+     "platformOptions": "object",
+     "scheduledAt": "string",
+     "connectedAccountId": "string",
+     "deleted": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/posteahora-api-openapi.yml#DELETE /posts/{id}",
+     "openapi/_original/posteahora-api-openapi.yml#GET /posts",
+     "openapi/_original/posteahora-api-openapi.yml#GET /posts/{id}",
+     "openapi/_original/posteahora-api-openapi.yml#PATCH /posts/{id}",
+     "openapi/_original/posteahora-api-openapi.yml#POST /posts"
+    ]
+   },
+   "postiz": {
+    "segments": [
+     "posts",
+     "post"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "content": "string",
+     "publishDate": "string",
+     "releaseURL": "string",
+     "state": "string",
+     "integration": "object",
+     "type": "string",
+     "date": "string",
+     "shortLink": "boolean",
+     "order": "string",
+     "inter": "number",
+     "tags": "array",
+     "posts": "array",
+     "settings": "object",
+     "postId": "string",
+     "total": "string"
+    },
+    "evidence": [
+     "openapi/_original/postiz-openapi.yml#DELETE /posts/{id}",
+     "openapi/_original/postiz-openapi.yml#GET /analytics/post/{postId}",
+     "openapi/_original/postiz-openapi.yml#GET /posts",
+     "openapi/_original/postiz-openapi.yml#POST /posts",
+     "openapi/_original/postiz-platform-swagger-openapi.json#DELETE /posts/{group}",
+     "openapi/_original/postiz-platform-swagger-openapi.json#DELETE /public/v1/posts/{id}",
+     "openapi/_original/postiz-platform-swagger-openapi.json#GET /analytics/post/{postId}",
+     "openapi/_original/postiz-platform-swagger-openapi.json#GET /posts",
+     "openapi/_original/postiz-platform-swagger-openapi.json#GET /posts/{id}",
+     "openapi/_original/postiz-platform-swagger-openapi.json#GET /public/posts/{id}",
+     "openapi/_original/postiz-platform-swagger-openapi.json#GET /public/v1/analytics/post/{postId}",
+     "openapi/_original/postiz-platform-swagger-openapi.json#GET /public/v1/posts"
+    ]
+   },
+   "postonce": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "content": "string",
+     "external_id": "string",
+     "media": "array",
+     "origin": "string",
+     "publish_at": "string",
+     "status": "string",
+     "created_at": "string",
+     "targets": "array"
+    },
+    "evidence": [
+     "openapi/_original/postonce-api-openapi.json#DELETE /v1/posts/{id}",
+     "openapi/_original/postonce-api-openapi.json#GET /v1/posts",
+     "openapi/_original/postonce-api-openapi.json#GET /v1/posts/{id}",
+     "openapi/_original/postonce-api-openapi.json#PATCH /v1/posts/{id}",
+     "openapi/_original/postonce-api-openapi.json#POST /v1/posts"
+    ]
+   },
+   "publer": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "text": "string",
+     "url": "string",
+     "state": "string",
+     "type": "string",
+     "account_id": "string",
+     "user": "object",
+     "scheduled_at": "string",
+     "post_link": "string",
+     "has_media": "boolean",
+     "network": "string",
+     "deleted_ids": "array",
+     "account": "object",
+     "created_at": "string",
+     "updated_at": "string",
+     "media": "array",
+     "link": "object",
+     "labels": "array",
+     "auto": "boolean",
+     "recycling": "object",
+     "recurring": "object",
+     "post": "object"
+    },
+    "evidence": [
+     "openapi/_original/publer-openapi.yml#DELETE /posts",
+     "openapi/_original/publer-openapi.yml#GET /posts",
+     "openapi/_original/publer-openapi.yml#PUT /posts/{id}"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "posts",
+     "post",
+     "tweet"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "username": "string",
+     "limit": "string",
+     "max_id": "string",
+     "cursor": "string",
+     "rich": "string",
+     "date": "string",
+     "year": "string",
+     "month": "string",
+     "day": "string",
+     "week": "string",
+     "period": "string",
+     "page": "string",
+     "slug": "string",
+     "site": "string",
+     "pagesize": "string",
+     "order": "string",
+     "sort": "string",
+     "filter": "string",
+     "ids": "string",
+     "url": "string",
+     "code": "string",
+     "post_id": "string",
+     "tweet_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /instagram/v1/posts",
+     "openapi/_original/reefapi-openapi.json#POST /producthunt/v1/post",
+     "openapi/_original/reefapi-openapi.json#POST /producthunt/v1/posts",
+     "openapi/_original/reefapi-openapi.json#POST /stackoverflow/v1/post",
+     "openapi/_original/reefapi-openapi.json#POST /stackoverflow/v1/posts",
+     "openapi/_original/reefapi-openapi.json#POST /threads/v1/post",
+     "openapi/_original/reefapi-openapi.json#POST /threads/v1/posts",
+     "openapi/_original/reefapi-openapi.json#POST /twitter/v1/tweet"
+    ]
+   },
+   "respondology": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "post_id": "string",
+     "account_id": "string",
+     "screen_name": "string",
+     "title": "string",
+     "caption": "string",
+     "request_id": "string",
+     "posted_at": "string",
+     "post_permalink": "string",
+     "custom": "object",
+     "media": "array",
+     "user": "object",
+     "comment_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/respondology-api-openapi.json#DELETE /external_api/v1/posts/{id}",
+     "openapi/_original/respondology-api-openapi.json#GET /external_api/v1/posts/{id}",
+     "openapi/_original/respondology-api-openapi.json#PATCH /external_api/v1/posts/{id}",
+     "openapi/_original/respondology-api-openapi.json#POST /external_api/v1/posts",
+     "openapi/_original/respondology-api-swagger.json#DELETE /external_api/v1/posts/{id}",
+     "openapi/_original/respondology-api-swagger.json#GET /external_api/v1/posts/{id}",
+     "openapi/_original/respondology-api-swagger.json#PATCH /external_api/v1/posts/{id}",
+     "openapi/_original/respondology-api-swagger.json#POST /external_api/v1/posts"
+    ]
+   },
+   "scrapeatlas": {
+    "segments": [
+     "posts",
+     "post",
+     "tweet",
+     "tweets"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "requestId": "string",
+     "accounting": "object",
+     "success": "boolean",
+     "status": "string",
+     "sourceUrl": "string",
+     "fetchedAt": "string",
+     "coverage": "object",
+     "feed": "array",
+     "cursor": "string",
+     "post": "object",
+     "replies": "array",
+     "results": "array",
+     "uris": "array",
+     "has_more": "boolean",
+     "end_of_pagination": "boolean",
+     "items": "array",
+     "total_count": [
+      "integer",
+      "null"
+     ],
+     "id": "integer",
+     "url": "string",
+     "created_at": [
+      "string",
+      "null"
+     ],
+     "caption": [
+      "string",
+      "null"
+     ],
+     "text": [
+      "string",
+      "null"
+     ],
+     "title": [
+      "string",
+      "null"
+     ],
+     "description": [
+      "string",
+      "null"
+     ],
+     "owner": null,
+     "source_url": [
+      "string",
+      "null"
+     ],
+     "source_author": null,
+     "media": "array",
+     "price": null,
+     "brand": [
+      "string",
+      "null"
+     ],
+     "saved_at": [
+      "string",
+      "null"
+     ],
+     "mediaMetadata": "array",
+     "sourceMetadata": "object",
+     "save_count": [
+      "integer",
+      "null"
+     ],
+     "data": "object",
+     "hydration": "object",
+     "posts": "array",
+     "post_id": "string",
+     "like_count": [
+      "number",
+      "null"
+     ],
+     "comment_count": [
+      "number",
+      "null"
+     ],
+     "share_count": [
+      "number",
+      "null"
+     ],
+     "view_count": [
+      "number",
+      "null"
+     ],
+     "creation_time": [
+      "string",
+      "null"
+     ],
+     "feedback_id": [
+      "string",
+      "null"
+     ],
+     "image_url": [
+      "string",
+      "null"
+     ],
+     "video": null,
+     "mediaAttachments": "array",
+     "author": null,
+     "music": null,
+     "comments": null,
+     "transcript": [
+      "string",
+      "null"
+     ],
+     "comments_cursor": [
+      "string",
+      "null"
+     ],
+     "user": "object",
+     "more_available": "boolean",
+     "num_results": "integer",
+     "next_max_id": [
+      "string",
+      "null"
+     ],
+     "nextPage": [
+      "integer",
+      "null"
+     ],
+     "query": "string",
+     "name": "string",
+     "thumbnailUrl": [
+      "string",
+      "null"
+     ],
+     "headline": [
+      "string",
+      "null"
+     ],
+     "commentCount": [
+      "number",
+      "null"
+     ],
+     "likeCount": [
+      "number",
+      "null"
+     ],
+     "datePublished": [
+      "string",
+      "null"
+     ],
+     "uploadDate": [
+      "string",
+      "null"
+     ],
+     "images": "array",
+     "image": [
+      "string",
+      "null"
+     ],
+     "moreArticles": "array",
+     "server": "string",
+     "nextCursor": [
+      "string",
+      "null"
+     ],
+     "limit": "integer",
+     "tag": "string",
+     "time": "string",
+     "permalink": "string",
+     "author_fullname": [
+      "string",
+      "null"
+     ],
+     "subreddit": [
+      "string",
+      "null"
+     ],
+     "subreddit_id": [
+      "string",
+      "null"
+     ],
+     "selftext": [
+      "string",
+      "null"
+     ],
+     "selftext_html": [
+      "string",
+      "null"
+     ],
+     "score": [
+      "number",
+      "null"
+     ],
+     "ups": [
+      "number",
+      "null"
+     ],
+     "downs": [
+      "number",
+      "null"
+     ],
+     "upvote_ratio": [
+      "number",
+      "null"
+     ],
+     "num_comments": [
+      "number",
+      "null"
+     ],
+     "created": [
+      "number",
+      "null"
+     ],
+     "created_utc": [
+      "number",
+      "null"
+     ],
+     "created_at_iso": [
+      "string",
+      "null"
+     ],
+     "is_video": [
+      "boolean",
+      "null"
+     ],
+     "over_18": [
+      "boolean",
+      "null"
+     ],
+     "archived": [
+      "boolean",
+      "null"
+     ],
+     "locked": [
+      "boolean",
+      "null"
+     ],
+     "spoiler": [
+      "boolean",
+      "null"
+     ],
+     "link_flair_text": [
+      "string",
+      "null"
+     ],
+     "total_awards_received": [
+      "number",
+      "null"
+     ],
+     "subreddit_subscribers": [
+      "number",
+      "null"
+     ],
+     "after": [
+      "string",
+      "null"
+     ],
+     "page": "integer",
+     "total": [
+      "number",
+      "null"
+     ],
+     "hasMore": [
+      "boolean",
+      "null"
+     ],
+     "offset": "integer",
+     "nextOffset": [
+      "integer",
+      "null"
+     ],
+     "channel": "object",
+     "channel_handle": "string",
+     "author_name": [
+      "string",
+      "null"
+     ],
+     "author_url": [
+      "string",
+      "null"
+     ],
+     "renderedText": [
+      "string",
+      "null"
+     ],
+     "published_at": [
+      "string",
+      "null"
+     ],
+     "view_count_text": [
+      "string",
+      "null"
+     ],
+     "reactions": "array",
+     "reaction_count": [
+      "integer",
+      "null"
+     ],
+     "forwarded_from": null,
+     "link_preview": null,
+     "selfThreadPosts": "array",
+     "relatedPosts": "array",
+     "parentPosts": "array",
+     "in_reply_to_id": [
+      "string",
+      "null"
+     ],
+     "sensitive": "boolean",
+     "spoiler_text": "string",
+     "visibility": "string",
+     "language": [
+      "string",
+      "null"
+     ],
+     "uri": "string",
+     "content": "string",
+     "account": "object",
+     "media_attachments": "array",
+     "mentions": "array",
+     "tags": "array",
+     "replies_count": "integer",
+     "reblogs_count": "integer",
+     "favourites_count": "integer",
+     "blog": "object",
+     "totalPosts": [
+      "integer",
+      "null"
+     ],
+     "community": "object",
+     "__typename": "string",
+     "rest_id": "string",
+     "core": "object",
+     "legacy": "object",
+     "tweets": "array"
+    },
+    "evidence": [
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/bluesky/post",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/bluesky/user/posts",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/cosmos/cluster/posts",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/cosmos/post",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/cosmos/user/posts",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/facebook/group/posts",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/facebook/post",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/facebook/profile/posts",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/instagram/post",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/instagram/user/posts",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/kwai/post",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/kwai/user/posts"
+    ]
+   },
+   "social-fetch": {
+    "segments": [
+     "posts",
+     "tweets",
+     "media",
+     "publications",
+     "post"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "apId": "string",
+     "title": "string",
+     "url": "string",
+     "urlContentType": "string",
+     "thumbnailUrl": "string",
+     "nsfw": "boolean",
+     "locked": "boolean",
+     "removed": "boolean",
+     "deleted": "boolean",
+     "publishedAt": "string",
+     "updatedAt": "string",
+     "languageId": "integer",
+     "isLocal": "boolean",
+     "score": "integer",
+     "upvotes": "integer",
+     "downvotes": "integer",
+     "commentCount": "integer",
+     "community": "object",
+     "author": "object",
+     "body": "string",
+     "embed": "object",
+     "altText": "string",
+     "image": "object",
+     "featuredInCommunity": "boolean",
+     "featuredOnInstance": "boolean",
+     "newestCommentAt": "string",
+     "isAdmin": "boolean",
+     "isModerator": "boolean",
+     "bannedFromCommunity": "boolean",
+     "crossPosts": "array",
+     "moderators": "array",
+     "lookupStatus": "string",
+     "instance": "string",
+     "reason": "object",
+     "post": "object",
+     "restrictedReason": "string",
+     "publication": "object",
+     "profileId": "integer",
+     "posts": "array",
+     "publications": "array",
+     "page": "object",
+     "name": "string",
+     "subdomain": "string",
+     "customDomain": "string",
+     "apexDomain": "string",
+     "host": "string",
+     "description": "string",
+     "language": "string",
+     "kind": "string",
+     "createdAt": "string",
+     "firstPostAt": "string",
+     "hasPosts": "boolean",
+     "isExplicit": "boolean",
+     "isInviteOnly": "boolean",
+     "isFlagged": "boolean",
+     "noIndex": "boolean",
+     "isOnSubstack": "boolean",
+     "commentsEnabled": "boolean",
+     "notesEnabled": "boolean",
+     "defaultCommentSort": "string",
+     "annualDisabled": "boolean",
+     "monthlyDisabled": "boolean",
+     "paymentsState": "string",
+     "freeTrialEnabled": "boolean",
+     "pausedUntil": "string",
+     "emailBannerUrl": "string",
+     "copyright": "string",
+     "logoUrl": "string",
+     "wideLogoUrl": "string",
+     "coverImageUrl": "string",
+     "foundingPlanName": "string",
+     "hasRecommendations": "boolean",
+     "benefits": "object",
+     "audience": "object",
+     "contributors": "array",
+     "sections": "array",
+     "links": "array",
+     "plans": "array",
+     "podcast": "object",
+     "type": "string",
+     "pinned": "boolean",
+     "relativeTime": "string",
+     "excerpt": "string",
+     "slug": "string",
+     "galleryItemId": "string",
+     "likes": "integer",
+     "access": "string",
+     "truncatedDescription": "string",
+     "postId": "string",
+     "authorName": "string",
+     "authorUsername": "string",
+     "publicationSlug": "string",
+     "tags": "array",
+     "isCustomDomain": "boolean",
+     "contentAvailable": "boolean",
+     "contentHtml": "string",
+     "contentText": "string",
+     "snippet": "string",
+     "imageUrl": "string",
+     "wordCount": "integer",
+     "readingMinutes": "number",
+     "lastModified": "string",
+     "username": "string",
+     "tag": "string",
+     "listId": "string",
+     "priority": "number",
+     "changefreq": "string",
+     "tagline": "string",
+     "productSlug": "string",
+     "lastActivityAt": "string",
+     "websiteRedirectUrl": "string",
+     "featuredAt": "string",
+     "scheduledAt": "string",
+     "dailyRank": "string",
+     "weeklyRank": "string",
+     "monthlyRank": "string",
+     "latestScore": "integer",
+     "launchDayScore": "integer",
+     "commentsCount": "integer",
+     "hideVotesCount": "boolean",
+     "pricingType": "string",
+     "thumbnailImageUuid": "string",
+     "shortenedUrl": "string",
+     "topics": "array",
+     "topicsTotalCount": "integer",
+     "product": "object",
+     "channelId": "string",
+     "server": "object",
+     "channel": "object",
+     "header": "string",
+     "text": "string",
+     "textAttributes": "array",
+     "entityId": "string",
+     "postedAt": "object",
+     "edited": "boolean",
+     "engagements": "object",
+     "mediaContent": "array",
+     "resharedPostContent": null,
+     "repostedBy": "object",
+     "repostedAt": "number",
+     "createdAtLabel": "string",
+     "conversationId": "string",
+     "inReplyToStatusId": "string",
+     "inReplyToUserId": "string",
+     "inReplyToScreenName": "string",
+     "quotedStatusId": "string",
+     "retweetTweetId": "string",
+     "metrics": "object",
+     "media": "array",
+     "expandedUrl": "string",
+     "isRetweet": "boolean",
+     "isReply": "boolean",
+     "isQuote": "boolean",
+     "source": "string",
+     "communityId": "string",
+     "hasAIGeneratedMedia": "boolean",
+     "isPaidPromotion": "boolean",
+     "isTranslatable": "boolean",
+     "hasBirdwatchNotes": "boolean",
+     "possiblySensitive": "boolean",
+     "entities": "object",
+     "editInfo": "object",
+     "card": "object",
+     "poll": "object",
+     "article": "object",
+     "place": "object",
+     "communityNote": "object",
+     "isEdited": "boolean",
+     "quotedTweet": "object",
+     "retweetedTweet": "object",
+     "createdAtUnix": "integer",
+     "input": "string",
+     "tweetId": "string",
+     "tweet": "object",
+     "isLongForm": "boolean",
+     "displayTextRange": "array",
+     "inReplyToTweetId": "string",
+     "quotedTweetId": "string",
+     "retweetedTweetId": "string",
+     "sourceUrl": "string",
+     "date": "string",
+     "views": "integer",
+     "forwardedFrom": "string",
+     "replyTo": "object",
+     "photoUrls": "array",
+     "videoUrl": "string",
+     "reactions": "array",
+     "software": "string",
+     "profile": "object",
+     "uri": "string",
+     "editedAt": "string",
+     "contentWarning": "string",
+     "isSensitive": "boolean",
+     "visibility": "string",
+     "stats": "object",
+     "hashtags": "array",
+     "mentions": "array",
+     "emojis": "array",
+     "app": "object",
+     "isBoost": "boolean",
+     "boostOf": "object",
+     "quote": "object",
+     "impressions": "integer",
+     "attachments": "array",
+     "authors": "array",
+     "spoilerText": "string",
+     "inReplyToAccountId": "string",
+     "quoteId": "string",
+     "repostOfId": "string",
+     "linkPreview": "object",
+     "isPaidPartnership": "boolean",
+     "authorDisplayName": "string",
+     "authorShortName": "string",
+     "authorId": "string",
+     "reactionCount": "integer",
+     "videoViewCount": "integer",
+     "imageUrls": "array",
+     "videoSdUrl": "string",
+     "videoHdUrl": "string",
+     "videoThumbnailUrl": "string",
+     "topComments": "array",
+     "hostedMedia": "array",
+     "music": "object",
+     "comments": "array",
+     "transcript": "string",
+     "sharedPostId": "string",
+     "sharedPostUrl": "string",
+     "video": "object",
+     "shortcode": "string",
+     "mediaType": "string",
+     "caption": "string",
+     "owner": "object",
+     "durationSec": "number",
+     "dimensions": "object",
+     "carousel": "array",
+     "audio": "object",
+     "coauthors": "array",
+     "taggedUsers": "array",
+     "location": "object",
+     "sponsors": "array",
+     "commentsDisabled": "boolean",
+     "isPinned": "boolean",
+     "story": "object",
+     "position": "integer",
+     "width": "integer",
+     "height": "integer",
+     "sizeBytes": "integer",
+     "mimeType": "string",
+     "expiresAt": "string",
+     "reply": "boolean",
+     "threadItems": "array",
+     "replies": "array",
+     "relatedPosts": "array",
+     "cid": "string",
+     "indexedAt": "string",
+     "relatedArticles": "array",
+     "fullId": "string",
+     "subreddit": "string",
+     "permalinkUrl": "string",
+     "flags": "object",
+     "flair": "string",
+     "postType": "string",
+     "domain": "string",
+     "downloads": "array",
+     "displayUrl": "string",
+     "likeCount": "integer",
+     "shareCount": "integer",
+     "playCount": "integer",
+     "videoDurationSec": "number",
+     "carouselChildren": "array",
+     "authorUserId": "string",
+     "authoredByProfile": "boolean",
+     "headline": "string",
+     "embeddedLinks": "array",
+     "images": "array",
+     "videos": "array",
+     "moreArticlesByUser": "array",
+     "moreRelevantPosts": "array",
+     "topVisibleComments": "array",
+     "authorFollowers": "integer",
+     "authorPostCount": "integer",
+     "authorArticleCount": "integer",
+     "accountType": "string",
+     "postTextHtml": "string",
+     "repost": "object",
+     "taggedCompanies": "array",
+     "taggedPeople": "array",
+     "authorProfileUrl": "string",
+     "authorTitle": "string",
+     "authorProfilePicUrl": "string",
+     "authorConnectionCount": "integer",
+     "externalLinkPreviews": "array",
+     "documentCoverImageUrl": "string",
+     "documentPageCount": "integer",
+     "originalPostText": "string"
+    },
+    "evidence": [
+     "openapi/_original/social-fetch-openapi.json#GET /v1/bluesky/posts",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/bluesky/profiles/{handle}/posts",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/discord/announcement-channels/{channelId}/posts/{messageId}",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/facebook/groups/posts",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/facebook/posts",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/facebook/profiles/posts",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/gumroad/creator/posts",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/gumroad/post",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/hugging-face/blog/posts",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/hugging-face/posts",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/instagram/posts",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/instagram/profiles/{handle}/posts"
+    ]
+   },
+   "socialapis": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/socialapis-openapi.json#GET /facebook/groups/posts",
+     "openapi/_original/socialapis-openapi.json#GET /facebook/pages/posts",
+     "openapi/_original/socialapis-openapi.json#GET /facebook/search/posts",
+     "openapi/_original/socialapis-openapi.json#GET /instagram/location/posts",
+     "openapi/_original/socialapis-openapi.json#GET /instagram/profile/posts"
+    ]
+   },
+   "sociallisteningapi": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "platform": "string",
+     "endpoint": "string",
+     "data": "object",
+     "pagination": "object",
+     "raw": null,
+     "request_id": "string",
+     "credits_used": "integer",
+     "credits_remaining": [
+      "integer",
+      "null"
+     ],
+     "profile_url": "string",
+     "cursor": "string",
+     "username": "string"
+    },
+    "evidence": [
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/linkedin/profile/posts",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/linkedin/user/posts",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/x/user/posts",
+     "openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/linkedin/profile/posts",
+     "openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/linkedin/user/posts",
+     "openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/x/user/posts",
+     "openapi/_original/sociallisteningapi-openapi.yml#GET /api/v1/linkedin/profile/posts",
+     "openapi/_original/sociallisteningapi-openapi.yml#GET /api/v1/linkedin/user/posts",
+     "openapi/_original/sociallisteningapi-openapi.yml#GET /api/v1/x/user/posts",
+     "openapi/_original/sociallisteningapi-openapi.yml#POST /api/v1/linkedin/profile/posts",
+     "openapi/_original/sociallisteningapi-openapi.yml#POST /api/v1/linkedin/user/posts",
+     "openapi/_original/sociallisteningapi-openapi.yml#POST /api/v1/x/user/posts"
+    ]
+   },
+   "spredfast": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "export_id": "string",
+     "accounts": "array",
+     "content_filter": "object",
+     "intiatives": "array",
+     "account_sets": "array",
+     "fields": "array",
+     "start": "string",
+     "stop": "string",
+     "timezone": "string"
+    },
+    "evidence": [
+     "openapi/_original/spredfast-analytics-api-openapi.json#POST /export/posts",
+     "openapi/_original/spredfast-analytics-api-openapi.yml#POST /export/posts"
+    ]
+   },
+   "sylvia-api": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "selftext": "string",
+     "author": "string",
+     "subreddit": "string",
+     "score": "integer",
+     "upvote_ratio": "number",
+     "num_comments": "integer",
+     "created_utc": "integer",
+     "permalink": "string",
+     "url": "string",
+     "is_self": "boolean",
+     "is_video": "boolean",
+     "flair": "string",
+     "awards": "integer",
+     "gilded": "integer",
+     "over_18": "boolean",
+     "spoiler": "boolean",
+     "stickied": "boolean",
+     "data": "array",
+     "cursor": "string",
+     "has_more": "boolean",
+     "total": "integer"
+    },
+    "evidence": [
+     "openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /posts/{id}",
+     "openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /subreddits/{name}/posts",
+     "openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /users/{username}/posts"
+    ]
+   },
+   "synup": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "postName": "string",
+     "locationIds": "array",
+     "postType": "string",
+     "postSites": "array",
+     "postMessage": "array"
+    },
+    "evidence": [
+     "openapi/_original/synup-api-openapi.yml#DELETE /posts/{postId}",
+     "openapi/_original/synup-api-openapi.yml#GET /locations/{locationId}/posts",
+     "openapi/_original/synup-api-openapi.yml#GET /posts/{postId}",
+     "openapi/_original/synup-api-openapi.yml#POST /posts"
+    ]
+   },
+   "tiktok-ads": {
+    "segments": [
+     "post"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "code": "integer",
+     "data": "object",
+     "message": "string",
+     "request_id": "string",
+     "ad_id": "string",
+     "advertiser_id": "string",
+     "comment_id": "string",
+     "comment_type": "string",
+     "identity_id": "string",
+     "identity_type": "string",
+     "text": "string",
+     "tiktok_item_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/tiktok-ads-marketing-api-openapi.yml#POST /comment/post/"
+    ]
+   },
+   "toksta": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "data": "object",
+     "meta": "object",
+     "creator_ids": "array",
+     "result_set_id": "string",
+     "result_set_ids": "array",
+     "top_n": "integer",
+     "ranks": "array",
+     "keywords": "array",
+     "posts_limit_per_creator": "integer",
+     "detail_level": "string",
+     "job_id": "string",
+     "job_ids": "array",
+     "campaign_id": "string",
+     "wait_seconds": "integer"
+    },
+    "evidence": [
+     "openapi/_original/toksta-public-api-openapi.json#POST /v1/content-match/posts",
+     "openapi/_original/toksta-public-api-openapi.json#POST /v1/search-results/posts",
+     "openapi/_original/toksta-public-api-openapi.yml#POST /v1/content-match/posts",
+     "openapi/_original/toksta-public-api-openapi.yml#POST /v1/search-results/posts"
+    ]
+   },
+   "twitter": {
+    "segments": [
+     "tweets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "attachments": "object",
+     "author_id": "string",
+     "community_id": "string",
+     "context_annotations": "array",
+     "conversation_id": "string",
+     "created_at": "string",
+     "display_text_range": "array",
+     "edit_controls": "object",
+     "edit_history_tweet_ids": "array",
+     "entities": "object",
+     "geo": "object",
+     "id": "string",
+     "in_reply_to_user_id": "string",
+     "lang": "string",
+     "non_public_metrics": "object",
+     "note_tweet": "object",
+     "organic_metrics": "object",
+     "possibly_sensitive": "boolean",
+     "promoted_metrics": "object",
+     "public_metrics": "object",
+     "referenced_tweets": "array",
+     "reply_settings": "string",
+     "scopes": "object",
+     "source": "string",
+     "suggested_source_links": "array",
+     "suggested_source_links_with_counts": "object",
+     "text": "string",
+     "username": "string",
+     "withheld": "object",
+     "card_uri": "string",
+     "direct_message_deep_link": "string",
+     "edit_options": "object",
+     "for_super_followers_only": "boolean",
+     "made_with_ai": "boolean",
+     "media": "object",
+     "nullcast": "boolean",
+     "paid_partnership": "boolean",
+     "poll": "object",
+     "quote_tweet_id": "string",
+     "reply": "object",
+     "share_with_followers": "boolean",
+     "deleted": "boolean",
+     "client_app_id": "string",
+     "usage": "array",
+     "usage_result_count": "integer"
+    },
+    "evidence": [
+     "openapi/_original/x-api-openapi.json#DELETE /2/tweets/{id}",
+     "openapi/_original/x-api-openapi.json#GET /2/lists/{id}/tweets",
+     "openapi/_original/x-api-openapi.json#GET /2/spaces/{id}/tweets",
+     "openapi/_original/x-api-openapi.json#GET /2/tweets",
+     "openapi/_original/x-api-openapi.json#GET /2/tweets/{id}",
+     "openapi/_original/x-api-openapi.json#GET /2/usage/tweets",
+     "openapi/_original/x-api-openapi.json#GET /2/users/{id}/tweets",
+     "openapi/_original/x-api-openapi.json#POST /2/tweets"
+    ]
+   },
+   "twitter-x": {
+    "segments": [
+     "tweets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "attachments": "object",
+     "author_id": "string",
+     "community_id": "string",
+     "context_annotations": "array",
+     "conversation_id": "string",
+     "created_at": "string",
+     "display_text_range": "array",
+     "edit_controls": "object",
+     "edit_history_tweet_ids": "array",
+     "entities": "object",
+     "geo": "object",
+     "id": "string",
+     "in_reply_to_user_id": "string",
+     "lang": "string",
+     "matched_media_notes": "object",
+     "non_public_metrics": "object",
+     "note_request_suggestions": "object",
+     "note_tweet": "object",
+     "organic_metrics": "object",
+     "paid_partnership": "boolean",
+     "possibly_sensitive": "boolean",
+     "promoted_metrics": "object",
+     "public_metrics": "object",
+     "referenced_tweets": "array",
+     "reply_settings": "string",
+     "scopes": "object",
+     "source": "string",
+     "suggested_source_links": "array",
+     "suggested_source_links_with_counts": "object",
+     "text": "string",
+     "username": "string",
+     "withheld": "object",
+     "card_uri": "string",
+     "direct_message_deep_link": "string",
+     "edit_options": "object",
+     "for_super_followers_only": "boolean",
+     "made_with_ai": "boolean",
+     "media": "object",
+     "nullcast": "boolean",
+     "poll": "object",
+     "quote_tweet_id": "string",
+     "reply": "object",
+     "share_with_followers": "boolean",
+     "deleted": "boolean",
+     "client_app_id": "string",
+     "usage": "array",
+     "usage_result_count": "integer"
+    },
+    "evidence": [
+     "openapi/_original/twitter-x-x-api-v2-openapi.json#DELETE /2/tweets/{id}",
+     "openapi/_original/twitter-x-x-api-v2-openapi.json#GET /2/lists/{id}/tweets",
+     "openapi/_original/twitter-x-x-api-v2-openapi.json#GET /2/spaces/{id}/tweets",
+     "openapi/_original/twitter-x-x-api-v2-openapi.json#GET /2/tweets",
+     "openapi/_original/twitter-x-x-api-v2-openapi.json#GET /2/tweets/{id}",
+     "openapi/_original/twitter-x-x-api-v2-openapi.json#GET /2/usage/tweets",
+     "openapi/_original/twitter-x-x-api-v2-openapi.json#GET /2/users/{id}/tweets",
+     "openapi/_original/twitter-x-x-api-v2-openapi.json#POST /2/tweets"
+    ]
+   },
+   "vaynermedia": {
+    "segments": [
+     "posts",
+     "statuses"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/posts",
+     "openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/posts/{id}",
+     "openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/statuses",
+     "openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/statuses/{status}"
+    ]
+   },
+   "x": {
+    "segments": [
+     "tweets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "article": "object",
+     "article_title": "object",
+     "attachments": "object",
+     "author_id": "string",
+     "card_uri": "string",
+     "community_id": "string",
+     "context_annotations": "array",
+     "conversation_id": "string",
+     "created_at": "string",
+     "display_text_range": "array",
+     "edit_controls": "object",
+     "edit_history_post_ids": "array",
+     "entities": "object",
+     "geo": "object",
+     "id": "string",
+     "in_reply_to_user_id": "string",
+     "lang": "string",
+     "matched_media_notes": "array",
+     "media_metadata": "array",
+     "non_public_metrics": "object",
+     "note_post": "object",
+     "note_request_suggestions": "array",
+     "organic_metrics": "object",
+     "paid_partnership": "boolean",
+     "possibly_sensitive": "boolean",
+     "promoted_metrics": "object",
+     "public_metrics": "object",
+     "referenced_posts": "array",
+     "reply_settings": "string",
+     "scopes": "object",
+     "source": "string",
+     "suggested_source_links": "array",
+     "suggested_source_links_with_counts": "array",
+     "text": "string",
+     "username": "string",
+     "withheld": "object",
+     "direct_message_deep_link": "string",
+     "edit_options": "object",
+     "for_super_followers_only": "boolean",
+     "made_with_ai": "boolean",
+     "media": "object",
+     "nullcast": "boolean",
+     "poll": "object",
+     "quote_tweet_id": "string",
+     "reply": "object",
+     "share_with_followers": "boolean",
+     "deleted": "boolean",
+     "client_app_id": "string",
+     "usage": "array",
+     "usage_result_count": "integer"
+    },
+    "evidence": [
+     "openapi/_original/x-api-v2-openapi.json#DELETE /2/tweets/{id}",
+     "openapi/_original/x-api-v2-openapi.json#GET /2/lists/{id}/tweets",
+     "openapi/_original/x-api-v2-openapi.json#GET /2/spaces/{id}/tweets",
+     "openapi/_original/x-api-v2-openapi.json#GET /2/tweets",
+     "openapi/_original/x-api-v2-openapi.json#GET /2/tweets/{id}",
+     "openapi/_original/x-api-v2-openapi.json#GET /2/usage/tweets",
+     "openapi/_original/x-api-v2-openapi.json#GET /2/users/{id}/tweets",
+     "openapi/_original/x-api-v2-openapi.json#POST /2/tweets"
+    ]
+   },
+   "xproapi": {
+    "segments": [
+     "tweets"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/xproapi-openapi.json#GET /twitter/tweets"
+    ]
+   },
+   "xquik-api": {
+    "segments": [
+     "tweets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "text": "string",
+     "type": "string",
+     "createdAt": "string",
+     "isNoteTweet": "boolean",
+     "isReply": "boolean",
+     "isQuoteStatus": "boolean",
+     "isLimitedReply": "boolean",
+     "inReplyToId": "string",
+     "inReplyToUserId": "string",
+     "inReplyToUsername": "string",
+     "conversationId": "string",
+     "source": "string",
+     "displayTextRange": "array",
+     "contentDisclosure": "object",
+     "article": "object",
+     "card": "object",
+     "communityNote": "object",
+     "edit": "object",
+     "isTranslatable": "boolean",
+     "noteTweet": "object",
+     "place": "object",
+     "possiblySensitive": "boolean",
+     "previousCounts": "object",
+     "viewState": "string",
+     "entities": "object",
+     "quoted_tweet": "object",
+     "retweeted_tweet": "object",
+     "media": "array",
+     "url": "string",
+     "lang": "string",
+     "likeCount": "integer",
+     "retweetCount": "integer",
+     "replyCount": "integer",
+     "quoteCount": "integer",
+     "viewCount": "integer",
+     "bookmarkCount": "integer",
+     "author": "object",
+     "object": "string",
+     "writeActionId": "string",
+     "action": "string",
+     "status": "string",
+     "terminal": "boolean",
+     "retryable": "boolean",
+     "safeToRetry": "boolean",
+     "statusUrl": "string",
+     "pollAfterMs": [
+      "integer",
+      "null"
+     ],
+     "charged": "boolean",
+     "chargedCredits": "string",
+     "billing": "object",
+     "request": "object",
+     "account": [
+      "object",
+      "null"
+     ],
+     "target": [
+      "object",
+      "null"
+     ],
+     "targetId": [
+      "string",
+      "null"
+     ],
+     "result": [
+      "object",
+      "null"
+     ],
+     "nextAction": [
+      "object",
+      "null"
+     ],
+     "requestHash": "string",
+     "requestId": "string",
+     "idempotent": "boolean",
+     "error": "string",
+     "message": "string",
+     "sendDispatched": "boolean",
+     "sendDispatchedAt": "string",
+     "updatedAt": "string",
+     "completedAt": "string",
+     "expiresAt": "string",
+     "confirmedAt": "string",
+     "confirmationCheckedAt": "string",
+     "confirmationAttempts": "integer",
+     "tweetId": "string",
+     "messageId": "string",
+     "mediaId": "string",
+     "mediaUrl": "string",
+     "communityId": "string",
+     "communityName": "string",
+     "resultId": "string",
+     "details": "object",
+     "success": "boolean",
+     "reply_to_tweet_id": "string",
+     "community_id": "string",
+     "is_note_tweet": "boolean",
+     "tweet": "object"
+    },
+    "evidence": [
+     "openapi/_original/xquik-rest-api-openapi.json#DELETE /api/v1/x/tweets/{id}",
+     "openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/communities/tweets",
+     "openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/communities/{id}/tweets",
+     "openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/lists/{id}/tweets",
+     "openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/tweets",
+     "openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/tweets/{id}",
+     "openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/users/{id}/tweets",
+     "openapi/_original/xquik-rest-api-openapi.json#POST /api/v1/x/tweets",
+     "openapi/_original/xquik-rest-api-openapi.yml#DELETE /api/v1/x/tweets/{id}",
+     "openapi/_original/xquik-rest-api-openapi.yml#GET /api/v1/x/communities/tweets",
+     "openapi/_original/xquik-rest-api-openapi.yml#GET /api/v1/x/communities/{id}/tweets",
+     "openapi/_original/xquik-rest-api-openapi.yml#GET /api/v1/x/lists/{id}/tweets"
+    ]
+   },
+   "yawplet": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "site": "string",
+     "url": "string",
+     "content_trust": "string",
+     "license": "object",
+     "author": "object",
+     "published_at": "string",
+     "expires_at": [
+      "string",
+      "null"
+     ],
+     "policy_version": "string",
+     "dry_run": "boolean",
+     "outcome": "string",
+     "price": "integer",
+     "charged": "integer",
+     "penalty_if_abuse": "integer",
+     "ready_to_post": "boolean",
+     "blocking": "object",
+     "refusal": "object",
+     "flags": "array",
+     "note": "string",
+     "text": "string",
+     "topics": "array",
+     "location": "object",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/yawplet-openapi.yml#DELETE /v1/posts/{id}",
+     "openapi/_original/yawplet-openapi.yml#GET /v1/posts",
+     "openapi/_original/yawplet-openapi.yml#GET /v1/posts/{id}",
+     "openapi/_original/yawplet-openapi.yml#POST /v1/posts",
+     "openapi/_original/yawplet-openapi_2.yml#DELETE /v1/posts/{id}",
+     "openapi/_original/yawplet-openapi_2.yml#GET /v1/posts",
+     "openapi/_original/yawplet-openapi_2.yml#GET /v1/posts/{id}",
+     "openapi/_original/yawplet-openapi_2.yml#POST /v1/posts",
+     "openapi/_original/yawplet-openapi_3.yml#DELETE /v1/posts/{id}",
+     "openapi/_original/yawplet-openapi_3.yml#GET /v1/posts",
+     "openapi/_original/yawplet-openapi_3.yml#GET /v1/posts/{id}",
+     "openapi/_original/yawplet-openapi_3.yml#POST /v1/posts"
+    ]
+   },
+   "zoca": {
+    "segments": [
+     "post",
+     "posts",
+     "statuses"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "scan": "object",
+     "businessLat": "number",
+     "businessLng": "number",
+     "points": "array",
+     "heroMetrics": "object"
+    },
+    "evidence": [
+     "openapi/_original/zoca-platform-openapi.yml#DELETE /gbp-location/posts",
+     "openapi/_original/zoca-platform-openapi.yml#GET /gbp-location/posts",
+     "openapi/_original/zoca-platform-openapi.yml#GET /social-media/posts",
+     "openapi/_original/zoca-platform-openapi.yml#PATCH /content-queue/{entityId}/items/{itemId}/post",
+     "openapi/_original/zoca-platform-openapi.yml#PATCH /gbp-location/posts",
+     "openapi/_original/zoca-platform-openapi.yml#POST /gbp-location/posts",
+     "openapi/_original/zoca-platform-openapi.yml#POST /social-media/posts",
+     "openapi/_original/zoca-platform-swagger.json#DELETE /gbp-location/posts",
+     "openapi/_original/zoca-platform-swagger.json#GET /gbp-location/posts",
+     "openapi/_original/zoca-platform-swagger.json#GET /social-media/posts",
+     "openapi/_original/zoca-platform-swagger.json#PATCH /content-queue/{entityId}/items/{itemId}/post",
+     "openapi/_original/zoca-platform-swagger.json#PATCH /gbp-location/posts"
+    ]
+   }
+  },
+  "social_comment": {
+   "creatoriq": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "Email": "string",
+     "CreatedBy": "string",
+     "Comment": "string",
+     "SocialEdgeId": "string"
+    },
+    "evidence": [
+     "openapi/_original/creatoriq-onesheets-openapi-original.yaml#POST /crm/v1/api/onesheet/{oneSheetId}/publisher/{publisherId}/comments",
+     "openapi/_original/creatoriq-onesheets-openapi.yml#POST /crm/v1/api/onesheet/{oneSheetId}/publisher/{publisherId}/comments"
+    ]
+   },
+   "dev-to": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "type_of": "string",
+     "id_code": "string",
+     "created_at": "string",
+     "body_html": "string",
+     "user": "object",
+     "children": "array",
+     "image_url": "string",
+     "ai_disclosure_level": "string",
+     "ai_disclosure_label": "string"
+    },
+    "evidence": [
+     "openapi/_original/dev-to-forem-api-openapi.yml#GET /comments",
+     "openapi/_original/dev-to-forem-api-openapi.yml#GET /comments/{id}",
+     "openapi/_original/dev-to-forem-api-v1-openapi.json#GET /api/comments",
+     "openapi/_original/dev-to-forem-api-v1-openapi.json#GET /api/comments/{id}",
+     "openapi/_original/devto-comments-api-openapi.yml#GET /api/comments",
+     "openapi/_original/devto-comments-api-openapi.yml#GET /api/comments/{id}",
+     "openapi/_original/devto-comments-api-openapi.yml#GET /comments",
+     "openapi/_original/devto-comments-api-openapi.yml#GET /comments/{id}"
+    ]
+   },
+   "devto": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "type_of": "string",
+     "id_code": "string",
+     "created_at": "string",
+     "image_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.json#GET /api/comments",
+     "openapi/_original/openapi.json#GET /api/comments/{id}",
+     "openapi/_original/openapi.yaml#GET /comments",
+     "openapi/_original/openapi.yaml#GET /comments/{id}"
+    ]
+   },
+   "diaspora": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/diaspora-api-openapi.yml#DELETE /posts/{post_guid}/comments/{comment_guid}",
+     "openapi/_original/diaspora-api-openapi.yml#GET /posts/{post_guid}/comments",
+     "openapi/_original/diaspora-api-openapi.yml#POST /posts/{post_guid}/comments"
+    ]
+   },
+   "facebook-business-manager": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "message": "string",
+     "from": "object",
+     "created_time": "string",
+     "like_count": "integer",
+     "comment_count": "integer",
+     "is_hidden": "boolean",
+     "attachment": "object",
+     "attachment_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/facebook-pages-openapi.yml#GET /{post_id}/comments",
+     "openapi/_original/facebook-pages-openapi.yml#POST /{post_id}/comments"
+    ]
+   },
+   "facebook-pages": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "message": "string",
+     "attachment_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/facebook-pages-openapi.yml#GET /{object-id}/comments",
+     "openapi/_original/facebook-pages-openapi.yml#POST /{object-id}/comments"
+    ]
+   },
+   "honesthook": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/github/issue/comments",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/hackernews/story/comments",
+     "openapi/_original/honesthook-openapi.json#GET /api/v1/youtube/video/comments"
+    ]
+   },
+   "hootsuite": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "comment": "string",
+     "createdDate": "string",
+     "creatorId": "string",
+     "creatorName": "string",
+     "id": "string",
+     "parentId": "string",
+     "parentType": "string",
+     "reviewState": "string",
+     "sequenceNumber": "number",
+     "socialProfileId": "string"
+    },
+    "evidence": [
+     "openapi/_original/hootsuite-rest-api-swagger.yaml#GET /v1/comments/{commentId}"
+    ]
+   },
+   "imgur": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/imgur-openapi.yml#GET /3/account/{username}/comments"
+    ]
+   },
+   "instagram": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "text": "string",
+     "username": "string",
+     "timestamp": "string",
+     "like_count": "integer",
+     "hidden": "boolean",
+     "parent_id": "string",
+     "message": "string",
+     "access_token": "string"
+    },
+    "evidence": [
+     "openapi/_original/instagram-graph-api.yaml#GET /{media_id}/comments",
+     "openapi/_original/instagram-graph-api.yaml#POST /{media_id}/comments"
+    ]
+   },
+   "konbiniapi": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "@context": "array",
+     "type": "string",
+     "partOf": "string",
+     "totalItems": [
+      "integer",
+      "null"
+     ],
+     "cursor": [
+      "string",
+      "null"
+     ],
+     "nextCursor": [
+      "string",
+      "null"
+     ],
+     "next": [
+      "string",
+      "null"
+     ],
+     "itemCount": "integer",
+     "orderedItems": "array",
+     "id": "string",
+     "url": "string",
+     "entityId": "string",
+     "content": "string",
+     "published": "string",
+     "isPinned": "boolean",
+     "isSponsored": "boolean",
+     "hasReplies": "boolean",
+     "likeCount": "integer",
+     "voteCount": "integer",
+     "attributedTo": null,
+     "inReplyTo": "string",
+     "image": null,
+     "attachment": "array",
+     "entityIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/instagram/posts/{postId}/comments",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/posts/{postId}/comments",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/posts/{postId}/comments/{commentId}",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/subreddits/{subreddit}/comments",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/reddit/users/{username}/comments",
+     "openapi/_original/konbiniapi-openapi.json#GET /v1/tiktok/videos/{videoId}/comments",
+     "openapi/_original/konbiniapi-openapi.json#POST /v1/reddit/comments/batch",
+     "openapi/_original/konbiniapi-openapi.yml#GET /v1/instagram/posts/{postId}/comments",
+     "openapi/_original/konbiniapi-openapi.yml#GET /v1/tiktok/videos/{videoId}/comments"
+    ]
+   },
+   "later": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "author": "object",
+     "createdAt": "string",
+     "id": "number",
+     "text": "string",
+     "pinned": "boolean",
+     "resource": "object",
+     "conceptId": "number",
+     "accountId": "number",
+     "administratorAccount": "object",
+     "commenterName": "string",
+     "commenterType": "string",
+     "isArchived": "boolean",
+     "archivedByAccountId": "number",
+     "draftContentId": "number"
+    },
+    "evidence": [
+     "openapi/_original/later-influence-api-openapi-original.json#GET /v1/global-users/{globalUserId}/comments",
+     "openapi/_original/later-influence-api-openapi-original.json#PATCH /v1/global-users/{globalUserId}/comments/{commentId}",
+     "openapi/_original/later-influence-api-openapi-original.json#POST /v1/concept-content/{conceptContentId}/comments",
+     "openapi/_original/later-influence-api-openapi-original.json#POST /v1/draft-content/{draftContentId}/comments",
+     "openapi/_original/later-influence-api-openapi-original.json#POST /v1/global-users/{globalUserId}/comments",
+     "openapi/_original/later-influence-api-openapi-original.json#PUT /v1/concept-content/{conceptContentId}/comments/{id}",
+     "openapi/_original/later-influence-api-openapi-original.json#PUT /v1/draft-content/{draftContentId}/comments/{id}",
+     "openapi/_original/later-influence-api-openapi.json#GET /v1/global-users/{globalUserId}/comments",
+     "openapi/_original/later-influence-api-openapi.json#PATCH /v1/global-users/{globalUserId}/comments/{commentId}",
+     "openapi/_original/later-influence-api-openapi.json#POST /v1/concept-content/{conceptContentId}/comments",
+     "openapi/_original/later-influence-api-openapi.json#POST /v1/draft-content/{draftContentId}/comments",
+     "openapi/_original/later-influence-api-openapi.json#POST /v1/global-users/{globalUserId}/comments"
+    ]
+   },
+   "mavrck": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "author": "object",
+     "createdAt": "string",
+     "id": "number",
+     "text": "string",
+     "pinned": "boolean",
+     "resource": "object",
+     "conceptId": "number",
+     "accountId": "number",
+     "administratorAccount": "object",
+     "commenterName": "string",
+     "commenterType": "string",
+     "isArchived": "boolean",
+     "archivedByAccountId": "number",
+     "draftContentId": "number"
+    },
+    "evidence": [
+     "openapi/_original/mavrck-openapi.json#GET /v1/global-users/{globalUserId}/comments",
+     "openapi/_original/mavrck-openapi.json#PATCH /v1/global-users/{globalUserId}/comments/{commentId}",
+     "openapi/_original/mavrck-openapi.json#POST /v1/concept-content/{conceptContentId}/comments",
+     "openapi/_original/mavrck-openapi.json#POST /v1/draft-content/{draftContentId}/comments",
+     "openapi/_original/mavrck-openapi.json#POST /v1/global-users/{globalUserId}/comments",
+     "openapi/_original/mavrck-openapi.json#PUT /v1/concept-content/{conceptContentId}/comments/{id}",
+     "openapi/_original/mavrck-openapi.json#PUT /v1/draft-content/{draftContentId}/comments/{id}"
+    ]
+   },
+   "mighty-networks": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "created_at": "string",
+     "updated_at": "string",
+     "targetable_id": "integer",
+     "targetable_type": "string",
+     "text": "string",
+     "replyable": "boolean",
+     "depth": "integer",
+     "cheer_count": "integer",
+     "reply_count": "integer",
+     "reply_to_id": "integer",
+     "author_id": "integer",
+     "space_id": "integer",
+     "files": "array",
+     "embedded_link": "object",
+     "permalink": "string"
+    },
+    "evidence": [
+     "openapi/_original/mighty-networks-admin-api-openapi.json#DELETE /admin/v1/networks/{network_id}/posts/{post_id}/comments/{id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#GET /admin/v1/networks/{network_id}/posts/{post_id}/comments",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#GET /admin/v1/networks/{network_id}/posts/{post_id}/comments/{id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#POST /admin/v1/networks/{network_id}/posts/{post_id}/comments"
+    ]
+   },
+   "monocrawl": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "_completeness": "object",
+     "success": null,
+     "platform": "string",
+     "endpoint": "string",
+     "data": null,
+     "credits_used": "integer",
+     "credits_remaining": "integer",
+     "request_id": "string",
+     "cached": "boolean",
+     "stale": "boolean",
+     "age_seconds": "integer",
+     "fetched_at": "string",
+     "synthetic": "boolean",
+     "degraded": "boolean",
+     "id": [
+      "number",
+      "string",
+      "null"
+     ],
+     "author": [
+      "string",
+      "null"
+     ],
+     "body": [
+      "string",
+      "null"
+     ],
+     "url": [
+      "string",
+      "null"
+     ],
+     "reactions": [
+      "number",
+      "null"
+     ],
+     "created_at": [
+      "string",
+      "null"
+     ],
+     "updated_at": [
+      "string",
+      "null"
+     ],
+     "parent_id": [
+      "string",
+      "null"
+     ],
+     "text": [
+      "string",
+      "null"
+     ],
+     "depth": [
+      "number",
+      "null"
+     ],
+     "children_count": [
+      "number",
+      "null"
+     ],
+     "items": "array",
+     "count": [
+      "number",
+      "null"
+     ],
+     "cursor": [
+      "string",
+      "null"
+     ],
+     "has_more": [
+      "boolean",
+      "null"
+     ],
+     "truncated": [
+      "boolean",
+      "null"
+     ],
+     "unexpanded_replies": "array",
+     "_warnings": "array",
+     "text_original": [
+      "string",
+      "null"
+     ],
+     "likes": [
+      "number",
+      "null"
+     ],
+     "reply_count": [
+      "number",
+      "null"
+     ],
+     "published_at": [
+      "string",
+      "null"
+     ],
+     "replies": "array",
+     "replies_pagination": "object"
+    },
+    "evidence": [
+     "openapi/_original/monocrawl-openapi.json#GET /v1/github/issue/comments",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/hackernews/story/comments",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/reddit/post/comments",
+     "openapi/_original/monocrawl-openapi.json#GET /v1/youtube/video/comments"
+    ]
+   },
+   "openhandle": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "capturedAt": "string",
+     "data": null,
+     "meta": "object",
+     "platform": "string",
+     "resource": "string",
+     "source": "string",
+     "ai": "object",
+     "author": null,
+     "createdAt": "string",
+     "id": "string",
+     "isByPostAuthor": [
+      "boolean",
+      "null"
+     ],
+     "isCovered": [
+      "boolean",
+      "null"
+     ],
+     "isEdited": [
+      "boolean",
+      "null"
+     ],
+     "isLikedByPostAuthor": [
+      "boolean",
+      "null"
+     ],
+     "isPinned": [
+      "boolean",
+      "null"
+     ],
+     "keywords": [
+      "array",
+      "null"
+     ],
+     "likedByCoauthors": [
+      "array",
+      "null"
+     ],
+     "media": [
+      "array",
+      "null"
+     ],
+     "metrics": "object",
+     "parentId": [
+      "string",
+      "null"
+     ],
+     "pinnedPosition": [
+      "integer",
+      "null"
+     ],
+     "postId": [
+      "string",
+      "null"
+     ],
+     "previewUsers": [
+      "array",
+      "null"
+     ],
+     "ranking": "object",
+     "replies": [
+      "array",
+      "null"
+     ],
+     "replyToId": [
+      "string",
+      "null"
+     ],
+     "sharingEnabled": [
+      "boolean",
+      "null"
+     ],
+     "status": [
+      "string",
+      "null"
+     ],
+     "text": [
+      "string",
+      "null"
+     ],
+     "translation": "object",
+     "community": null,
+     "depth": [
+      "integer",
+      "null"
+     ],
+     "display": "object",
+     "distinguishedBy": [
+      "string",
+      "null"
+     ],
+     "editedAt": [
+      "string",
+      "null"
+     ],
+     "isArchived": [
+      "boolean",
+      "null"
+     ],
+     "isControversial": [
+      "boolean",
+      "null"
+     ],
+     "isLocked": [
+      "boolean",
+      "null"
+     ],
+     "isStickied": [
+      "boolean",
+      "null"
+     ],
+     "textHtml": [
+      "string",
+      "null"
+     ],
+     "type": [
+      "string",
+      "null"
+     ],
+     "url": "string",
+     "visibility": "object",
+     "entities": [
+      "array",
+      "null"
+     ],
+     "isLikedByCreator": [
+      "boolean",
+      "null"
+     ],
+     "labels": [
+      "array",
+      "null"
+     ],
+     "language": [
+      "string",
+      "null"
+     ],
+     "predictions": "object",
+     "previewReplies": [
+      "array",
+      "null"
+     ],
+     "replyTo": null,
+     "rootCommentId": [
+      "string",
+      "null"
+     ],
+     "sticker": null,
+     "article": null,
+     "authorId": [
+      "string",
+      "null"
+     ],
+     "card": null,
+     "communityNote": null,
+     "conversationId": [
+      "string",
+      "null"
+     ],
+     "displayTextRange": null,
+     "edit": null,
+     "hasGrokAnalysisButton": [
+      "boolean",
+      "null"
+     ],
+     "inReplyToHandle": [
+      "string",
+      "null"
+     ],
+     "inReplyToPostId": [
+      "string",
+      "null"
+     ],
+     "inReplyToUserId": [
+      "string",
+      "null"
+     ],
+     "isPromoted": [
+      "boolean",
+      "null"
+     ],
+     "isQuote": [
+      "boolean",
+      "null"
+     ],
+     "isRepost": [
+      "boolean",
+      "null"
+     ],
+     "isSensitive": [
+      "boolean",
+      "null"
+     ],
+     "longText": null,
+     "preview": null,
+     "previousMetrics": null,
+     "promotion": null,
+     "quotedPost": null,
+     "quotedPostId": [
+      "string",
+      "null"
+     ],
+     "repostedPost": null,
+     "restrictions": [
+      "array",
+      "null"
+     ],
+     "timeline": null
+    },
+    "evidence": [
+     "openapi/_original/openhandle-openapi.json#GET /v1/instagram/posts/{identifier}/comments",
+     "openapi/_original/openhandle-openapi.json#GET /v1/reddit/posts/{identifier}/comments",
+     "openapi/_original/openhandle-openapi.json#GET /v1/reddit/profiles/{identifier}/comments",
+     "openapi/_original/openhandle-openapi.json#GET /v1/tiktok/posts/{identifier}/comments",
+     "openapi/_original/openhandle-openapi.json#GET /v1/twitter/posts/{identifier}/comments",
+     "openapi/_original/openhandle-openapi.yml#GET /v1/instagram/posts/{identifier}/comments",
+     "openapi/_original/openhandle-openapi.yml#GET /v1/reddit/posts/{identifier}/comments",
+     "openapi/_original/openhandle-openapi.yml#GET /v1/reddit/profiles/{identifier}/comments",
+     "openapi/_original/openhandle-openapi.yml#GET /v1/tiktok/posts/{identifier}/comments",
+     "openapi/_original/openhandle-openapi.yml#GET /v1/twitter/posts/{identifier}/comments"
+    ]
+   },
+   "planable": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "postId": "string",
+     "text": "string",
+     "authorId": "string",
+     "teamOnly": "boolean",
+     "replyFor": "string",
+     "reactions": "array",
+     "createdAt": "string",
+     "replyToCommentId": "string"
+    },
+    "evidence": [
+     "openapi/_original/planable-openapi.json#DELETE /posts/{id}/comments/{commentId}",
+     "openapi/_original/planable-openapi.json#GET /posts/{id}/comments",
+     "openapi/_original/planable-openapi.json#PATCH /posts/{id}/comments/{commentId}",
+     "openapi/_original/planable-openapi.json#POST /posts/{id}/comments"
+    ]
+   },
+   "postiz": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/postiz-platform-swagger-openapi.json#GET /public/posts/{id}/comments",
+     "openapi/_original/postiz-platform-swagger-openapi.json#POST /posts/{id}/comments"
+    ]
+   },
+   "reddit": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "after": "string",
+     "before": "string",
+     "dist": "integer",
+     "modhash": "string",
+     "children": "array"
+    },
+    "evidence": [
+     "openapi/_original/reddit-data-api-openapi.yml#GET /comments/{article}",
+     "openapi/_original/reddit-data-api-openapi.yml#GET /user/{username}/comments"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "id": "string",
+     "site": "string",
+     "page": "string",
+     "pagesize": "string",
+     "sort": "string",
+     "filter": "string",
+     "video_id": "string",
+     "limit": "string",
+     "continuation": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /stackoverflow/v1/comments",
+     "openapi/_original/reefapi-openapi.json#POST /youtube/v1/comments"
+    ]
+   },
+   "respondology": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "comment_id": "string",
+     "account_id": "string",
+     "screen_name": "string",
+     "message": "string",
+     "request_id": "string",
+     "moderate": "boolean",
+     "posted_at": "string",
+     "post_id": "string",
+     "post_created_at": "string",
+     "parent_comment_id": "string",
+     "comment_permalink": "string",
+     "custom": "object",
+     "media": "array",
+     "message_tags": "array",
+     "user": "object"
+    },
+    "evidence": [
+     "openapi/_original/respondology-api-openapi.json#DELETE /external_api/v1/comments/{id}",
+     "openapi/_original/respondology-api-openapi.json#GET /external_api/v1/comments/{id}",
+     "openapi/_original/respondology-api-openapi.json#PATCH /external_api/v1/comments/{id}",
+     "openapi/_original/respondology-api-openapi.json#POST /external_api/v1/comments",
+     "openapi/_original/respondology-api-swagger.json#DELETE /external_api/v1/comments/{id}",
+     "openapi/_original/respondology-api-swagger.json#GET /external_api/v1/comments/{id}",
+     "openapi/_original/respondology-api-swagger.json#PATCH /external_api/v1/comments/{id}",
+     "openapi/_original/respondology-api-swagger.json#POST /external_api/v1/comments"
+    ]
+   },
+   "scrapeatlas": {
+    "segments": [
+     "comments",
+     "replies"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "data": "object",
+     "hydration": "object",
+     "success": "boolean",
+     "status": "string",
+     "requestId": "string",
+     "sourceUrl": "string",
+     "fetchedAt": "string",
+     "coverage": "object",
+     "accounting": "object",
+     "comments": "array",
+     "cursor": [
+      "string",
+      "null"
+     ],
+     "has_next_page": "boolean",
+     "replies": "array",
+     "id": "integer",
+     "type": "string",
+     "commentCount": "integer",
+     "maxDepth": "integer",
+     "post": "object",
+     "posts_and_comments": "array",
+     "server": "string",
+     "ancestors": "array",
+     "parentEntityType": "string",
+     "parentEntityID": "integer",
+     "series": "object",
+     "nextCursor": [
+      "string",
+      "null"
+     ],
+     "totalCount": [
+      "integer",
+      "null"
+     ],
+     "hasMore": "boolean",
+     "more": "object",
+     "after": [
+      "string",
+      "null"
+     ],
+     "sourceComments": "array",
+     "snapId": "string",
+     "normalizedComments": "array",
+     "spotlight": "object",
+     "postId": "integer",
+     "has_more": "integer",
+     "total": "integer",
+     "continuationToken": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/facebook/post/comment/replies",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/facebook/post/comments",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/hackernews/story/comments",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/instagram/post/comments",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/kalshi/comments",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/mastodon/post/replies",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/polymarket/comments",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/producthunt/comments",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/reddit/post/comments",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/reddit/profile/comments",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/snapchat/spotlight/comments",
+     "openapi/_original/scrapeatlas-openapi.json#GET /v1/substack/post/comments"
+    ]
+   },
+   "social-fetch": {
+    "segments": [
+     "comments",
+     "replies"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "author": "object",
+     "createdAt": "string",
+     "permalink": "string",
+     "text": "string",
+     "textHtml": "string",
+     "editedAt": "string",
+     "url": "string",
+     "replyCount": "integer",
+     "apId": "string",
+     "content": "string",
+     "postId": "integer",
+     "path": "string",
+     "depth": "integer",
+     "parentId": "integer",
+     "distinguished": "boolean",
+     "languageId": "integer",
+     "isLocal": "boolean",
+     "removed": "boolean",
+     "deleted": "boolean",
+     "publishedAt": "string",
+     "updatedAt": "string",
+     "score": "integer",
+     "upvotes": "integer",
+     "downvotes": "integer",
+     "isAdmin": "boolean",
+     "isModerator": "boolean",
+     "bannedFromCommunity": "boolean",
+     "post": "object",
+     "community": "object",
+     "lookupStatus": "string",
+     "restrictedReason": "string",
+     "comments": "array",
+     "commentsHidden": "boolean",
+     "returnedCount": "integer",
+     "truncated": "boolean",
+     "postedAt": "string",
+     "likes": "integer",
+     "replyTo": "object",
+     "replies": "array",
+     "body": "string",
+     "bodyHtml": "string",
+     "bodyText": "string",
+     "votesCount": "integer",
+     "user": "object",
+     "repliesCount": "integer",
+     "repliesHasMore": "boolean",
+     "sourceFamily": "string",
+     "page": "object",
+     "reportedTotal": "number",
+     "comment": "string",
+     "edited": "boolean",
+     "engagements": "object",
+     "language": "string",
+     "createdAtLabel": "string",
+     "conversationId": "string",
+     "inReplyToStatusId": "string",
+     "inReplyToUserId": "string",
+     "inReplyToScreenName": "string",
+     "quotedStatusId": "string",
+     "retweetTweetId": "string",
+     "metrics": "object",
+     "media": "array",
+     "expandedUrl": "string",
+     "isRetweet": "boolean",
+     "isReply": "boolean",
+     "isQuote": "boolean",
+     "source": "string",
+     "communityId": "string",
+     "hasAIGeneratedMedia": "boolean",
+     "isPaidPromotion": "boolean",
+     "isTranslatable": "boolean",
+     "hasBirdwatchNotes": "boolean",
+     "possiblySensitive": "boolean",
+     "entities": "object",
+     "editInfo": "object",
+     "card": "object",
+     "poll": "object",
+     "article": "object",
+     "place": "object",
+     "communityNote": "object",
+     "isEdited": "boolean",
+     "quotedTweet": "object",
+     "retweetedTweet": "object",
+     "childIds": "array",
+     "dead": "boolean",
+     "itemUrl": "string",
+     "type": "string",
+     "title": "string",
+     "commentCount": "integer",
+     "parentCommentId": "string",
+     "reactionCount": "integer",
+     "reportCount": "integer",
+     "aiDisclosure": "string",
+     "kind": "string",
+     "likeCount": "integer",
+     "rootId": "string",
+     "replyToAuthor": "string",
+     "timestamps": "array",
+     "postType": "string",
+     "isByPostAuthor": "boolean",
+     "license": "string",
+     "bodyMarkdown": "string",
+     "repliesCursor": "string",
+     "gifUrl": "string",
+     "isPinned": "boolean",
+     "isByOwner": "boolean",
+     "isLikedByOwner": "boolean",
+     "renderedHtml": "string",
+     "isSubmitter": "boolean",
+     "stickied": "boolean",
+     "locked": "boolean",
+     "publishedTimeText": "string",
+     "dislikeCount": "integer",
+     "replyLevel": "integer"
+    },
+    "evidence": [
+     "openapi/_original/social-fetch-openapi.json#GET /v1/dailymotion/videos/{videoId}/comments",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/dev-to/article/comments",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/facebook/posts/comments",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/facebook/posts/comments/replies",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/flickr/galleries/{galleryId}/comments",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/flickr/photos/{photoId}/comments",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/gumroad/post/comments",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/hackernews/stories/{id}/comments",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/hackernews/users/{username}/comments",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/instagram/posts/comments",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/instagram/posts/comments/replies",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/ko-fi/posts/{slug}/comments"
+    ]
+   },
+   "socialapis": {
+    "segments": [
+     "comments",
+     "replies"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/socialapis-openapi.json#GET /facebook/posts/comments",
+     "openapi/_original/socialapis-openapi.json#GET /facebook/posts/comments/replies"
+    ]
+   },
+   "sociallisteningapi": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "platform": "string",
+     "endpoint": "string",
+     "data": "object",
+     "pagination": "object",
+     "raw": null,
+     "request_id": "string",
+     "credits_used": "integer",
+     "credits_remaining": [
+      "integer",
+      "null"
+     ],
+     "url": "string",
+     "cursor": "string"
+    },
+    "evidence": [
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/reddit/post/comments",
+     "openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/reddit/post/comments",
+     "openapi/_original/sociallisteningapi-openapi.yml#GET /api/v1/reddit/post/comments",
+     "openapi/_original/sociallisteningapi-openapi.yml#POST /api/v1/reddit/post/comments"
+    ]
+   },
+   "sorsa": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "bookmark_count": "integer",
+     "conversation_id_str": "string",
+     "created_at": "string",
+     "entities": "array",
+     "full_text": "string",
+     "id": "string",
+     "in_reply_to_tweet_id": "string",
+     "in_reply_to_username": "string",
+     "is_quote_status": "boolean",
+     "is_replies_limited": "boolean",
+     "is_reply": "boolean",
+     "lang": "string",
+     "likes_count": "integer",
+     "quote_count": "integer",
+     "quoted_status": null,
+     "reply_count": "integer",
+     "retweet_count": "integer",
+     "retweeted_status": null,
+     "user": null,
+     "view_count": "integer",
+     "next_cursor": "string",
+     "order_by": "string",
+     "tweet_link": "string"
+    },
+    "evidence": [
+     "openapi/_original/sorsa-openapi.yml#POST /comments"
+    ]
+   },
+   "sylvia-api": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "body": "string",
+     "author": "string",
+     "subreddit": "string",
+     "score": "integer",
+     "created_utc": "integer",
+     "permalink": "string",
+     "parent_id": "string",
+     "link_id": "string",
+     "is_submitter": "boolean",
+     "gilded": "integer",
+     "depth": "integer",
+     "collapsed": "boolean",
+     "data": "array",
+     "cursor": "string",
+     "has_more": "boolean",
+     "total": "integer"
+    },
+    "evidence": [
+     "openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /comments/{id}",
+     "openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /live/comments",
+     "openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /users/{username}/comments"
+    ]
+   },
+   "trakt": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/trakt-openapi.yml#DELETE /comments/{id}",
+     "openapi/_original/trakt-openapi.yml#GET /comments/{id}",
+     "openapi/_original/trakt-openapi.yml#PUT /comments/{id}"
+    ]
+   },
+   "vaynermedia": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/comments",
+     "openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/comments/{id}"
+    ]
+   },
+   "xquik-api": {
+    "segments": [
+     "replies"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "text": "string",
+     "type": "string",
+     "createdAt": "string",
+     "isNoteTweet": "boolean",
+     "isReply": "boolean",
+     "isQuoteStatus": "boolean",
+     "isLimitedReply": "boolean",
+     "inReplyToId": "string",
+     "inReplyToUserId": "string",
+     "inReplyToUsername": "string",
+     "conversationId": "string",
+     "source": "string",
+     "displayTextRange": "array",
+     "contentDisclosure": "object",
+     "article": "object",
+     "card": "object",
+     "communityNote": "object",
+     "edit": "object",
+     "isTranslatable": "boolean",
+     "noteTweet": "object",
+     "place": "object",
+     "possiblySensitive": "boolean",
+     "previousCounts": "object",
+     "viewState": "string",
+     "entities": "object",
+     "quoted_tweet": "object",
+     "retweeted_tweet": "object",
+     "media": "array",
+     "url": "string",
+     "lang": "string",
+     "likeCount": "integer",
+     "retweetCount": "integer",
+     "replyCount": "integer",
+     "quoteCount": "integer",
+     "viewCount": "integer",
+     "bookmarkCount": "integer",
+     "author": "object"
+    },
+    "evidence": [
+     "openapi/_original/xquik-rest-api-openapi.json#GET /api/v1/x/tweets/{id}/replies",
+     "openapi/_original/xquik-rest-api-openapi.yml#GET /api/v1/x/tweets/{id}/replies"
+    ]
+   },
+   "youtube": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "kind": "string",
+     "etag": "string",
+     "id": "string",
+     "snippet": "object"
+    },
+    "evidence": [
+     "openapi/_original/youtube-data-api-openapi.yml#DELETE /comments",
+     "openapi/_original/youtube-data-api-openapi.yml#GET /comments",
+     "openapi/_original/youtube-data-api-openapi.yml#POST /comments",
+     "openapi/_original/youtube-data-api-openapi.yml#PUT /comments"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "adsmom-inc",
+    "agorapulse",
+    "ahrefs",
+    "anyapi",
+    "at-protocol",
+    "audiomack",
+    "beehiiv",
+    "blotato",
+    "brandwatch",
+    "convertkit",
+    "creatoriq",
+    "dataforseo",
+    "dev-to",
+    "devto",
+    "diaspora",
+    "discord",
+    "disqus",
+    "facebook-business-manager",
+    "facebook-pages",
+    "fama",
+    "famous",
+    "farcaster",
+    "firstpromoter",
+    "flickr",
+    "fourthwall",
+    "giphy",
+    "gravatar",
+    "highrise",
+    "honesthook",
+    "hootsuite",
+    "imgur",
+    "impact",
+    "impact-radius",
+    "insightera",
+    "instagram",
+    "kajabi",
+    "khoros-ai",
+    "kit",
+    "konbiniapi",
+    "later",
+    "learnworlds",
+    "linkedin",
+    "lithium",
+    "loudcrowd",
+    "lucidya-ltd",
+    "mastodon-instances",
+    "mavrck",
+    "medium",
+    "meltwater",
+    "metricool",
+    "mighty-networks",
+    "monocrawl",
+    "nakama",
+    "nextdoor",
+    "neynar",
+    "openhandle",
+    "opus",
+    "opusclip",
+    "paragraph",
+    "patreon",
+    "pinterest",
+    "pixelfed",
+    "planable",
+    "pomo",
+    "posteahora",
+    "postiz",
+    "postonce",
+    "publer",
+    "publora",
+    "reddit",
+    "reefapi",
+    "refersion",
+    "reputation",
+    "respondology",
+    "scrapeatlas",
+    "snap",
+    "snapchat",
+    "social-fetch",
+    "socialapis",
+    "sociallisteningapi",
+    "sorsa",
+    "spredfast",
+    "sssnack-com",
+    "stocktwits",
+    "streamelements",
+    "sylvia-api",
+    "syncly",
+    "synup",
+    "talkwalker",
+    "tapfiliate",
+    "teachable",
+    "threads-api",
+    "thrivecart",
+    "tiktok",
+    "tiktok-ads",
+    "tiktok-for-developers",
+    "toksta",
+    "trakt",
+    "trend",
+    "twitter",
+    "twitter-x",
+    "unified",
+    "upload-post",
+    "usecommune",
+    "vaynermedia",
+    "vbout",
+    "versusgame",
+    "viewsmeet-com",
+    "wechat",
+    "x",
+    "xproapi",
+    "xquik-api",
+    "yawplet",
+    "youtube",
+    "zoca",
+    "zora"
+   ],
+   "kebab-case": [
+    "adsmom-inc",
+    "agorapulse",
+    "ahrefs",
+    "audiomack",
+    "blotato",
+    "creatoriq",
+    "discord",
+    "famous",
+    "fourthwall",
+    "gravatar",
+    "highrise",
+    "honesthook",
+    "hootsuite",
+    "impact",
+    "impact-radius",
+    "insightera",
+    "later",
+    "loudcrowd",
+    "lucidya-ltd",
+    "mavrck",
+    "meltwater",
+    "metricool",
+    "monocrawl",
+    "nextdoor",
+    "neynar",
+    "openhandle",
+    "opus",
+    "opusclip",
+    "paragraph",
+    "pixelfed",
+    "planable",
+    "pomo",
+    "posteahora",
+    "postiz",
+    "publer",
+    "publora",
+    "reefapi",
+    "reputation",
+    "scrapeatlas",
+    "social-fetch",
+    "socialapis",
+    "sociallisteningapi",
+    "sorsa",
+    "sylvia-api",
+    "syncly",
+    "synup",
+    "tapfiliate",
+    "toksta",
+    "trend",
+    "upload-post",
+    "usecommune",
+    "vaynermedia",
+    "versusgame",
+    "wechat",
+    "xquik-api",
+    "zoca"
+   ],
+   "snake_case": [
+    "audiomack",
+    "beehiiv",
+    "convertkit",
+    "dataforseo",
+    "dev-to",
+    "devto",
+    "diaspora",
+    "facebook-business-manager",
+    "facebook-pages",
+    "fama",
+    "famous",
+    "firstpromoter",
+    "flickr",
+    "highrise",
+    "imgur",
+    "instagram",
+    "kajabi",
+    "khoros-ai",
+    "kit",
+    "later",
+    "lithium",
+    "lucidya-ltd",
+    "mavrck",
+    "meltwater",
+    "mighty-networks",
+    "monocrawl",
+    "neynar",
+    "pinterest",
+    "pixelfed",
+    "pomo",
+    "publer",
+    "reddit",
+    "reefapi",
+    "refersion",
+    "respondology",
+    "snapchat",
+    "spredfast",
+    "sylvia-api",
+    "synup",
+    "talkwalker",
+    "teachable",
+    "threads-api",
+    "thrivecart",
+    "tiktok",
+    "tiktok-ads",
+    "tiktok-for-developers",
+    "trakt",
+    "twitter",
+    "twitter-x",
+    "upload-post",
+    "vaynermedia",
+    "versusgame",
+    "x",
+    "xproapi"
+   ],
+   "other": [
+    "agorapulse",
+    "anyapi",
+    "at-protocol",
+    "creatoriq",
+    "discord",
+    "facebook-business-manager",
+    "flickr",
+    "highrise",
+    "imgur",
+    "khoros-ai",
+    "later",
+    "linkedin",
+    "lithium",
+    "mavrck",
+    "metricool",
+    "pixelfed",
+    "pomo",
+    "reefapi",
+    "scrapeatlas",
+    "spredfast",
+    "sssnack-com",
+    "syncly",
+    "talkwalker",
+    "tiktok",
+    "toksta",
+    "twitter",
+    "twitter-x",
+    "x",
+    "zoca"
+   ],
+   "camelCase": [
+    "creatoriq",
+    "disqus",
+    "farcaster",
+    "hootsuite",
+    "impact",
+    "impact-radius",
+    "khoros-ai",
+    "later",
+    "linkedin",
+    "lithium",
+    "mavrck",
+    "metricool",
+    "neynar",
+    "reefapi",
+    "reputation",
+    "scrapeatlas",
+    "spredfast",
+    "sylvia-api",
+    "synup",
+    "telegram",
+    "thrivecart",
+    "trend",
+    "versusgame",
+    "youtube",
+    "zoca",
+    "zora"
+   ],
+   "PascalCase": [
+    "creatoriq",
+    "hootsuite",
+    "impact",
+    "impact-radius",
+    "loudcrowd",
+    "vbout"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "adsmom-inc",
+    "agorapulse",
+    "ahrefs",
+    "anyapi",
+    "at-protocol",
+    "audiomack",
+    "beehiiv",
+    "blotato",
+    "brandwatch",
+    "convertkit",
+    "creatoriq",
+    "dev-to",
+    "devto",
+    "discord",
+    "disqus",
+    "facebook-business-manager",
+    "facebook-pages",
+    "fama",
+    "famous",
+    "farcaster",
+    "firstpromoter",
+    "flickr",
+    "giphy",
+    "gravatar",
+    "highrise",
+    "honesthook",
+    "hootsuite",
+    "imgur",
+    "impact",
+    "impact-radius",
+    "insightera",
+    "instagram",
+    "kajabi",
+    "khoros-ai",
+    "kit",
+    "konbiniapi",
+    "later",
+    "learnworlds",
+    "linkedin",
+    "lithium",
+    "loudcrowd",
+    "lucidya-ltd",
+    "mastodon-instances",
+    "mavrck",
+    "medium",
+    "meltwater",
+    "metricool",
+    "mighty-networks",
+    "monocrawl",
+    "nakama",
+    "neynar",
+    "openhandle",
+    "opus",
+    "opusclip",
+    "paragraph",
+    "patreon",
+    "pinterest",
+    "pixelfed",
+    "planable",
+    "pomo",
+    "posteahora",
+    "postiz",
+    "postonce",
+    "publer",
+    "publora",
+    "reddit",
+    "reputation",
+    "scrapeatlas",
+    "snapchat",
+    "social-fetch",
+    "socialapis",
+    "sociallisteningapi",
+    "sorsa",
+    "spredfast",
+    "sssnack-com",
+    "stocktwits",
+    "streamelements",
+    "sylvia-api",
+    "synup",
+    "talkwalker",
+    "tapfiliate",
+    "teachable",
+    "threads-api",
+    "thrivecart",
+    "tiktok",
+    "tiktok-ads",
+    "tiktok-for-developers",
+    "toksta",
+    "trakt",
+    "trend",
+    "twitter",
+    "twitter-x",
+    "upload-post",
+    "usecommune",
+    "vaynermedia",
+    "vbout",
+    "versusgame",
+    "wechat",
+    "x",
+    "xproapi",
+    "xquik-api",
+    "yawplet",
+    "youtube",
+    "zoca",
+    "zora"
+   ],
+   "snake_case": [
+    "adsmom-inc",
+    "ahrefs",
+    "anyapi",
+    "audiomack",
+    "beehiiv",
+    "brandwatch",
+    "convertkit",
+    "creatoriq",
+    "dev-to",
+    "devto",
+    "discord",
+    "disqus",
+    "facebook-business-manager",
+    "fama",
+    "famous",
+    "farcaster",
+    "firstpromoter",
+    "flickr",
+    "fourthwall",
+    "giphy",
+    "gravatar",
+    "highrise",
+    "honesthook",
+    "hootsuite",
+    "imgur",
+    "impact",
+    "impact-radius",
+    "instagram",
+    "khoros-ai",
+    "kit",
+    "later",
+    "learnworlds",
+    "lithium",
+    "lucidya-ltd",
+    "mastodon-instances",
+    "mavrck",
+    "medium",
+    "meltwater",
+    "metricool",
+    "mighty-networks",
+    "monocrawl",
+    "nakama",
+    "neynar",
+    "openhandle",
+    "patreon",
+    "pinterest",
+    "pixelfed",
+    "pomo",
+    "postonce",
+    "publer",
+    "reddit",
+    "scrapeatlas",
+    "snap",
+    "snapchat",
+    "socialapis",
+    "sociallisteningapi",
+    "sorsa",
+    "spredfast",
+    "sssnack-com",
+    "sylvia-api",
+    "talkwalker",
+    "tapfiliate",
+    "teachable",
+    "threads-api",
+    "thrivecart",
+    "tiktok",
+    "tiktok-ads",
+    "twitter",
+    "twitter-x",
+    "upload-post",
+    "usecommune",
+    "vaynermedia",
+    "vbout",
+    "wechat",
+    "x",
+    "xproapi",
+    "xquik-api",
+    "yawplet",
+    "youtube",
+    "zoca"
+   ],
+   "camelCase": [
+    "agorapulse",
+    "at-protocol",
+    "brandwatch",
+    "creatoriq",
+    "farcaster",
+    "hootsuite",
+    "impact",
+    "impact-radius",
+    "khoros-ai",
+    "later",
+    "linkedin",
+    "lithium",
+    "loudcrowd",
+    "mavrck",
+    "metricool",
+    "monocrawl",
+    "neynar",
+    "openhandle",
+    "opus",
+    "opusclip",
+    "paragraph",
+    "planable",
+    "pomo",
+    "postiz",
+    "publer",
+    "publora",
+    "scrapeatlas",
+    "social-fetch",
+    "socialapis",
+    "spredfast",
+    "streamelements",
+    "synup",
+    "thrivecart",
+    "trend",
+    "vbout",
+    "versusgame",
+    "xproapi",
+    "xquik-api",
+    "youtube",
+    "zoca",
+    "zora"
+   ],
+   "other": [
+    "beehiiv",
+    "brandwatch",
+    "convertkit",
+    "creatoriq",
+    "firstpromoter",
+    "impact",
+    "impact-radius",
+    "kajabi",
+    "khoros-ai",
+    "later",
+    "linkedin",
+    "lithium",
+    "mavrck",
+    "metricool",
+    "pixelfed",
+    "spredfast",
+    "tiktok-ads",
+    "trend",
+    "twitter",
+    "twitter-x",
+    "vbout",
+    "versusgame",
+    "x"
+   ],
+   "PascalCase": [
+    "creatoriq",
+    "impact",
+    "impact-radius",
+    "khoros-ai",
+    "lithium",
+    "vbout",
+    "zoca"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "adsmom-inc",
+    "agorapulse",
+    "ahrefs",
+    "anyapi",
+    "at-protocol",
+    "audiomack",
+    "beehiiv",
+    "brandwatch",
+    "creatoriq",
+    "discord",
+    "facebook-business-manager",
+    "facebook-pages",
+    "giphy",
+    "highrise",
+    "honesthook",
+    "hootsuite",
+    "impact",
+    "impact-radius",
+    "instagram",
+    "khoros-ai",
+    "later",
+    "lithium",
+    "loudcrowd",
+    "mavrck",
+    "metricool",
+    "monocrawl",
+    "nakama",
+    "neynar",
+    "openhandle",
+    "paragraph",
+    "pinterest",
+    "pixelfed",
+    "planable",
+    "pomo",
+    "posteahora",
+    "postiz",
+    "postonce",
+    "publora",
+    "reddit",
+    "reputation",
+    "scrapeatlas",
+    "social-fetch",
+    "socialapis",
+    "spredfast",
+    "sssnack-com",
+    "stocktwits",
+    "streamelements",
+    "sylvia-api",
+    "synup",
+    "tapfiliate",
+    "threads-api",
+    "toksta",
+    "trakt",
+    "upload-post",
+    "usecommune",
+    "vbout",
+    "versusgame",
+    "xquik-api",
+    "zoca"
+   ],
+   "page": [
+    "audiomack",
+    "beehiiv",
+    "brandwatch",
+    "creatoriq",
+    "dev-to",
+    "devto",
+    "fama",
+    "famous",
+    "firstpromoter",
+    "flickr",
+    "gravatar",
+    "highrise",
+    "impact",
+    "impact-radius",
+    "khoros-ai",
+    "later",
+    "learnworlds",
+    "lithium",
+    "lucidya-ltd",
+    "mavrck",
+    "meltwater",
+    "metricool",
+    "mighty-networks",
+    "monocrawl",
+    "pomo",
+    "postiz",
+    "publer",
+    "publora",
+    "scrapeatlas",
+    "social-fetch",
+    "streamelements",
+    "synup",
+    "tapfiliate",
+    "teachable",
+    "thrivecart",
+    "tiktok",
+    "tiktok-ads",
+    "trakt",
+    "trend",
+    "upload-post",
+    "vaynermedia",
+    "vbout",
+    "versusgame",
+    "zoca"
+   ],
+   "offset": [
+    "agorapulse",
+    "ahrefs",
+    "creatoriq",
+    "discord",
+    "giphy",
+    "highrise",
+    "impact",
+    "impact-radius",
+    "khoros-ai",
+    "later",
+    "lithium",
+    "mavrck",
+    "metricool",
+    "monocrawl",
+    "neynar",
+    "pixelfed",
+    "planable",
+    "pomo",
+    "reputation",
+    "scrapeatlas",
+    "social-fetch",
+    "spredfast",
+    "streamelements",
+    "synup",
+    "talkwalker",
+    "toksta",
+    "trend",
+    "vaynermedia",
+    "versusgame",
+    "zoca"
+   ],
+   "page_size": [
+    "brandwatch",
+    "creatoriq",
+    "farcaster",
+    "impact",
+    "impact-radius",
+    "kajabi",
+    "khoros-ai",
+    "later",
+    "lithium",
+    "mavrck",
+    "meltwater",
+    "metricool",
+    "neynar",
+    "opus",
+    "opusclip",
+    "pinterest",
+    "pomo",
+    "spredfast",
+    "tiktok",
+    "tiktok-ads",
+    "versusgame",
+    "xproapi",
+    "xquik-api",
+    "zoca"
+   ],
+   "cursor": [
+    "adsmom-inc",
+    "at-protocol",
+    "beehiiv",
+    "creatoriq",
+    "hootsuite",
+    "konbiniapi",
+    "loudcrowd",
+    "monocrawl",
+    "nakama",
+    "neynar",
+    "openhandle",
+    "paragraph",
+    "planable",
+    "pomo",
+    "scrapeatlas",
+    "social-fetch",
+    "sociallisteningapi",
+    "sylvia-api",
+    "usecommune",
+    "versusgame",
+    "xproapi",
+    "xquik-api",
+    "zoca"
+   ],
+   "after": [
+    "convertkit",
+    "dev-to",
+    "devto",
+    "discord",
+    "facebook-business-manager",
+    "instagram",
+    "khoros-ai",
+    "kit",
+    "lithium",
+    "monocrawl",
+    "postonce",
+    "reddit",
+    "scrapeatlas",
+    "social-fetch",
+    "spredfast",
+    "sssnack-com",
+    "streamelements",
+    "sylvia-api",
+    "synup",
+    "vaynermedia",
+    "xquik-api",
+    "zora"
+   ],
+   "per_page": [
+    "convertkit",
+    "dev-to",
+    "devto",
+    "famous",
+    "firstpromoter",
+    "flickr",
+    "gravatar",
+    "khoros-ai",
+    "kit",
+    "lithium",
+    "mighty-networks",
+    "scrapeatlas",
+    "spredfast",
+    "synup",
+    "thrivecart",
+    "trend",
+    "vaynermedia"
+   ],
+   "count": [
+    "creatoriq",
+    "hootsuite",
+    "konbiniapi",
+    "linkedin",
+    "mastodon-instances",
+    "pomo",
+    "reddit",
+    "scrapeatlas",
+    "social-fetch",
+    "xquik-api",
+    "zora"
+   ],
+   "start": [
+    "dev-to",
+    "khoros-ai",
+    "linkedin",
+    "lithium",
+    "meltwater",
+    "metricool",
+    "scrapeatlas",
+    "social-fetch",
+    "spredfast",
+    "teachable",
+    "versusgame"
+   ],
+   "before": [
+    "convertkit",
+    "discord",
+    "kit",
+    "reddit",
+    "social-fetch",
+    "streamelements",
+    "sylvia-api",
+    "synup",
+    "vaynermedia"
+   ],
+   "size": [
+    "creatoriq",
+    "fama",
+    "gravatar",
+    "meltwater",
+    "metricool",
+    "versusgame"
+   ],
+   "page_token": [
+    "farcaster",
+    "neynar",
+    "scrapeatlas",
+    "tiktok",
+    "youtube"
+   ],
+   "max_results": [
+    "monocrawl",
+    "twitter",
+    "twitter-x",
+    "x",
+    "youtube"
+   ],
+   "skip": [
+    "khoros-ai",
+    "lithium",
+    "pomo",
+    "versusgame"
+   ],
+   "top": [
+    "dev-to",
+    "devto",
+    "social-fetch"
+   ],
+   "starting_after": [
+    "pomo"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "adsmom-inc",
+    "agorapulse",
+    "anyapi",
+    "audiomack",
+    "beehiiv",
+    "blotato",
+    "brandwatch",
+    "convertkit",
+    "creatoriq",
+    "dataforseo",
+    "dev-to",
+    "devto",
+    "discord",
+    "famous",
+    "firstpromoter",
+    "fourthwall",
+    "giphy",
+    "honesthook",
+    "hootsuite",
+    "imgur",
+    "impact",
+    "impact-radius",
+    "kajabi",
+    "khoros-ai",
+    "konbiniapi",
+    "later",
+    "learnworlds",
+    "lithium",
+    "lucidya-ltd",
+    "mavrck",
+    "meltwater",
+    "metricool",
+    "mighty-networks",
+    "nakama",
+    "nextdoor",
+    "openhandle",
+    "paragraph",
+    "patreon",
+    "pinterest",
+    "pixelfed",
+    "planable",
+    "pomo",
+    "posteahora",
+    "postiz",
+    "postonce",
+    "publer",
+    "publora",
+    "reddit",
+    "respondology",
+    "social-fetch",
+    "spredfast",
+    "sssnack-com",
+    "stocktwits",
+    "streamelements",
+    "sylvia-api",
+    "synup",
+    "talkwalker",
+    "tapfiliate",
+    "toksta",
+    "trakt",
+    "trend",
+    "twitter",
+    "twitter-x",
+    "upload-post",
+    "usecommune",
+    "vaynermedia",
+    "versusgame",
+    "viewsmeet-com",
+    "x",
+    "xquik-api",
+    "yawplet",
+    "zoca"
+   ],
+   "snake_case": [
+    "adsmom-inc",
+    "audiomack",
+    "convertkit",
+    "creatoriq",
+    "dataforseo",
+    "dev-to",
+    "devto",
+    "diaspora",
+    "discord",
+    "facebook-business-manager",
+    "fama",
+    "famous",
+    "firstpromoter",
+    "giphy",
+    "gravatar",
+    "highrise",
+    "impact",
+    "impact-radius",
+    "instagram",
+    "kajabi",
+    "khoros-ai",
+    "linkedin",
+    "lithium",
+    "loudcrowd",
+    "lucidya-ltd",
+    "meltwater",
+    "mighty-networks",
+    "nakama",
+    "neynar",
+    "openhandle",
+    "patreon",
+    "pinterest",
+    "pixelfed",
+    "pomo",
+    "publer",
+    "snap",
+    "snapchat",
+    "sorsa",
+    "spredfast",
+    "stocktwits",
+    "sylvia-api",
+    "synup",
+    "talkwalker",
+    "tapfiliate",
+    "teachable",
+    "threads-api",
+    "thrivecart",
+    "tiktok",
+    "trakt",
+    "twitter",
+    "twitter-x",
+    "upload-post",
+    "x",
+    "zoca"
+   ],
+   "camelCase": [
+    "agorapulse",
+    "audiomack",
+    "beehiiv",
+    "blotato",
+    "brandwatch",
+    "creatoriq",
+    "fourthwall",
+    "gravatar",
+    "hootsuite",
+    "imgur",
+    "impact",
+    "impact-radius",
+    "khoros-ai",
+    "konbiniapi",
+    "later",
+    "linkedin",
+    "lithium",
+    "mavrck",
+    "medium",
+    "meltwater",
+    "metricool",
+    "opus",
+    "opusclip",
+    "paragraph",
+    "planable",
+    "postiz",
+    "postonce",
+    "publora",
+    "reputation",
+    "social-fetch",
+    "spredfast",
+    "streamelements",
+    "synup",
+    "trend",
+    "versusgame",
+    "viewsmeet-com",
+    "xquik-api",
+    "youtube",
+    "zoca"
+   ],
+   "other": [
+    "impact",
+    "impact-radius",
+    "khoros-ai",
+    "linkedin",
+    "lithium",
+    "synup"
+   ],
+   "kebab-case": [
+    "facebook-pages",
+    "khoros-ai",
+    "lithium",
+    "metricool",
+    "spredfast"
+   ],
+   "PascalCase": [
+    "impact",
+    "impact-radius",
+    "linkedin",
+    "versusgame"
+   ]
+  },
+  "property": {
+   "lower": [
+    "ahrefs",
+    "beehiiv",
+    "blotato",
+    "convertkit",
+    "creatoriq",
+    "dev-to",
+    "diaspora",
+    "facebook-business-manager",
+    "facebook-pages",
+    "fama",
+    "gravatar",
+    "highrise",
+    "honesthook",
+    "hootsuite",
+    "instagram",
+    "khoros-ai",
+    "konbiniapi",
+    "later",
+    "lithium",
+    "lucidya-ltd",
+    "mavrck",
+    "medium",
+    "metricool",
+    "mighty-networks",
+    "monocrawl",
+    "openhandle",
+    "opus",
+    "opusclip",
+    "paragraph",
+    "pixelfed",
+    "planable",
+    "pomo",
+    "posteahora",
+    "postiz",
+    "postonce",
+    "publer",
+    "reddit",
+    "reefapi",
+    "respondology",
+    "scrapeatlas",
+    "social-fetch",
+    "sociallisteningapi",
+    "sorsa",
+    "spredfast",
+    "sylvia-api",
+    "tiktok-ads",
+    "toksta",
+    "trend",
+    "twitter",
+    "twitter-x",
+    "versusgame",
+    "x",
+    "xquik-api",
+    "yawplet",
+    "youtube",
+    "zoca",
+    "zora"
+   ],
+   "snake_case": [
+    "ahrefs",
+    "beehiiv",
+    "convertkit",
+    "creatoriq",
+    "dev-to",
+    "devto",
+    "facebook-business-manager",
+    "facebook-pages",
+    "gravatar",
+    "highrise",
+    "honesthook",
+    "instagram",
+    "khoros-ai",
+    "lithium",
+    "lucidya-ltd",
+    "mighty-networks",
+    "monocrawl",
+    "pixelfed",
+    "pomo",
+    "posteahora",
+    "postonce",
+    "publer",
+    "reefapi",
+    "respondology",
+    "scrapeatlas",
+    "sociallisteningapi",
+    "sorsa",
+    "spredfast",
+    "sylvia-api",
+    "tiktok-ads",
+    "toksta",
+    "twitter",
+    "twitter-x",
+    "x",
+    "xquik-api",
+    "yawplet"
+   ],
+   "camelCase": [
+    "agorapulse",
+    "blotato",
+    "hootsuite",
+    "konbiniapi",
+    "later",
+    "mavrck",
+    "medium",
+    "metricool",
+    "openhandle",
+    "opus",
+    "opusclip",
+    "paragraph",
+    "planable",
+    "posteahora",
+    "postiz",
+    "scrapeatlas",
+    "social-fetch",
+    "synup",
+    "trend",
+    "versusgame",
+    "xquik-api",
+    "zoca",
+    "zora"
+   ],
+   "other": [
+    "highrise",
+    "konbiniapi",
+    "monocrawl",
+    "scrapeatlas"
+   ],
+   "PascalCase": [
+    "creatoriq"
+   ]
+  }
+ }
+}

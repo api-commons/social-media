@@ -1,0 +1,265 @@
+openapi: 3.1.0
+info:
+  title: Social Media (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Social Media interface, distilled from the harvested OpenAPI of 118 providers in the
+    APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /social-accounts:
+    get:
+      operationId: listSocialAccounts
+      summary: List social accounts
+      tags:
+      - Social Accounts
+      x-commons-tier: core
+      x-commons-share: 0.773
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/SocialAccount'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createSocialAccount
+      summary: Create a social account
+      tags:
+      - Social Accounts
+      x-commons-tier: extended
+      x-commons-share: 0.409
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /social-accounts/{social_account_id}:
+    parameters:
+    - $ref: '#/components/parameters/social_account_id'
+    get:
+      operationId: getSocialAccount
+      summary: Get a social account
+      tags:
+      - Social Accounts
+      x-commons-tier: extended
+      x-commons-share: 0.318
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /posts:
+    get:
+      operationId: listPosts
+      summary: List posts
+      tags:
+      - Posts
+      x-commons-tier: core
+      x-commons-share: 0.844
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Post'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createPost
+      summary: Create a post
+      tags:
+      - Posts
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /posts/{post_id}:
+    parameters:
+    - $ref: '#/components/parameters/post_id'
+    get:
+      operationId: getPost
+      summary: Get a post
+      tags:
+      - Posts
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    delete:
+      operationId: deletePost
+      summary: Delete a post
+      tags:
+      - Posts
+      x-commons-tier: extended
+      x-commons-share: 0.4
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updatePost
+      summary: Update a post
+      tags:
+      - Posts
+      x-commons-tier: extended
+      x-commons-share: 0.2
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /posts/{post_id}/comments:
+    parameters:
+    - $ref: '#/components/parameters/post_id'
+    get:
+      operationId: listSocialComments
+      summary: List comments
+      tags:
+      - Social Comments
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/SocialComment'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createSocialComment
+      summary: Create a social comment
+      tags:
+      - Social Comments
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /posts/{post_id}/comments/{social_comment_id}:
+    parameters:
+    - $ref: '#/components/parameters/post_id'
+    - $ref: '#/components/parameters/social_comment_id'
+    get:
+      operationId: getSocialComment
+      summary: Get a social comment
+      tags:
+      - Social Comments
+      x-commons-tier: extended
+      x-commons-share: 0.3
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    delete:
+      operationId: deleteSocialComment
+      summary: Delete a social comment
+      tags:
+      - Social Comments
+      x-commons-tier: extended
+      x-commons-share: 0.2
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+components:
+  schemas:
+    SocialAccount:
+      $ref: ./schema/social_account.json
+    Post:
+      $ref: ./schema/post.json
+    SocialComment:
+      $ref: ./schema/social_comment.json
+  parameters:
+    social_account_id:
+      name: social_account_id
+      in: path
+      required: true
+      schema:
+        type: string
+    post_id:
+      name: post_id
+      in: path
+      required: true
+      schema:
+        type: string
+    social_comment_id:
+      name: social_comment_id
+      in: path
+      required: true
+      schema:
+        type: string

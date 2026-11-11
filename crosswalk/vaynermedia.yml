@@ -1,0 +1,24 @@
+provider: vaynermedia
+apis_io: https://apis.io/providers/vaynermedia/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    - statuses
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/posts
+    - openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/posts/{id}
+    - openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/statuses
+    - openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/statuses/{status}
+  social_comment:
+    path_segment:
+    - comments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/comments
+    - openapi/_original/vaynermedia-wordpress-content-openapi.json#GET /wp/v2/comments/{id}

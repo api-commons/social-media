@@ -1,0 +1,30 @@
+provider: posteahora
+apis_io: https://apis.io/providers/posteahora/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties:
+      id: id
+      text: caption
+      created_at:
+      - published_at
+      - created_at
+      author_id: accountId
+      status: status
+      media_urls:
+      - media_urls
+      - mediaUrls
+      name: title
+      scheduled_at:
+      - scheduled_at
+      - scheduledAt
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/posteahora-api-openapi.yml#DELETE /posts/{id}
+    - openapi/_original/posteahora-api-openapi.yml#GET /posts
+    - openapi/_original/posteahora-api-openapi.yml#GET /posts/{id}
+    - openapi/_original/posteahora-api-openapi.yml#PATCH /posts/{id}
+    - openapi/_original/posteahora-api-openapi.yml#POST /posts

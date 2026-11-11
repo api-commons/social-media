@@ -1,0 +1,15 @@
+provider: synup
+apis_io: https://apis.io/providers/synup/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/synup-api-openapi.yml#DELETE /posts/{postId}
+    - openapi/_original/synup-api-openapi.yml#GET /locations/{locationId}/posts
+    - openapi/_original/synup-api-openapi.yml#GET /posts/{postId}
+    - openapi/_original/synup-api-openapi.yml#POST /posts

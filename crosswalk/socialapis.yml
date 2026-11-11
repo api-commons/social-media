@@ -1,0 +1,25 @@
+provider: socialapis
+apis_io: https://apis.io/providers/socialapis/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/socialapis-openapi.json#GET /facebook/groups/posts
+    - openapi/_original/socialapis-openapi.json#GET /facebook/pages/posts
+    - openapi/_original/socialapis-openapi.json#GET /facebook/search/posts
+    - openapi/_original/socialapis-openapi.json#GET /instagram/location/posts
+    - openapi/_original/socialapis-openapi.json#GET /instagram/profile/posts
+  social_comment:
+    path_segment:
+    - comments
+    - replies
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/socialapis-openapi.json#GET /facebook/posts/comments
+    - openapi/_original/socialapis-openapi.json#GET /facebook/posts/comments/replies

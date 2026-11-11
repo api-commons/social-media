@@ -1,0 +1,38 @@
+provider: respondology
+apis_io: https://apis.io/providers/respondology/
+context: social-media
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties:
+      id: post_id
+      text: caption
+      created_at: posted_at
+      author_id: account_id
+      media_urls: media
+      name: title
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/respondology-api-openapi.json#DELETE /external_api/v1/posts/{id}
+    - openapi/_original/respondology-api-openapi.json#GET /external_api/v1/posts/{id}
+    - openapi/_original/respondology-api-openapi.json#PATCH /external_api/v1/posts/{id}
+    - openapi/_original/respondology-api-openapi.json#POST /external_api/v1/posts
+    - openapi/_original/respondology-api-swagger.json#DELETE /external_api/v1/posts/{id}
+  social_comment:
+    path_segment:
+    - comments
+    properties:
+      id: post_id
+      author_id: user
+      created_at: posted_at
+      media: media
+      request_id: request_id
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/respondology-api-openapi.json#DELETE /external_api/v1/comments/{id}
+    - openapi/_original/respondology-api-openapi.json#GET /external_api/v1/comments/{id}
+    - openapi/_original/respondology-api-openapi.json#PATCH /external_api/v1/comments/{id}
+    - openapi/_original/respondology-api-openapi.json#POST /external_api/v1/comments
+    - openapi/_original/respondology-api-swagger.json#DELETE /external_api/v1/comments/{id}
