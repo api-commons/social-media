@@ -164,7 +164,7 @@ paths:
     parameters:
     - $ref: '#/components/parameters/post_id'
     get:
-      operationId: listSocialComments
+      operationId: listComments
       summary: List comments
       tags:
       - Social Comments
