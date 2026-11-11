@@ -1,7 +1,7 @@
 provider: opusclip
 apis_io: https://apis.io/providers/opusclip/
 context: social-media
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   social_account:
     path_segment:

@@ -16,7 +16,7 @@ generated. Every number below is a count of providers.
 | post | 45 | 39 | id 74%, text 69%, created_at 64%, platform 51% | posts 38, post 9, tweets 9, statuses 5 |
 | social_comment | 20 | 15 | id 80%, author_id 53%, created_at 53%, text 53% | comments 19, replies 4 |
 
-Cohort: 118 providers with harvested OpenAPI, 53 crosswalks. Of the providers exposing a social_account: 41% create, 77% list, 32% fetch, 9% update, 0% delete. Generated 2026-11-10 by build.py.
+Cohort: 118 providers with harvested OpenAPI, 53 crosswalks. Of the providers exposing a social_account: 41% create, 77% list, 32% fetch, 9% update, 0% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
@@ -24,7 +24,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 
 ## What the measurement shows
 
-- A post agrees on id, text and created_at across networks (X, Mastodon-compatible servers, LinkedIn) and the publishing tools that schedule onto them.
+- A post agrees on id, text and created_at -- across networks (X, LinkedIn, ActivityPub servers such as Pixelfed) and the publishing tools that schedule onto them.
 - A comment agrees on id, author, text and created_at -- the same core as a post, one level down.
 - A social account agrees on nothing outright: networks expose a user, publishing tools a connected channel, and creator platforms an influencer profile.
 
